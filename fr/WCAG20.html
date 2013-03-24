@@ -1,14 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title>Règles pour l'accessibilité des contenus Web (WCAG) 2.0</title>
   <link media="print" type="text/css" rel="stylesheet" href="print.css" />
   <link rel="stylesheet" type="text/css" href="additional.css" />
-  <link rel="stylesheet" type="text/css"
-  href="http://www.w3.org/StyleSheets/TR/W3C-REC" />
+  <style type="text/css">
+/* Copy of http://www.w3.org/StyleSheets/TR/W3C-REC */
+/* Style for a "Recommendation" */
+
+/*
+   Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+/* $Id: base.css,v 1.27 2013-01-14 15:02:50 denis Exp $ */
+
+body {
+  padding: 2em 1em 2em 70px;
+  margin: 0;
+  font-family: sans-serif;
+  color: black;
+  background: white;
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+a:active { color: #C00; background: transparent }
+
+a:link img, a:visited img { border-style: none } /* no border on img links */
+
+a img { color: white; }        /* trick to hide the border in Netscape 4 */
+@media all {                   /* hide the next rule from Netscape 4 */
+  a img { color: inherit; }    /* undo the color change above */
+}
+
+th, td { /* ns 4 */
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { text-align: left }
+/* background should be transparent, but WebTV has a bug */
+h1, h2, h3 { color: #005A9C; background: white }
+h1 { font: 170% sans-serif }
+h2 { font: 140% sans-serif }
+h3 { font: 120% sans-serif }
+h4 { font: bold 100% sans-serif }
+h5 { font: italic 100% sans-serif }
+h6 { font: small-caps 100% sans-serif }
+
+.hide { display: none }
+
+div.head { margin-bottom: 1em }
+div.head h1 { margin-top: 2em; clear: both }
+div.head table { margin-left: 2em; margin-top: 2em }
+
+p.copyright { font-size: small }
+p.copyright small { font-size: small }
+
+@media screen {  /* hide from IE3 */
+a[href]:hover { background: #ffa }
+}
+
+pre { margin-left: 2em }
+/*
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+*/
+dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+dt { font-weight: bold }
+
+ul.toc, ol.toc {
+  list-style: disc;   /* Mac NS has problem with 'none' */
+  list-style: none;
+}
+
+@media aural {  
+  h1, h2, h3 { stress: 20; richness: 90 }
+  .hide { speak: none }
+  p.copyright { volume: x-soft; speech-rate: x-fast }
+  dt { pause-before: 63ms }
+  pre { speak-punctuation: code } 
+}
+
+
+
+body {
+  background-image: url(//www.w3.org/StyleSheets/TR/logo-REC);
+}
+
+</style>
+
   <style type="text/css">
 div.transheader {display: block;
 border: solid #ccccbb; padding: 2%;
@@ -22,8 +108,7 @@ font-weight: bolder;}</style>
 <p align="center">[<a href="#contents">accès aux contenus</a>] </p>
 
 <div class="head">
-<p><a href="http://www.w3.org/"><img src="http://www.w3.org/Icons/w3c_home"
-alt="W3C" height="48" width="72" /></a></p>
+<p><a href="http://www.w3.org/">W3C</a></p>
 
 <div class="transheader">
 <h1 class="transtitle"><span xml:lang="en" lang="en">Web Content Accessibility
@@ -250,8 +335,10 @@ l'élaboration de cette recommandation, est d'attirer l'attention sur les
 spécifications et d'en promouvoir le large déploiement. Ceci améliore la
 fonctionnalité et l'interopérabilité du Web.</p>
 
-<p>Les WCAG 2.0 sont soutenues par des documents non-normatifs associés, <a
-href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">Comprendre les
+<p>Les WCAG 2.0 sont soutenues par des documents non-normatifs associés, 
+- <a href="COMPRENDRE-WCAG20/Comprendre-WCAG20.html" class="phv-ins phv-local">Comprendre les
+WCAG 2.0</a> - 
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">Comprendre les
 WCAG 2.0 (en anglais)</a> et <a href="http://www.w3.org/TR/WCAG20-TECHS/"
 hreflang="en">Techniques pour les WCAG 2.0 (en anglais)</a>. Bien que ces
 documents n'aient pas le statut formel des WCAG 2.0, ils fournissent
@@ -454,7 +541,12 @@ du code.</p>
 <ul>
   <li><p><strong>Les principes</strong> - Le premier niveau traite des quatre
     principes fondamentaux pour l'accessibilité des contenus Web :
-    perceptible, utilisable, compréhensible et robuste. Voir aussi <a
+    perceptible, utilisable, compréhensible et robuste. Voir aussi
+- <a
+    href="COMPRENDRE-WCAG20/intro.html#introduction-fourprincs-head"
+    class="phv-ins phv-local">Comprendre
+    les quatre principes de l'accessibilité</a> - 
+     <a
     hreflang="en"
     href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head">Comprendre
     les quatre principes de l'accessibilité (en anglais)</a>.</p>
@@ -475,7 +567,12 @@ du code.</p>
     de divers groupes et de différents contextes, trois niveaux de conformité
     ont été définis : A (le plus bas), AA et AAA (le plus élevé). Des
     informations complémentaires sur les niveaux des WCAG peuvent être
-    consultées dans <a hreflang="en"
+    consultées dans 
+    - <a
+    href="COMPRENDRE-WCAG20/conformance.html#uc-levels-head"
+    class="phv-ins phv-local">Comprendre
+    les niveaux de conformité</a> -
+    <a hreflang="en"
     href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head">Comprendre
     les niveaux de conformité (en anglais)</a>.</p>
   </li>
@@ -490,7 +587,13 @@ du code.</p>
     les règles. Certaines techniques recommandées concernent des problèmes
     d'accessibilité qui ne sont pas traités par les critères de succès
     testables. Lorsque des échecs fréquents sont connus, ils sont aussi
-    documentés. Voir également <a hreflang="en"
+    documentés. Voir également 
+    - <a
+    href="COMPRENDRE-WCAG20/intro.html#introduction-layers-techs-head"
+    class="phv-ins phv-local">les
+    techniques suffisantes et les techniques recommandées dans Comprendre les
+    WCAG 2.0</a> -
+    <a hreflang="en"
     href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-layers-techs-head">les
     techniques suffisantes et les techniques recommandées dans Comprendre les
     WCAG 2.0 (en anglais)</a>.</p>
@@ -512,7 +615,10 @@ cognitifs, du langage et de l'apprentissage. Les auteurs sont encouragés à
 prendre en compte l'ensemble des techniques, y compris les techniques
 recommandées, et à rechercher des conseils appropriés à propos des bonnes
 pratiques en vigueur afin de faire en sorte que les contenus Web soient
-accessibles, autant que possible, à cette communauté. Des <a hreflang="en"
+accessibles, autant que possible, à cette communauté. Des 
+- <a
+href="COMPRENDRE-WCAG20/appendixC.html#understanding-metadata">métadonnées</a> -
+<a hreflang="en"
 href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/appendixC.html#understanding-metadata">métadonnées
 (en anglais)</a> pourront aider l'utilisateur à trouver les contenus qui
 correspondent le mieux à ses besoins.</p>
@@ -536,7 +642,10 @@ technologies futures. Les documents d'accompagnement comprennent :</p>
     utilisables par les auteurs lorsqu'ils développent et évaluent les
     contenus Web.</p>
   </li>
-  <li><p><strong><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/"
+  <li><p><strong>
+- <a href="COMPRENDRE-WCAG20/"
+    class="phv-ins phv-local">Comprendre les WCAG 2.0</a> -
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/"
     hreflang="en">Comprendre les WCAG 2.0 (en anglais)</a></strong> - Un guide
     pour comprendre et mettre en œuvre les WCAG 2.0. On y trouve un court
     document de « compréhension » pour chaque règle et chaque critère de
@@ -582,7 +691,10 @@ détaillé de façon plus complète dans le glossaire. </p>
       virtuelle interactive complète. Par exemple, le terme « page Web »
       peut inclure une expérience immersive, interactive, proche du cinéma,
       pouvant être trouvée sur une seule URI. Pour plus d'informations, voir
-      <a
+- <a
+  href="COMPRENDRE-WCAG20/conformance.html#uc-web-page-head"
+  class="phv-ins phv-local">Comprendre le terme « page Web »</a> -
+<a
       href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-web-page-head"
       hreflang="en">Comprendre le terme « page Web » (en anglais)</a>.</p>
     </dd>
@@ -598,7 +710,11 @@ détaillé de façon plus complète dans le glossaire. </p>
       title="définition : technologie d'assistance (tel qu'utilisé dans ce document)"
       href="#atdef" class="termref">technologies d'assistance</a>, puissent
       extraire et présenter l'information concernée de différentes manières
-      aux utilisateurs. Pour plus d'informations, voir <a
+      aux utilisateurs. Pour plus d'informations, voir
+- <a
+      href="COMPRENDRE-WCAG20/conformance.html#uc-programmatically-determined-head"
+    class="phv-ins phv-local">Comprendre déterminé par un programme informatique</a> -
+<a
       href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-programmatically-determined-head"
       hreflang="en">Comprendre déterminé par un programme informatique (en
       anglais)</a>. </p>
@@ -623,7 +739,11 @@ détaillé de façon plus complète dans le glossaire. </p>
       sera compatible).</p>
       <p>La définition de « compatible avec l'accessibilité » est
       disponible dans la section <a href="#glossary">Annexe A : Glossaire</a>
-      de ces règles. Pour plus d'informations, voir <a
+      de ces règles. Pour plus d'informations, voir
+- <a
+      href="COMPRENDRE-WCAG20/conformance.html#uc-accessibility-support-head"
+    class="phv-ins phv-local">Comprendre la compatibilité avec l'accessibilité</a> -
+<a
       href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head"
       hreflang="en">Comprendre la compatibilité avec l'accessibilité (en
       anglais)</a>. </p>
