@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.4.1  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 2.4 [Navigable]" href="navigation-mechanisms.html"><strong>Précédent&nbsp;: </strong>Règle 2.4 [Navigable]</a></li><li><a title="Comprendre le CS 2.4.2 [Titre de page]" href="navigation-mechanisms-title.html"><strong>Suivant&nbsp;: </strong>CS 2.4.2 [Titre de page]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#navigation-mechanisms-skip-intent-head">Objectif</a></li><li><a href="#navigation-mechanisms-skip-examples-head">Exemples</a></li><li><a href="#navigation-mechanisms-skip-resources-head">Ressources liées</a></li><li><a href="#navigation-mechanisms-skip-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div>
+<h1><a name="navigation-mechanisms-skip" id="navigation-mechanisms-skip"> </a><strong>Contourner des blocs</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 2.4.1</h1>
+<blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-FR/#navigation-mechanisms-skip">2.4.1</a> Contourner des blocs&nbsp;:</strong>
+ un <a href="#mechanismdef"
+class="termref">mécanisme</a> permet de contourner les blocs de contenu qui
+sont répétés sur plusieurs <a href="#webpagedef" class="termref">pages Web</a>. (Niveau A) </p>
+</div></blockquote><div class="intent"><h2 id="navigation-mechanisms-skip-intent-head" class="section">
+Objectif de ce critère de succès
+			</h2>
+<p>
+L'objectif de ce critère de succès est de permettre aux personnes qui naviguent séquentiellement à travers le contenu d'accéder plus directement au contenu principal de la page. Le contenu des pages Web et des applications apparaît souvent sur d'autres pages ou d'autres écrans. Parmi les exemples non exhaustifs de blocs répétitifs, il y a les liens de navigation, les images d'en-tête, et les cadres publicitaires. Les petites sections répétitives comme les mots uniques, les phrases ou de simples liens ne sont pas considérées comme des blocs dans le cadre de cette disposition.</p>
+<p>Cela fait contraste avec la possibilité pour un utilisateur voyant d'ignorer les éléments répétitifs soit en se focalisant sur la partie centrale de l'écran (où apparaît généralement le contenu principal) ou la possibilité qu'a un utilisateur de souris de sélectionner un lien par un simple clic de souris plutôt que de parcourir chacun des liens ou contrôles de formulaire qui précèdent l'élément souhaité.</p>
+<p>Il n'est pas dans l'objectif de ce critère de succès de demander aux auteurs de fournir des méthodes redondantes par rapport aux fonctionnalités offertes par l'agent utilisateur. La plupart des navigateurs Web fournissent à l'utilisateur des commandes clavier pour placer le focus en haut de la page, donc si un ensemble de liens de navigation est présent en bas de page, le fait de fournir un lien «&nbsp;Aller à&nbsp;» n'est pas forcément nécessaire.</p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>
+bien que ce critère de succès traite des blocs de contenu qui sont répétés sur plusieurs pages, nous encourageons fortement à structurer chaque page dans le code source selon le critère de succès 1.3.1.
+</p>
+</div><div class="benefits"><h3 id="navigation-mechanisms-skip-137-head" class="div3head">
+Avantages spécifiques du critère de succès 2.4.1&nbsp;:
+</h3><ul><li><p>
+Lorsque ce critère de succès n'est pas satisfait, il peut être difficile pour certaines personnes en situation de handicap d'atteindre rapidement et facilement le contenu principal d'une page web.
+</p></li><li><p>
+Les utilisateurs de lecteurs d'écran qui visitent plusieurs pages d'un même site peuvent éviter de réentendre, sur chaque page, les images d'en-tête et des dizaines de liens de navigation, avant que ne soit lu le contenu principal.</p></li><li>
+  <p>Les personnes qui n'utilisent que le clavier ou une interface clavier peuvent atteindre le contenu avec un minimum de commandes. Dans le cas contraire, elles peuvent avoir à activer des dizaines de commandes avant d'atteindre un lien dans la zone principale du contenu. Pour certains utilisateurs, cela peut prendre beaucoup de temps et causer des douleurs physiques sévères.</p></li>
+<li><p>Les personnes utilisant un agrandisseur d'écran n'ont pas à chercher à travers les mêmes en-têtes ou autres blocs d'informations pour trouver où commence le contenu lorsqu'elles arrivent sur une nouvelle page.</p></li>
+<li><p>Les personnes ayant des limitations cognitives ainsi que celles qui utilisent des lecteurs d'écran peuvent en bénéficier si les liens sont groupés sous forme de listes.</p></li></ul></div></div><div class="div3"><h2 id="navigation-mechanisms-skip-examples-head" class="section">
+Exemples pour le critère de succès 2.4.1</h2><ul><li><p>La page d'accueil d'une agence de presse contient, en son centre, un article principal, entouré de multiples blocs et de barres latérales de publicité, de fonctions de recherche et autres services. En haut de la page, un lien permet d'aller à l'article principal. Sans l'aide de ce lien, une personne utilisant le clavier doit tabuler approximativement sur 40 liens avant d'atteindre l'article principal&nbsp;; l'utilisateur de lecteur d'écran doit écouter 200 mots&nbsp;; et l'utilisateur de logiciel d'agrandissement doit scruter la page pour trouver la partie principale.</p></li></ul></div><div class="resources"><h2 id="navigation-mechanisms-skip-resources-head" class="section">Ressources liées</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.
+</p><ul><li><p><a xml:lang="en" lang="en" hreflang="en" href="http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">
+Quick tips for accessible headings</a> – Conseils en anglais pour créer des en-têtes accessibles
+</p></li></ul></div><div class="div3"><h2 id="navigation-mechanisms-skip-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 2.4.1 - Contourner des blocs</h2>
+
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="navigation-mechanisms-skip-138-head" class="div3head">
+Techniques suffisantes
+			</h3><ol class="enumar"><li><p>
+Créer des liens pour contourner les blocs d'éléments répétitifs en utilisant l'une des techniques suivantes&nbsp;:
+</p><ul><li><p>
+                      <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G1">
+G1&nbsp;: Ajouter un lien au début de chaque page pour aller directement à la zone de contenu principal (en anglais)</a>
+</p></li><li><p>
+<a  hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G123">
+G123&nbsp;: Ajouter un lien au début d'un bloc de contenu répété pour aller à la fin de ce bloc (en anglais)</a>
+</p></li><li><p>
+<a  hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G124">
+G124&nbsp;: Ajouter des liens au début de la page pour aller à chacune des zones du contenu (en anglais)</a>
+</p></li></ul></li><li><p>
+Grouper les blocs d'éléments répétitifs de façon à ce qu'ils puissent être contournés en utilisant l'une des techniques suivantes&nbsp;:
+</p><ul><li><p>
+<a  hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H69">
+H69&nbsp;: Fournir des éléments d'en-têtes au début de chaque section du contenu (en anglais)</a>  (HTML)
+</p></li><li><p>
+<a  hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H50">
+H50&nbsp;: Utiliser des éléments structurels pour regrouper les liens (en anglais)</a>  (HTML)
+</p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H70">
+H70&nbsp;: Utiliser des éléments frame pour grouper les blocs de contenus qui se répètent (en anglais)</a>  (HTML)
+<strong>ET</strong>
+<a  hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H64">
+H64&nbsp;: Utiliser l'attribut title des éléments frame et iframe (en anglais)</a>  (HTML)
+</p></li><li><p><a  hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR28">
+SCR28&nbsp;: Utiliser un menu extensible pour passer par dessus les blocs de contenu (en anglais)
+</a>  (programmation par script)
+			</p></li></ul></li></ol></div><div class="boxed"><h3 id="navigation-mechanisms-skip-139-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 2.4.1</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul><li><p>
+Fournir des raccourcis clavier pour les liens et les éléments de contrôles de formulaire qui sont importants (lien à venir)</p></li><li><p>
+Fournir des liens d'évitement pour améliorer la navigation à l'intérieur d'une page
+ (lien à venir)
+    </p></li><li><p>
+Fournir des raccourcis clavier (lien à venir)
+    </p></li><li><p>
+Utiliser des technologies compatibles avec l'accessibilité afin de permettre une navigation structurée avec les agents utilisateurs et les technologies
+d'assistance (lien à venir)</p></li><li><p>
+                  <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C6">
+C6&nbsp;: Positionner le contenu selon le balisage structurel (en anglais)</a>  (CSS)
+</p></li></ul></div><div class="boxed"><h3 id="navigation-mechanisms-skip-140-head" class="div3head">
+Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 2.4.1</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.4.1.</p>
+<p>(Aucun échec n'est actuellement documenté)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms">
+  <dt class="label"><a id="mechanismdef" name="mechanismdef"></a>
+  mécanisme</dt>
+    <dd><p><a class="termref" href="http://w3.org/Translations/wcag20-fr/#processdef">processus</a> ou technique pour obtenir
+      un résultat</p>
+      <div class="note">
+      <p class="prefix"><em>Note 1&nbsp;: </em>le mécanisme peut être
+explicitement fourni par le contenu ou <a href="http://w3.org/Translations/wcag20-fr/#reliedupondef" class="termref">dépendre</a> de la plateforme ou de l'<a class="termref" href="http://w3.org/Translations/wcag20-fr/#useragentdef">agent utilisateur</a>, y compris
+      les <a class="termref" href="http://w3.org/Translations/wcag20-fr/#atdef">technologies
+      d'assistance</a>.</p>
+      <p class="prefix"><em>Note 2&nbsp;: </em>le mécanisme doit satisfaire à
+      tous les critères de succès (d'un niveau donné) pour déclarer un
+      niveau de conformité.</p>
+      </div>
+    </dd>
+<dt class="label"><a name="webpagedef" id="webpagedef"></a>page Web</dt>
+    <dd><p>une ressource autonome obtenue depuis un URI unique grâce au
+      protocole HTTP, accompagnée de toutes les autres ressources utilisées
+      dans la restitution ou conçues pour être restituées simultanément par
+un <a href="http://w3.org/Translations/wcag20-fr/#useragentdef"
+      class="termref">agent utilisateur</a></p>
+
+      <div class="note">
+      <p class="prefix"><em>Note 1&nbsp;: </em>bien que toutes les «&nbsp;autres
+      ressources&nbsp;» seraient restituées avec la ressource primaire, elles ne
+sont pas nécessairement restituées simultanément.</p>
+      <p class="prefix"><em>Note 2&nbsp;: </em>à des fins de conformité avec ces
+      règles, une ressource doit être autonome à l'intérieur du périmètre
+de conformité pour être considérée comme une page Web.</p>
+      </div>
+      <div class="example">
+      <p class="prefix"><em>Exemple 1&nbsp;: </em>une ressource Web incluant toutes
+      les images et médias liés.</p>
+      <p class="prefix"><em>Exemple 2&nbsp;: </em>un programme Web de courrier
+      électronique (Webmail) développé à l'aide d'AJAX (<span xml:lang="en"
+      lang="en">Asynchronous JavaScript and XML</span>, JavaScript asynchrone
+et XML). Le programme réside intégralement à l'adresse
+      http://exemple.com/mail, mais comprend une boîte de réception, un
+      carnet d'adresses et un calendrier. Des liens et des boutons permettent
+      d'afficher la boîte de réception, les contacts ou le calendrier, mais
+      ne changent pas globalement l'URI de la page.</p>
+      <p class="prefix"><em>Exemple 3&nbsp;: </em>un site portail personnalisable,
+      dans lequel les utilisateurs peuvent choisir le contenu à afficher à
+      partir d'un ensemble de modules de contenu.</p>
+      <p class="prefix"><em>Exemple 4&nbsp;: </em>quand on saisit
+      «&nbsp;http://shopping.exemple.com/&nbsp;» dans son navigateur, on entre dans
+un environnement commercial animé et interactif dans lequel on se
+      déplace visuellement dans une boutique, retirant les produits
+      directement depuis les rayons pour les placer dans un panier d'achat face
+      à soi. Cliquer sur un produit déclenche une démonstration avec la
+      fiche technique juste à côté. Cela peut être un site Web à page
+unique ou simplement une page à l'intérieur d'un site Web.</p>
+      </div>
+    </dd>
+</dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 2.4 [Navigable]" href="navigation-mechanisms.html"><strong>Précédent&nbsp;: </strong>Règle 2.4 [Navigable]</a></li><li><a title="Comprendre le CS 2.4.2 [Titre de page]" href="navigation-mechanisms-title.html"><strong>Suivant&nbsp;: </strong>CS 2.4.2 [Titre de page]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

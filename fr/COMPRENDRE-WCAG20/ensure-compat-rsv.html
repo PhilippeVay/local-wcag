@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 4.1.2  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 4.1.1 [Analyse syntaxique]" href="ensure-compat-parses.html"><strong>Précédent&nbsp;: </strong>CS 4.1.1 [Analyse syntaxique]</a></li><li><a title="Comprendre Comprendre la conformité" href="conformance.html"><strong>Suivant&nbsp;: </strong>Comprendre la conformité</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#ensure-compat-rsv-intent-head">Objectif</a></li><li><a href="#ensure-compat-rsv-examples-head">Exemples</a></li><li><a href="#ensure-compat-rsv-resources-head">Ressources liées</a></li><li><a href="#ensure-compat-rsv-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="ensure-compat-rsv" id="ensure-compat-rsv"> </a><strong>Nom, rôle et valeur</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 4.1.2</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv">4.1.2</a> Nom, rôle et
+valeur&nbsp;:</strong> pour tout <a href="#user-interface-componentdef" class="termref">composant d'interface utilisateur</a> (comprenant mais n'étant pas limité aux éléments de
+formulaire, liens et composants générés par des scripts), le <a href="#namedef" class="termref">nom</a> et le <a href="#roledef" class="termref">rôle</a> peuvent
+être <a href="#programmaticallydetermineddef" class="termref">déterminés par un
+programme informatique</a>&nbsp;; les états, les propriétés et les valeurs qui peuvent être paramétrés par l'utilisateur peuvent être <a href="#programmaticallysetdef"
+class="termref">définis par programmation</a>&nbsp;; et la notification des
+changements de ces éléments est disponible aux <a href="#useragentdef"
+class="termref">agents utilisateurs</a>, incluant les <a href="#atdef" class="termref">technologies d'assistance</a>. (Niveau A) </p><div class="note"><p class="prefix"><em>Note&nbsp;: </em>ce critère de succès s'adresse d'abord aux
+auteurs qui développent ou programment leurs propres composants d'interface
+utilisateur. Toutefois, les contrôles HTML standards se conforment déjà à
+ce critère de succès lorsqu'ils sont utilisés conformément à la
+spécification.</p>
+</div></div></blockquote><div class="intent"><h2 id="ensure-compat-rsv-intent-head" class="section">
+Objectif de ce critère de succès</h2><p>L'objectif de ce critère de succès est de s'assurer que les technologies d'assistance (TA) peuvent recueillir des informations sur l’activation (ou le paramétrage) et tenir à jour l'état des contrôles des interfaces utilisateur du contenu.</p><p>
+Lorsque les contrôles standards de technologies accessibles sont utilisés, ce processus est simplifié. Si les éléments d'interface utilisateur sont utilisés conformément aux spécifications, les conditions de ce critère seront remplies. (voir les exemples du critère de succès 4.1.2 ci-dessous)</p><p>Cependant, si des contrôles personnalisés ou des éléments d’interface sont créés ou programmés (en code ou via un script) afin d’avoir un rôle et/ou une fonction différents de l'usage habituel, des mesures supplémentaires doivent être prises pour s'assurer que les contrôles fournissent des informations essentielles aux technologies d'assistance et permettent d'être contrôlés par les technologies d'assistance.</p><p>Un état particulièrement important d'un contrôle d'interface utilisateur est de savoir s'il a le focus ou non. L'état de prise de focus d'un contrôle peut être déterminé par programmation, et des notifications sur les changements de focus sont envoyées aux agents utilisateurs et à la technologie d’assistance. D'autres exemples de l'état du contrôle de l'interface utilisateur sont de savoir si une case à cocher ou un bouton radio ont été sélectionnés, ou si une arborescence ou une liste dépliable est développée ou réduite.</p><div class="note"><p class="prefix"><em>Note&nbsp;:</em> le critère de succès 4.1.2 requiert un nom déterminable par programmation pour tous les composants d'interface utilisateur. Les noms peuvent être visibles ou invisibles. Parfois, le nom doit être visible, dans ce cas, il est identifié comme une étiquette. Se référer à la définition d'un nom et d’une étiquette dans le glossaire pour plus d'informations.</p></div><div class="benefits"><h3 id="ensure-compat-rsv-247-head" class="div3head">
+				Avantages spécifiques du critère de succès 4.1.2&nbsp;:
+</h3><ul><li><p>Fournir des informations sur le rôle, le nom et la valeur de tous les composants d’interface utilisateur permet de garantir la compatibilité avec les technologies d’assistance, telles que les lecteurs ou agrandisseurs d’écran et les logiciels de reconnaissance vocale utilisés par les personnes en situation de handicap. </p></li></ul></div></div><div class="div3"><h2 id="ensure-compat-rsv-examples-head" class="section">
+Exemples pour le critère de succès 4.1.2</h2><ul><li><p>
+<strong>APIs accessibles</strong>
+</p><p> Une applet java utilise l'API d'accessibilité définie par le langage. Se référer aux <a hreflang="en" xml:lang="en" lang="en" href="http://www-03.ibm.com/able/guidelines/java/snsjavag.html">IBM Guidelines for Writing Accessible Applications Using 100% Pure Java</a> (Recommandations en anglais d'IBM pour écrire des applications accessibles en pur java).</p></li></ul></div><div class="resources"><h2 id="ensure-compat-rsv-resources-head" class="section">
+Ressources
+liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p><ul><li><p>
+<a hreflang="en" xml:lang="en" lang="en" href="http://wiki.codetalks.org/wiki/index.php/Main_Page">CodeTalks: Accessible DHTML</a> – CodeTakls&nbsp;: le DHTML accessible (en anglais)
+</p></li><li><p>
+<a hreflang="en" xml:lang="en" lang="en" href="http://www.w3.org/WAI/PF/roadmap/">Dynamic Accessible Web Content Roadmap</a> – Feuille de route du contenu Web dynamique accessible (en anglais)</p></li><li><p>
+<a hreflang="en" xml:lang="en" lang="en" href="http://www.w3.org/WAI/PF/GUI/">Role Taxonomy for Accessible Adaptable Applications</a> – Taxonomie et rôle pour des applications adaptables accessibles (en anglais)</p></li>
+<li><p><a hreflang="en" xml:lang="en" lang="en" href="http://www.w3.org/WAI/PF/adaptable/">States and Adaptable Properties Module</a> – Module des états et des propriétés adaptables (en anglais) </p></li>
+<li><p><a hreflang="en" xml:lang="en" lang="en" href="http://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility, Version 2.0</a>
+</p></li>
+<li><p> <a hreflang="en" xml:lang="en" lang="en" href="http://www-03.ibm.com/able/guidelines/java/snsjavag.html">IBM Guidelines for Writing Accessible Applications using 100% Pure Java</a> – recommandations en anglais d'IBM pour écrire des applications accessibles en pur Java</p></li>
+<li><p><a hreflang="en" xml:lang="en" lang="en" href="http://www.adobe.com/accessibility/products/flash/best_practices.html">Adobe Flash accessibility design guidelines</a> – guide de conception pour l'accessibilité d'Adobe Flash (en anglais)</p></li></ul></div><div class="div3"><h2 id="ensure-compat-rsv-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 4.1.2 - nom, rôle, valeur</h2><p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p><div class="boxed"><h3 id="ensure-compat-rsv-248-head" class="div3head">
+Techniques suffisantes</h3><p class="instructions"><strong>Consignes&nbsp;:</strong> choisissez parmi les situations suivantes celle qui correspond à votre contenu. Chaque situation comprend des techniques ou des combinaisons de techniques qui sont connues et documentées comme suffisantes par rapport à cette situation.</p><div><h4><a name="ensure-compat-rsv-situation-64-head" id="ensure-compat-rsv-situation-64-head"> </a>Situation A&nbsp;: si vous utilisez un composant d'interface utilisateur standard dans un langage de balisage (par exemple, HTML)&nbsp;:</h4>
+<ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G108">G108&nbsp;: Utiliser les caractéristiques des balises pour présenter le nom et le rôle, permettre de configurer directement les propriétés modifiables par
+l'utilisateur et informer des changements
+(en anglais)</a> en utilisant les techniques spécifiques à une technologie ci-dessous&nbsp;:</p><ul><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H91">H91&nbsp;: Utiliser des éléments de formulaire et des liens (en anglais) </a> (HTML)
+</p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H44">H44&nbsp;: Utiliser l'élément label pour associer les étiquettes avec les champs de formulaire
+ (en anglais)</a> (HTML)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH32">FLASH32&nbsp;: Utiliser l'étiquetage automatique pour associer les étiquettes textuelles aux éléments de formulaire (en anglais)</a> (Flash)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH29">FLASH29&nbsp;: Définir la propriété label pour les éléments de formulaire
+(en anglais)</a> (Flash)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH30">FLASH30&nbsp;: Préciser la propriété name pour les boutons images
+(en anglais)</a> (Flash)
+</p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H64">H64&nbsp;: Utiliser l'attribut title des éléments frame et iframe
+(en anglais)</a> (HTML)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H65">H65&nbsp;: Utiliser l'attribut title pour identifier un champ de formulaire quand l'élément label ne peut pas être utilisé
+ (en anglais)</a>  (HTML)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H88">H88&nbsp;: Utiliser HTML conformément aux spécifications (en anglais)</a></p></li></ul></li></ol></div><div><h4><a name="ensure-compat-rsv-situation-65-head" id="ensure-compat-rsv-situation-65-head"> </a>Situation B&nbsp;: si vous utilisez un script ou un code pour ré-insérer un composant d’interface utilisateur standard via un langage de balisage&nbsp;:</h4>
+<ol class="enumar"><li><p>Exposer les noms et les rôles, permettant aux propriétés réglables par l'utilisateur d'être paramétrées directement, et fournir la notification des changements en utilisant l'une des techniques ci-dessous&nbsp;:</p><ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR21">SCR21&nbsp;: Utiliser les fonctions du modèle objet de document (DOM) pour ajouter du contenu à la page
+(en anglais)</a>  (Script)
+</p></li></ul></li></ol></div><div><h4><a name="ensure-compat-rsv-situation-66-head" id="ensure-compat-rsv-situation-66-head"> </a>Situation C&nbsp;: si vous utilisez un composant d'interface utilisateur standard via une technologie de programmation&nbsp;:</h4>
+<ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G135">G135&nbsp;: Utiliser les fonctionnalités de l'API d'accessibilité d'une technologie pour exposer les noms et les rôles, pour permettre à l'utilisateur de
+configurer directement les propriétés configurables et pour notifier les changements (en anglais)</a>
+</p></li></ol></div><div><h4><a name="ensure-compat-rsv-situation-67-head" id="ensure-compat-rsv-situation-67-head"> </a>Situation D&nbsp;: si vous créez votre propre composant d'interface utilisateur dans un langage de programmation&nbsp;:</h4>
+<ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G10">G10&nbsp;: Créer des composants à l'aide d'une technologie compatible avec les fonctionnalités de l'API d'accessibilité de la plateforme sur laquelle l'agent
+utilisateur sera utilisé pour exposer les noms et les rôles, pour permettre à l'utilisateur de configurer directement les propriétés configurables et pour
+notifier les changements (en anglais)</a>
+</p></li></ol></div></div><div class="boxed"><h3 id="ensure-compat-rsv-249-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 4.1.2</h3><p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p><ul><li><p>Fournir des étiquettes pour tous les éléments de formulaires qui n'ont pas d'étiquettes implicites (lien à venir)
+</p></li></ul></div><div class="boxed"><h3 id="ensure-compat-rsv-250-head" class="div3head">
+Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 4.1.2</h3><p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.4.2.</p><ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F59">F59&nbsp;: Échec du critère de succès 4.1.2 consistant à utiliser un script pour transformer un élément div ou span en contrôle d'interface en HTML
+(en anglais)</a>
+</p><div class="note"><p class="prefix"><em>Note&nbsp;: </em>cet échec peut être résolu à l'avenir en utilisant la feuille de route des techniques DHTML. </p></div></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F15">F15&nbsp;: Échec du critère de succès 4.1.2 consistant à implémenter des composants d'interface qui n'utilisent pas une API d'accessibilité pour la technologie
+ou qui l'utilisent de façon incomplète (en anglais) </a>
+</p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F20">F20&nbsp;: Échec du critère de succès 1.1.1 et 4.1.2 consistant à ne pas mettre à jour l'équivalent textuel quand le contenu non textuel change
+(en anglais)</a>
+</p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F68">F68&nbsp;: Échec du critère de succès 1.3.1 et 4.1.2 lié au fait que l'association entre l'étiquette et le composant d'interface utilisateur n'est pas déterminable
+par programmation
+(en anglais)</a>
+</p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F79">F79&nbsp;: Échec du critère de succès 4.1.2 lié au fait que l'état du focus d'un composant d'interface utilisateur ne peut être déterminé par un programme
+informatique ou que les notifications des changements de focus ne sont pas disponibles (en anglais)
+</a>
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F86">F86&nbsp;: Échec du critère de succès 4.1.2 consistant à ne pas fournir un nom pour chaque partie d'un champ multiple comme un numéro de téléphone américain (en anglais) </a></p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F89">F89&nbsp;: Échec du critère de succès 2.4.4, 2.4.9 et 4.1.2 consistant à utiliser un attribut alt vide pour une image qui est le seul contenu d'un lien (en anglais) </a></p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2><dl class="keyterms">
+<dt class="label"><a name="useragentdef" id="useragentdef"> </a>agent utilisateur</dt><dd><p>tout logiciel qui récupère et présente le contenu Web aux utilisateurs</p><div class="example"><p class="prefix"><em>Exemple&nbsp;: </em>les navigateurs Web, les lecteurs
+      de média, les modules d'extensions et les autres programmes — dont les <a href="http://www.w3.org/Translations/WCAG20-fr/#atdef" class="termref">technologies d'assistance</a> — qui aident à
+      récupérer, restituer et interagir avec le contenu Web.
+</p></div></dd>
+<dt class="label"><a name="user-interface-componentdef" id="user-interface-componentdef"> </a>composant d'interface utilisateur</dt><dd><p>partie du contenu qui est perçue par les utilisateurs comme un
+      élément de contrôle unique pour une fonction distincte</p><div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>plusieurs composants d'interface
+      utilisateur peuvent être implémentés au sein d'un seul programme. La notion de composant n'est pas liée ici aux techniques de programmation, mais plutôt à ce que les utilisateurs perçoivent comme des éléments de contrôle distincts. </p><p class="prefix"><em>Note 2&nbsp;:
+</em>les composants d'interface
+      utilisateur incluent les éléments de formulaire et les liens aussi bien
+      que des composants générés par scripts.</p></div><div class="example"><p class="prefix"><em>Exemple&nbsp;: </em>un microprogramme (applet) dispose
+      d'un «&nbsp;élément de contrôle&nbsp;» permettant de se déplacer dans le
+      contenu ligne par ligne, page par page ou au hasard. Puisque chacune de
+      ces fonctions devrait avoir un nom et fonctionner indépendamment, elles
+      constitueraient chacune un «&nbsp;composant d'interface utilisateur&nbsp;». </p></div></dd>
+<dt class="label"><a name="programmaticallysetdef" id="programmaticallysetdef"> </a>défini par programmation</dt><dd><p>défini par un logiciel utilisant des méthodes qui fonctionnent
+      avec les agents utilisateur, y compris les technologies d'assistance</p></dd>
+<dt class="label"><a name="programmaticallydetermineddef" id="programmaticallydetermineddef"> </a>déterminé
+      (déterminable) par un programme informatique</dt><dd><p>déterminé par un programme à partir de données fournies par
+      l'auteur d'une manière qui permet aux
+<a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agents utilisateurs</a>, y compris les <a href="http://www.w3.org/Translations/WCAG20-fr/#atdef" class="termref">technologies d'assistance</a>, d'extraire
+      et de présenter cette information aux utilisateurs sous différentes
+      formes </p><div class="example"><p class="prefix"><em>Exemple 1&nbsp;:
+</em>déterminé dans un langage de
+      balisage à partir d'éléments et d'attributs auxquels on accède grâce
+      aux technologies d'assistance couramment disponibles.</p><p class="prefix"><em>Exemple 2&nbsp;: </em>déterminé grâce à des
+      structures de données spécifiques d'une technologie pour un langage
+      non-balisé et exposée aux technologies d'assistance via une <acronym
+      xml:lang="en" lang="en"
+      title="Application Programming Interface">API</acronym> d'accessibilité
+      aux technologies d'assistance couramment disponibles. </p></div></dd>
+<dt class="label"><a name="namedef" id="namedef"> </a>nom</dt><dd><p>texte grâce auquel un logiciel peut identifier pour l'utilisateur
+      un composant du contenu Web</p><div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>le nom peut être caché et présenté seulement aux technologies d'assistance, alors qu'une <a href="http://www.w3.org/Translations/WCAG20-fr/#labeldef" class="termref">étiquette</a> est présentée à tous les utilisateurs.
+Dans de nombreux cas (mais pas dans tous), l'étiquette et le nom sont
+      identiques.
+</p><p class="prefix"><em>Note 2&nbsp;:
+</em>celui-ci n'a pas de lien avec
+l'attribut HTML name.</p></div></dd>
+
+<dt class="label"><a name="roledef" id="roledef"> </a>rôle</dt><dd><p>texte ou nombre par lequel un logiciel peut identifier la fonction
+      d'un composant dans du contenu Web</p><div class="example"><p class="prefix"><em>Exemple&nbsp;:</em> un nombre qui indique si une image
+      sert d'hyperlien, de bouton de commande ou de case à cocher</p></div></dd>
+<dt class="label"><a name="atdef" id="atdef"> </a>technologie d'assistance
+  (tel qu'utilisé dans ce document)</dt><dd><p>matériel ou logiciel qui agit comme <a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>, ou simultanément avec un agent
+      utilisateur usuel afin de fournir des fonctionnalités répondant aux
+      besoins des utilisateurs ayant des limitations fonctionnelles,
+      fonctionnalités qui vont au-delà de celles qui sont offertes par les
+      agents utilisateurs usuels </p><div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>les fonctionnalités fournies par
+les technologies d'assistance comprennent des présentations de
+remplacement (par exemple de la synthèse vocale ou du contenu agrandi),
+des méthodes de saisie alternatives (par exemple la voix), des
+mécanismes de navigation ou d'orientation supplémentaires et des
+transformations de contenu (par exemple pour rendre un tableau plus
+accessible).</p><p class="prefix"><em>Note 2&nbsp;:
+	</em>les technologies d'assistance
+      communiquent souvent les données et les messages aux agents utilisateurs
+      usuels en utilisant et en surveillant le fonctionnement d'une <acronym
+      title="Application Programming Interface" xml:lang="en"
+      lang="en">API</acronym> (interface de programmation). </p><p class="prefix"><em>Note 3&nbsp;:
+</em>la distinction entre agents
+      utilisateurs usuels et technologies d'assistance n'est pas absolue.
+      Plusieurs agents utilisateurs usuels comportent des fonctions
+      d'assistance aux utilisateurs ayant des limitations fonctionnelles. La
+      principale différence est que ces agents utilisateurs usuels visent un
+      public large et diversifié qui comprend des personnes avec et sans
+      limitations fonctionnelles. Les technologies d'assistance visent des
+      populations plus restreintes d'utilisateurs ayant des limitations
+      fonctionnelles particulières. L'assistance fournie par une technologie
+      d'assistance est plus spécifique et appropriée aux besoins des
+      utilisateurs visés. Un agent utilisateur usuel peut comporter des
+      fonctionnalités importantes pour les technologies d'assistance comme
+      l'extraction du contenu Web à partir d'objets de programmation ou
+      l'analyse syntaxique du balisage par paquets identifiables.</p></div><div class="example"><p class="prefix"><em>Exemple&nbsp;: </em>les technologies d'assistance qui
+      sont importantes dans le contexte du présent document comprennent les
+technologies suivantes :</p>
+<ul>
+<li><p>les agrandisseurs d'écran et les autres assistants de lecture
+visuelle qui sont utilisés par les personnes ayant des limitations
+de la vision, de la perception ou d'accès physique à l'imprimé
+pour modifier la police de caractères, la taille, l'espacement, la
+couleur, la synchronisation avec la synthèse vocale, etc. dans le
+but d'améliorer la lisibilité visuelle du rendu des textes et des
+images&nbsp;;</p>
+</li>
+<li><p>les lecteurs d'écran qui sont utilisés par les personnes
+aveugles pour lire l'information textuelle en synthèse vocale ou en
+braille&nbsp;;</p>
+</li>
+<li><p>les logiciels de conversion du texte en parole qui sont
+utilisés par certaines personnes ayant des limitations cognitives,
+des limitations du langage et des difficultés d'apprentissage pour
+convertir le texte en synthèse vocale&nbsp;;</p>
+</li>
+<li><p>les logiciels de reconnaissance vocale qui peuvent être
+utilisés par les personnes ayant certaines limitations
+motrices&nbsp;;</p>
+</li>
+<li><p>des claviers de remplacement qui sont utilisés par des personnes ayant certaines limitations motrices pour simuler le clavier (y compris des claviers de remplacement qui utilisent des pointeurs de tête, des commutateurs simples, des dispositifs d'aspiration/expiration et d'autres dispositifs spéciaux d'aide à la saisie.)&nbsp;;</p>
+</li>
+<li><p>des dispositifs de pointage adaptés qui sont utilisés par des personnes ayant certaines limitations motrices pour simuler le pointeur de la souris et l'activation des boutons.</p>
+</li>
+</ul></div></dd>
+</dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 4.1.1 [Analyse syntaxique]" href="ensure-compat-parses.html"><strong>Précédent&nbsp;: </strong>CS 4.1.1 [Analyse syntaxique]</a></li><li><a title="Comprendre Comprendre la conformité" href="conformance.html"><strong>Suivant&nbsp;: </strong>Comprendre la conformité</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

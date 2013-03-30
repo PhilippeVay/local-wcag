@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.3.1  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle  1.3 [Adaptable]" href="content-structure-separation.html"><strong>Précédent&nbsp;: </strong>Règle 1.3 [Adaptable]</a></li><li><a title="Comprendre le CS 1.3.2 [Ordre séquentiel logique]" href="content-structure-separation-sequence.html"><strong>Suivant&nbsp;: </strong>CS 1.3.2 [Ordre séquentiel logique]</a></li></ul>
+<div class="navtoc">
+  <p>Sur cette page&nbsp;:</p>
+  <ul id="navbar">
+    <li><a href="#content-structure-separation-programmatic-intent-head">Objectif</a></li>
+    <li><a href="#content-structure-separation-programmatic-examples-head">Exemples</a></li>
+    <li><a href="#content-structure-separation-programmatic-resources-head">Ressources liées</a></li>
+    <li><a href="#content-structure-separation-programmatic-techniques-head">Techniques et échecs</a></li>
+    <li><a href="#key-terms">Mots clés</a></li>
+  </ul>
+</div>
+<div class="skiptarget"><a id="maincontent">-</a></div>
+<h1><a name="content-structure-separation-programmatic" id="content-structure-separation-programmatic"> </a><strong>Information et relations</strong><span class="screenreader">&nbsp;:</span><br/>
+  Comprendre le <abbr title="Critère de succès">CS</abbr> 1.3.1</h1>
+<blockquote class="scquote">
+  <div>
+    <p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#content-structure-separation-programmatic">1.3.1</a> Information et relations&nbsp;:</strong> l'information, la <a href="#structuredef" class="termref">structure</a>,
+      et les <a href="#relationshipsdef" class="termref">relations</a> véhiculées par la <a href="#presentationdef" class="termref">présentation</a> peuvent être <a href="#programmaticallydetermineddef" class="termref">déterminées par un programme informatique</a> ou sont disponibles sous forme de texte. (Niveau A) </p>
+  </div>
+</blockquote>
+<div class="intent">
+  <h2 id="content-structure-separation-programmatic-intent-head">Objectif de ce critère de succès</h2>
+  <p>L'objectif de ce critère de succès est de s'assurer que l'information et les relations qui sont impliquées par la mise en forme visuelle ou auditive sont conservées lors de la présentation sous d'autres formats. Par exemple, le format de présentation change lorsque le contenu est lu par un lecteur d'écran ou lorsque la feuille de style de l'utilisateur est substituée à la feuille de style fournie par l'auteur.</p>
+  <p>Les utilisateurs voyants perçoivent la structure à travers divers indices visuels — les en-têtes de section sont souvent dans une taille de police plus grande, en caractères gras et séparés du paragraphe par des lignes blanches&nbsp;; les éléments de liste sont précédés par une puce et peut-être en retrait&nbsp;; les paragraphes sont séparés par une ligne blanche&nbsp;; les éléments partageant une caractéristique commune sont organisés en lignes et en
+colonnes dans des tableaux&nbsp;; des champs de formulaires peuvent être positionnés par groupes partageant des étiquettes textuelles&nbsp;; une couleur de fond différente peut être utilisée pour indiquer que plusieurs points sont liés les uns aux autres&nbsp;; les mots qui ont une fonction particulière sont indiqués par un changement de la famille de police et/ou par des caractères gras, italiques ou soulignés et ainsi de suite. </p>
+  <p>Des signaux sonores peuvent aussi être utilisés. Par exemple, un carillon pourrait indiquer le début d'une nouvelle section, un changement de ton de la voix ou du débit de lecture pourrait faire ressortir de l'information importante ou indiquer le texte d'une citation, etc.</p>
+  <p>Lorsque de telles relations sont perceptibles à un ensemble d'utilisateurs, ces relations peuvent être rendues perceptibles à tous. Une méthode permettant de déterminer si oui ou non l'information a été correctement donnée à tous les utilisateurs est d'accéder à la même information dans une série de modalités différentes. </p>
+  <p>Si des liens vers des articles du glossaire sont implémentés en utilisant des éléments d'ancrage (ou l'élément de lien approprié pour la technologie utilisée) et si ces liens sont identifiés en utilisant une police différente, un utilisateur d'un lecteur d'écran va entendre que l'élément est un lien quand le terme du glossaire sera rencontré, même s'il ne peut pas recevoir l'information sur le changement de la police. Un catalogue en ligne peut indiquer les prix en utilisant une plus grande police rouge. Un lecteur d'écran ou une personne qui ne peut pas percevoir le rouge ont toujours l'information sur le prix tant qu'il est précédé du symbole monétaire.</p>
+  <p>Certaines technologies ne donnent pas le moyen de déterminer par un programme informatique certains types d'information et de relations. Dans ce cas, il devrait y avoir une description textuelle de l'information et des relations. Par exemple, «&nbsp;tous les champs obligatoires sont signalés par un astérisque (*)&nbsp;». La description du texte devrait être à proximité de l'information qui est décrite (si la page est linéarisée), comme dans l'élément parent ou dans l'élément adjacent.</p>
+  <p>Il peut aussi y avoir des cas où il faut porter un jugement sur les informations qui doivent figurer dans le texte et ce qui aurait besoin d'être directement associé, et il peut alors être plus approprié de dupliquer des informations (par exemple, dans un tableau HTML, fournir le résumé tant dans le paragraphe précédant le tableau que dans l'attribut summary du tableau lui-même). Toutefois, dans la mesure du possible, il est nécessaire que les informations puissent être déterminées par un programme informatique plutôt que de fournir une description textuelle précédant le tableau.</p>
+  <div class="note">
+    <p class="prefix"><em>Note&nbsp;: </em>il n'est pas nécessaire que les valeurs de la couleur soient déterminables par un programme informatique. L'information véhiculée par de la couleur ne peut pas être présentée de façon adéquate simplement en donnant la valeur. Par conséquent, le <a href="http://www.w3.org/Translations/wcag20-fr/#visual-audio-contrast-without-color">critère de succès 1.4.1 </a> traite du cas spécifique de la couleur, plutôt que le critère de succès 1.3.1. </p>
+  </div>
+  <div class="benefits">
+    <h3 id="content-structure-separation-programmatic-48-head" class="div3head"> Avantages spécifiques du critère de succès 1.3.1&nbsp;: </h3>
+    <ul>
+      <li><p>Ce critère de succès aide les personnes ayant différentes limitations fonctionnelles en permettant aux agents utilisateurs d'adapter le contenu en fonction des besoins de chaque utilisateur.</p>
+      </li>
+<li><p>Les utilisateurs aveugles (et qui utilisent un lecteur d'écran) en bénéficient lorsque les informations transmises par la couleur sont également disponibles en texte (y compris les équivalents textuels des images où la couleur est utilisée pour transmettre l'information).</p>
+</li>
+<li><p>Les utilisateurs sourds-aveugles et qui utilisent un afficheur braille éphémère peuvent être incapables d'accéder à l'information dépendante de la couleur.</p></li>
+</ul></div></div>
+<div class="div3"><h2 id="content-structure-separation-programmatic-examples-head" class="section">Exemples du critère de succès 1.3.1</h2>
+  <ul>
+<li><p> <strong>Un formulaire avec des champs obligatoires</strong> </p>
+<p>Un formulaire contient plusieurs champs obligatoires. Les étiquettes pour les champs obligatoires sont affichées en rouge. En outre, à la fin de chaque étiquette on trouve un astérisque, *. Les instructions pour remplir le formulaire indiquent que «&nbsp;tous les champs obligatoires sont affichés en rouge et marqués d'un astérisque «&nbsp;*&nbsp;», consigne qui est suivie d'un exemple.</p>
+    </li>
+    <li><p> <strong>Un formulaire qui utilise la couleur et du texte pour indiquer les champs obligatoires</strong> </p>
+      <p>Un formulaire contient à la fois des champs obligatoires et optionnels. Les instructions figurant au début du formulaire expliquent que les champs obligatoires sont marqués avec du texte en rouge ainsi qu'avec une icône dont l'équivalent textuel dit «&nbsp;obligatoire&nbsp;». Tant le texte en rouge que l'icône sont associés par programmation au champ de formulaire approprié afin que les utilisateurs d'une technologie d'assistance puissent déterminer les champs obligatoires. </p>
+    </li>
+    <li><p> <strong>Un horaire d'autobus présenté sous forme de tableau où les en-têtes de chaque cellule peuvent être déterminés par un programme informatique</strong> </p>
+      <p>Un horaire de bus consiste en un tableau présentant les arrêts de bus à la verticale dans la première colonne et les différents bus énumérés horizontalement dans la première rangée. Chaque cellule contient le moment où le bus sera à l'arrêt. Les arrêts de bus et les cellules des différents bus sont identifiés comme des en-têtes de la rangée ou de la colonne correspondante de telle sorte que la technologie d'assistance puisse déterminer par programmation quel bus et quel arrêt de bus sont associés dans chaque cellule.</p>
+    </li>
+    <li><p> <strong>Un formulaire où les étiquettes des cases à cocher peuvent être déterminées par un programme informatique</strong> </p>
+      <p>Dans un formulaire, l'étiquette de chaque case à cocher peut être déterminée par programmation par la technologie d'assistance. </p>
+    </li>
+    <li><p> <strong>Un document texte</strong> </p>
+      <p>Un simple document texte est mis en forme avec deux lignes vides avant les titres, des astérisques pour indiquer les éléments de liste et d'autres conventions de mise en forme standard si bien que sa structure peut être déterminée par un programme informatique.</p></li></ul></div>
+<div class="resources"> <h2 id="content-structure-separation-programmatic-resources-head" class="section">Ressources liées</h2>
+  <p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</a> – Conseils en anglais pour créer des en-têtes accessibles</p></li></ul></div>
+<div class="div3"> <h2 id="content-structure-separation-programmatic-techniques-head" class="section">Techniques et échecs pour le critère de succès 1.3.1 - Information et relations</h2>
+  <p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym title="Règles pour l'accessibilité des contenus Web">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr/#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées. </p>
+  <div class="boxed"><h3 id="content-structure-separation-programmatic-49-head" class="div3head">Techniques suffisantes</h3>
+    <p class="instructions"><strong>Consignes&nbsp;:</strong> choisissez parmi les situations suivantes celle qui correspond à votre contenu. Chaque situation comprend des techniques ou des combinaisons de techniques qui sont connues et documentées comme suffisantes par rapport à cette situation. </p><div>
+      <h4><a name="content-structure-separation-programmatic-situation-22-head" id="content-structure-separation-programmatic-situation-22-head"> </a>Situation A&nbsp;: la technologie offre une structure sémantique permettant de rendre l'information et les relations véhiculées par la présentation déterminables par un programme informatique&nbsp;:</h4>
+      <ol class="enumar">
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G115">G115&nbsp;: Utiliser les éléments sémantiques pour baliser la structure (en anglais) </a> <strong>ET</strong> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H49">H49&nbsp;: Utiliser les éléments sémantiques pour baliser le texte accentué ou spécial (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G117">G117&nbsp;: Utiliser du texte pour véhiculer l'information donnée par les variations dans la présentation du texte (en anglais)</a> </p>
+        </li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G140">G140&nbsp;: Séparer l'information et la structure de la présentation afin de permettre des présentations différentes (en anglais)</a> </p></li>
+ <li><p>Rendre l'information et les relations véhiculées par la présentation déterminables par un programme informatique en utilisant les techniques suivantes&nbsp;:</p>
+          <ul>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G138">G138&nbsp;: Utiliser un balisage sémantique quand des indices sont donnés par la couleur (en anglais)</a> </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H51">H51&nbsp;: Utiliser le balisage des tableaux pour présenter l'information tabulaire (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H39">H39&nbsp;: Utiliser l'élément caption pour associer un titre de tableau avec les données du tableau (en anglais)</a> (HTML) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH31">FLASH31&nbsp;: Préciser un titre pour un composant DataGrid
+(en anglais)</a> (Flash)
+</p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H73">H73&nbsp;: Utiliser l'attribut summary de l'élément table pour donner un aperçu d'un tableau de données (en anglais)</a> (HTML) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH23">FLASH23&nbsp;: Ajouter un résumé à un composant DataGrid
+(en anglais)</a> (Flash)
+</p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H63">H63&nbsp;: Utiliser l'attribut scope pour associer les cellules d'en-têtes et les cellules de données dans les tableaux de données (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H43">H43&nbsp;: Utiliser les attributs id et headers pour associer les cellules de données avec les cellules d'en-têtes dans les tableaux de données (en anglais) </a> (HTML) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH21">FLASH21&nbsp;: Utiliser le composant DataGrid pour associer les en-têtes de colonnes et les cellules
+(en anglais)</a> (Flash)
+</p></li><li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H44">H44&nbsp;: Utiliser l'élément label pour associer les étiquettes avec les champs de formulaire (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H65">H65&nbsp;: Utiliser l'attribut title pour identifier un champ de formulaire quand l'élément label ne peut pas être utilisé (en anglais)</a> (HTML) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH32">FLASH32&nbsp;: Utiliser l'étiquetage automatique pour associer les étiquettes textuelles aux éléments de formulaire (en anglais)</a> (Flash)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH29">FLASH29&nbsp;: Définir la propriété label pour les éléments de formulaire
+(en anglais)</a> (Flash)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH25">FLASH25&nbsp;: Donner une étiquette à un élément de formulaire en spécifiant sa propriété name
+(en anglais)</a> (Flash)
+</p></li><li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H71">H71&nbsp;:  Fournir une description des groupes de champs à l'aide des éléments fieldset et legend (en anglais)</a> (HTML) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H85">H85&nbsp;: Utiliser optgroup pour regrouper des éléments option dans un élément select (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H48">H48&nbsp;: Utiliser ol, ul et dl pour les listes (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H42">H42&nbsp;: Utiliser h1-h6 pour identifier les en-têtes de section (en anglais)</a> (HTML) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR21">SCR21&nbsp;: Utiliser les fonctions du modèle objet de document (DOM) pour ajouter du contenu à la page (en anglais)</a> (Scripts) </p></li>
+</ul>
+</li>
+      </ol>
+    </div>
+    <div><h4><a name="content-structure-separation-programmatic-situation-23-head" id="content-structure-separation-programmatic-situation-23-head"> </a> Situation B&nbsp;: la technologie en cours d'utilisation ne fournit pas la structure sémantique permettant de rendre l'information et les relations véhiculées par la présentation déterminables par un programme informatique&nbsp;:</h4>
+      <ol class="enumar">
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G117">G117&nbsp;: Utiliser du texte pour véhiculer l'information donnée par les variations dans la présentation du texte (en anglais)</a> </p>
+        </li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH8">FLASH8&nbsp;: Ajouter un nom de groupe à la propriété name accessible d'un élément de formulaire (en anglais)</a> (Flash)
+</p></li>
+<li><p>Rendre l'information et les relations véhiculées par la présentation déterminables par un programme informatique ou disponibles en texte en utilisant les techniques suivantes&nbsp;:</p>
+<ul>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/T1">T1&nbsp;: Utiliser les conventions standard pour le formatage des paragraphes (en anglais)</a> (Texte) </p>
+</li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/T2">T2&nbsp;: Utiliser les conventions standard pour le formatage des listes (en anglais)</a> (Texte) </p>
+            </li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/T3">T3&nbsp;: Utiliser les conventions standard pour le formatage des en-têtes de section (en anglais)</a> (Texte) </p>
+</li></ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="boxed"><h3 id="content-structure-separation-programmatic-50-head" class="div3head"> Techniques supplémentaires (recommandées) pour 1.3.1</h3>
+    <p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+    <ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C22">C22&nbsp;: Utiliser les CSS pour contrôler la présentation visuelle du texte (en anglais) </a> (CSS) </p>
+</li>
+      <li><p>Contrôler la mise en page par CSS plutôt que par tableaux (lien à venir)</p>
+      </li>
+      <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G162">G162&nbsp;: Positionner les étiquettes afin de maximiser la prévisibilité des relations (en anglais)</a></p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA1">ARIA1&nbsp;: Utiliser la propriété ARIA describedby pour fournir une étiquette descriptive aux contrôles de saisie (en anglais)</a> (ARIA) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA2">ARIA2&nbsp;: Identifier les champs obligatoires avec la propriété required (en anglais)
+</a> (ARIA) </p>
+      </li>
+      <li><p>Fournir des étiquettes pour tous les éléments de contrôle de formulaire qui n'ont pas d'étiquettes implicites (lien à venir)</p>
+      </li>
+      <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G141">G141&nbsp;: Organiser une page en utilisant les en-têtes de section (en anglais)</a></p>
+      </li>
+    </ul>
+  </div>
+  <div class="boxed">
+    <h3 id="content-structure-separation-programmatic-51-head" class="div3head">Échecs fréquents pour le <abbr title="Critère de succès">CS</abbr> 1.3.1</h3>
+    <p>Le groupe de travail des <acronym title="Règles pour l'accessibilité des contenus Web">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.3.1.</p>
+    <ul>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F2">F2&nbsp;: Échec du critère de succès 1.3.1 consistant à utiliser les changements dans la présentation du texte pour véhiculer de l'information sans utiliser le balisage ou le texte approprié (en anglais)</a> </p>
+      </li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F17">F17&nbsp;: Échec du critère de succès 1.3.1 et 4.1.1 lié à l'insuffisance d'information dans le DOM pour déterminer des relations univoques en HTML (par exemple entre les étiquettes ayant un même id) (en anglais)</a> </p></li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F33">F33&nbsp;: Échec du critère de succès 1.3.1 et 1.3.2 consistant à utiliser des caractères blancs pour contrôler l'espacement entre les colonnes dans un contenu textuel (en anglais)</a> </p></li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F34">F34&nbsp;: Échec du critère de succès 1.3.1 et 1.3.2 consistant à utiliser des caractères blancs pour formater un tableau dans un contenu textuel (en anglais)</a> </p>
+      </li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F42">F42&nbsp;: Échec du critère de succès 1.3.1 et 2.1.1 consistant à utiliser des événements de scripts pour émuler des liens d'une manière qui n'est pas déterminable par un programme informatique (en anglais)</a> </p></li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F43">F43&nbsp;: Échec du critère de succès 1.3.1 consistant à utiliser un balisage structurel d'une façon qui ne représente pas les relations à l'intérieur du contenu (en anglais)</a> </p></li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F46">F46&nbsp;: Échec du critère de succès 1.3.1 consistant à utiliser les éléments th ou caption ou des attributs summary non vides dans des tableaux de présentation (en anglais)</a> </p></li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F48">F48&nbsp;: Échec du critère de succès 1.3.1 lié à l'utilisation de l'élément pre pour baliser de l'information tabulaire (en anglais)</a> </p>
+      </li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F62">F62&nbsp;: Échec du critère de succès 1.3.1 et 4.1.1 lié à l'insuffisance d'information dans le DOM pour déterminer des relations spécifiques en XML (en anglais)</a> </p>
+      </li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F68">F68&nbsp;: Échec du critère de succès 1.3.1 et 4.1.2 lié au fait que l'association entre l'étiquette et le composant d'interface utilisateur n'est pas déterminable par programmation (en anglais)</a> </p>
+      </li>
+      <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F87">F87&nbsp;: Échec du critère de succès 1.3.1 consistant à utiliser les pseudo-éléments :before et :after et la propriété content en CSS (en anglais)</a></p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="div3">
+  <h2 id="key-terms" class="terms">Mots clés</h2>
+  <dl class="keyterms">
+<dt class="label"><a name="programmaticallydetermineddef"
+id="programmaticallydetermineddef"></a>déterminé (déterminable) par un
+  programme informatique</dt>
+<dd><p>déterminé par un programme à partir de données fournies par
+      l'auteur d'une manière qui permet aux <a
+       href="http://www.w3.org/Translations/wcag20-fr/#useragentdef"
+      class="termref">agents utilisateurs</a>, y compris les <a
+      href="http://www.w3.org/Translations/wcag20-fr/#atdef" class="termref">technologies d'assistance</a>, d'extraire
+      et de présenter cette information aux utilisateurs sous différentes
+      formes</p>
+      <div class="example">
+      <p class="prefix"><em>Exemple 1&nbsp;: </em>déterminé dans un langage de
+      balisage à partir d'éléments et d'attributs auxquels on accède grâce
+      aux technologies d'assistance couramment disponibles.</p>
+      <p class="prefix"><em>Exemple 2&nbsp;: </em>déterminé grâce à des
+      structures de données spécifiques d'une technologie pour un langage
+      non-balisé et exposée aux technologies d'assistance via une <acronym
+      xml:lang="en" lang="en"
+      title="Application Programming Interface">API</acronym> d'accessibilité
+      aux technologies d'assistance couramment disponibles. </p>
+      </div>
+    </dd>
+<dt class="label"><a name="presentationdef"
+  id="presentationdef"></a>présentation</dt>
+    <dd><p>rendu du <a href="http://www.w3.org/Translations/wcag20-fr/#contentdef"
+      class="termref">contenu</a> sous une forme perceptible par
+      l'utilisateur</p>
+    </dd>
+<dt class="label"><a name="relationshipsdef"
+  id="relationshipsdef"></a>relations</dt>
+    <dd><p>associations significatives entre des parties distinctes du
+      contenu</p>
+    </dd>
+ <dt class="label"><a name="structuredef" id="structuredef"></a>structure</dt>
+    <dd><ol class="enumar">
+        <li><p>La manière dont les parties d'une <a href="http://www.w3.org/Translations/wcag20-fr/#webpagedef"
+          class="termref">page Web</a> sont organisées entre elles&nbsp;; et</p>
+        </li>
+        <li><p>La manière dont un groupe de <a href="http://www.w3.org/Translations/wcag20-fr/#webpagedef" class="termref">pages Web</a> est organisé</p>
+</li></ol>
+</dd>
+  </dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 1.3 [Adaptable]" href="content-structure-separation.html"><strong>Précédent&nbsp;: </strong>Règle 1.3 [Adaptable]</a></li><li><a title="Comprendre le CS 1.3.2 [Ordre séquentiel logique]" href="content-structure-separation-sequence.html"><strong>Suivant&nbsp;: </strong>CS 1.3.2 [Ordre séquentiel logique]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

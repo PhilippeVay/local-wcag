@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 3.2.1  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle  3.2 [Prévisible]" href="consistent-behavior.html"><strong>Précédent&nbsp;: </strong>Règle 3.2 [Prévisible]</a></li><li><a title="Comprendre le CS 3.2.2 [À la saisie]" href="consistent-behavior-unpredictable-change.html"><strong>Suivant&nbsp;: </strong>CS 3.2.2 [À la saisie]</a></li></ul>
+<div class="navtoc">
+<p> Sur cette page&nbsp;:</p>
+<ul id="navbar">
+<li><a href="#consistent-behavior-receive-focus-intent-head">Objectif</a></li>
+<li><a href="#consistent-behavior-receive-focus-examples-head">Exemples</a></li>
+<li><a href="#consistent-behavior-receive-focus-resources-head">Ressources liées</a></li><li><a href="#consistent-behavior-receive-focus-techniques-head">Techniques et échecs</a></li>
+<li><a href="#key-terms">Mots clés</a></li>
+</ul>
+</div>
+<div class="skiptarget"><a id="maincontent">-</a></div>
+<h1><a name="consistent-behavior-receive-focus" id="consistent-behavior-receive-focus"></a>
+<strong>Au Focus</strong><span class="screenreader">&nbsp;:</span>
+<br/>Comprendre le
+ <abbr title="Critère de succès">
+CS</abbr>3.2.1</h1>
+<blockquote class="scquote">
+<div><p class="sctxt"><strong class="sc-handle">
+<a href="http://www.w3.org/Translations/WCAG20-fr/#consistent-behavior-receive-focus">3.2.1</a>
+Au Focus&nbsp;:</strong> quand un composant reçoit le focus, il ne doit pas initier un
+<a href="#context-changedef" class="termref">changement de contexte</a>.  (Niveau A)
+</p>
+</div>
+</blockquote>
+<div class="intent"><h2 id="consistent-behavior-receive-focus-intent-head" class="section"> Objectif de ce critère de succès</h2>
+<p> L'objectif de ce critère de succès est de s'assurer que le comportement des fonctionnalités est prévisible pour les utilisateurs au cours de leur navigation dans une page. Tout composant déclenchant un événement lorsqu'il reçoit le focus ne doit pas modifier le contexte. Les exemples de changements de contexte lorsqu'un composant reçoit le focus comprennent mais ne sont pas limités à&nbsp;:
+</p>
+<ul>
+<li><p> des formulaires soumis automatiquement lorsqu'un composant reçoit le focus&nbsp;;</p></li>
+<li><p> des nouvelles fenêtres qui s'ouvrent lorsqu'un composant reçoit le focus&nbsp;;</p></li>
+<li><p> le focus passe à un autre composant lorsque ce premier composant prend le focus.</p></li>
+</ul>
+<div class="benefits"><h3 id="consistent-behavior-receive-focus-201-head" class="div3head"> Avantages spécifiques du critère de succès 3.2.1&nbsp;:</h3>
+<ul>
+<li><p> Ce critère de succès aide les personnes ayant des limitations visuelles, des limitations cognitives ou motrices en diminuant les risques de changements de contexte inattendus.</p></li></ul>
+</div>
+</div>
+<div class="div3">
+<h2 id="consistent-behavior-receive-focus-examples-head" class="section"> Exemples pour le critère de succès 3.2.1</h2>
+<ul>
+<li><p><strong>Exemple 1&nbsp;: un menu déroulant</strong></p>
+<p> Un menu déroulant sur une page permet aux utilisateurs d'accéder directement à d'autres pages de leur choix. Si une personne utilise le clavier pour ouvrir ce menu afin de choisir une destination et  l'active (avec la barre d'espace ou la touche Entrée), elle accède alors directement à une nouvelle page. Cependant, si la personne ouvre le menu pour effectuer un choix mais finalement appuie sur la touche échappe ou tabulation pour sortir du menu déroulant – aucun nouvel écran ne s'affiche lorsque le focus quitte le menu déroulant.</p></li>
+<li><p><strong>Exemple d'échec&nbsp;: une fenêtre d'aide</strong></p>
+<p> Lorsqu'un champ reçoit le focus, une fenêtre d'aide décrivant le champ et proposant des options s'ouvre. Lorsque l'utilisateur se sert du clavier pour tabuler dans la page, le dialogue s'ouvre et retire le focus du champ à chaque fois que l'utilisateur essaie de se positionner sur le champ.</p></li>
+</ul>
+</div>
+<div class="resources"><h2 id="consistent-behavior-receive-focus-resources-head" class="section">
+Ressources liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p><p>(Aucune ressource n'est actuellement documentée)</p></div>
+<div class="div3"><h2 id="consistent-behavior-receive-focus-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 3.2.1 - Au Focus</h2>
+<p> Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des
+<acronym title="Web Content Accessibility Guidelines" lang="en"> WCAG
+</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes
+<a href="http://www.w3.org/Translations/WCAG20-fr/#conformance-reqs">les exigences de conformité aux WCAG 2.0</a> ont été appliquées.
+</p>
+<div class="boxed"><h3 id="consistent-behavior-receive-focus-202-head" class="div3head"> Techniques suffisantes</h3>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G107">G107&nbsp;: Utiliser activate au lieu de focus comme déclencheur pour un changement de contexte (en anglais)</a>
+</p></li>
+</ol>
+<div class="note">
+<p class="prefix"><em> Note&nbsp;:
+</em> un changement de contenu n'est pas toujours un
+<a href="http://www.w3.org/Translations/wcag20-fr/#context-changedef">changement de contexte</a>. Ce critère de succès est automatiquement atteint si les changements de contenus ne sont pas aussi des changements de contexte.</p>
+</div>
+</div>
+<div class="boxed"><h3 id="consistent-behavior-receive-focus-203-head" class="div3head"> Techniques (recommandées) supplémentaires pour 3.2.1</h3>
+<p> Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.
+</p>
+<ul><li><p> Ne pas causer de changements persistants d'état ou de valeur lorsqu'un composant reçoit le focus ou fournir un moyen de rétablir tout changement (lien à venir)
+</p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G200">G200&nbsp;: Ouvrir une nouvelle fenêtre et un onglet à partir d'un lien seulement quand cela est nécessaire (en anglais)</a></p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G201">G201&nbsp;: Avertir l'utilisateur à l'avance lorsqu'une nouvelle fenêtre est ouverte (en anglais)</a> </p></li>
+</ul>
+</div>
+<div class="boxed"><h3 id="consistent-behavior-receive-focus-204-head" class="div3head"> Échecs fréquents pour le <abbr title="critère de succès"> CS</abbr> 3.2.1
+</h3>
+<p> Le groupe de travail des
+<acronym title="Web Content Accessibility Guidelines"> WCAG
+</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 3.2.1.
+</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014F52">F52&nbsp;: Échec du critère de succès 3.2.1 consistant à ouvrir une nouvelle fenêtre dès que la page est chargée (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014F55">F55&nbsp;: Échec du critère de succès 2.1.1, 2.4.7 et 3.2.1 consistant à utiliser un script pour enlever le focus lorsque le focus est reçu (en anglais)</a>
+</p></li>
+</ul>
+</div>
+</div>
+<div class="div3"><h2 id="key-terms" class="terms"> Mots clés</h2>
+<dl class="keyterms">
+ <dt class="label">
+ <a name="context-changedef" id="context-changedef"></a>changement de contexte</dt>
+<dd>
+<p> changements majeurs dans le contenu d'une <a href="http://www.w3.org/Translations/WCAG20-fr/#webpagedef" class="termref">page Web</a>  qui, s'ils sont faits sans que l'utilisateur en soit conscient, peuvent désorienter l'utilisateur qui ne peut voir l'ensemble de la page en même temps.
+</p>
+<p> Les changements de contexte comprennent les changements de&nbsp;:</p>
+<ol class="enumar">
+<li><p><a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>&nbsp;;</p></li>
+<li><p><a href="http://www.w3.org/Translations/WCAG20-fr/#viewportdef" class="termref">espace de restitution</a>&nbsp;;</p></li>
+<li><p> focus&nbsp;;</p></li>
+<li><p><a href="http://www.w3.org/Translations/WCAG20-fr/#contentdef" class="termref">contenu</a> qui modifie la signification de la
+<a href="http://www.w3.org/Translations/WCAG20-fr/#webpagedef" class="termref">page Web</a>.
+</p></li>
+</ol>
+<div class="note"><p class="prefix">
+<em> Note&nbsp;:
+</em> un changement dans le contenu comme le déploiement d'une arborescence, un
+menu dynamique ou un déplacement de tabulation ne change pas nécessairement le contexte à moins qu'il ne change aussi l'un des éléments énumérés ci-dessus
+(par exemple le focus).</p>
+</div>
+<div class="example"><p class="prefix">
+<em> Exemple&nbsp;:</em> l'ouverture d'une nouvelle fenêtre, le déplacement du focus sur un composant différent, le déplacement vers une nouvelle page (y compris tout
+ce qui, pour l'utilisateur, aurait l'air d'un déplacement vers une autre page) ou la réorganisation significative du contenu d'une page sont autant d'exemples
+d'un changement de contexte.</p>
+</div>
+</dd>
+</dl>
+</div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle  3.2 [Prévisible]" href="consistent-behavior.html"><strong>Précédent&nbsp;: </strong>Règle 3.2 [Prévisible]</a></li><li><a title="Comprendre le CS 3.2.2 [À la saisie]" href="consistent-behavior-unpredictable-change.html"><strong>Suivant&nbsp;: </strong>CS 3.2.2 [À la saisie]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

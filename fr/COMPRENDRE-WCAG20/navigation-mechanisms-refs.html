@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.4.4  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.4.3 [Parcours du focus]" href="navigation-mechanisms-focus-order.html"><strong>Précédent&nbsp;: </strong>CS 2.4.3 [Parcours du focus]</a></li><li><a title="Comprendre le CS 2.4.5 [Accès multiples]" href="navigation-mechanisms-mult-loc.html"><strong>Suivant&nbsp;: </strong>CS 2.4.5 [Accès multiples]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#navigation-mechanisms-refs-intent-head">Objectif</a></li><li><a href="#navigation-mechanisms-refs-examples-head">Exemples</a></li><li><a href="#navigation-mechanisms-refs-resources-head">Ressources liées</a></li><li><a href="#navigation-mechanisms-refs-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="navigation-mechanisms-refs" id="navigation-mechanisms-refs"> </a><strong>Fonction du lien (selon le contexte)</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 2.4.4</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#navigation-mechanisms-refs">2.4.4</a> Fonction du lien (selon le contexte)&nbsp;:</strong>
+la <a
+href="#linkpurposedef" class="termref">fonction de chaque lien</a> est
+déterminée par le texte du lien seul ou par le texte du lien associé à un
+<a
+href="#pdlinkcontextdef" class="termref">contexte du lien déterminé par un
+programme informatique</a>, sauf si la fonction du lien est <a href="#ambiguouslinkdef"
+class="termref">ambiguë pour tout utilisateur</a>. (Niveau A) </p>
+</div></blockquote><div class="intent"><h2 id="navigation-mechanisms-refs-intent-head" class="section">
+Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est d'aider les utilisateurs à comprendre la fonction de
+chaque lien et à décider s'ils veulent le suivre. Dès que cela est possible, fournir un
+texte de lien qui identifie la fonction du lien sans que l'on ait besoin de contexte
+supplémentaire. La technologie d'assistance est capable de fournir aux utilisateurs une
+liste des liens présents sur la page web. Les textes de lien, lorsqu'ils sont aussi
+explicites que possible, aident les utilisateurs qui veulent faire un choix à partir de
+cette liste de liens. Des textes de lien explicites aident également les utilisateurs qui
+souhaitent passer de lien en lien avec la touche tab. Des textes de lien explicites aident
+les utilisateurs à choisir les liens à suivre sans avoir recours à une stratégie complexe
+pour comprendre la page.</p>
+<p>Dans certains cas, les auteurs peuvent vouloir donner une partie de la description du lien
+par un texte qui lui soit logiquement rattaché, qui fournit le contexte du lien. Dans ce
+cas, l'utilisateur doit être en mesure de comprendre la fonction du lien sans avoir à
+déplacer le focus du lien. En d'autres termes, il doit pouvoir arriver sur le lien et en
+savoir plus sur le lien sans avoir à en bouger. Cela peut se faire en mettant la description
+du lien dans la même phrase, paragraphe, élément de liste, l'en-tête qui précède
+immédiatement le lien, ou la cellule de tableau servant de lien ou la cellule d'en-tête de
+tableau servant de lien dans un tableau de données, car elle est directement associée au
+lien lui-même.</p>
+<p>Cette mise en contexte est plus utile lorsqu'elle précède le lien. (Par exemple, si vous
+devez utiliser des textes de lien ambigus, il vaut mieux les placer à la fin de la phrase
+qui en décrit la destination, plutôt que de mettre l'intitulé ambigu au début de la phrase).
+Si la description suit le lien, il peut y avoir confusion ou difficulté pour les
+utilisateurs de lecteurs d'écran qui lisent la page dans l'ordre (de haut en bas).
+</p>
+<p>Les liens ayant la même destination doivent avoir les mêmes descriptions (selon le
+ <a href="http://www.w3.org/Translations/wcag20-fr/#consistent-behavior-consistent-functionality">critère de succès 3.2.4</a>), mais les liens ayant des fonctions et des destinations différentes doivent
+avoir des descriptions différentes.</p>
+<p>Le critère de succès comporte une exception concernant les liens pour lesquels la fonction
+du lien ne peut être déterminée d'après les informations présentes sur la page. Dans ce cas,
+la personne ayant une limitation fonctionnelle n'est pas désavantagée&nbsp;; il n'existe pas de contexte supplémentaire permettant de comprendre la fonction du lien. Cependant, quel que soit le nombre de contextes disponibles sur la page web pouvant être utilisés pour l'interpréter, la fonction du lien
+doit être rendue disponible dans le texte du lien ou associée au lien par un programme informatique pour satisfaire le critère de succès.</p><div class="note"><p class="prefix"><em>Note&nbsp;: </em>il peut y avoir des situations où la fonction du lien est supposée inconnue ou masquée. Par exemple, un jeu peut avoir des liens identifiés par porte 1, porte 2, porte 3. Ces textes de liens seraient suffisants car la fonction du lien est de créer du suspens pour
+tous les utilisateurs.</p></div><p>Voir également <em><a href="navigation-mechanisms-link.html">
+    Comprendre le critère de succès 2.4.9 Fonction du lien (lien uniquement)</a></em>.</p><div class="benefits"><h3 id="navigation-mechanisms-refs-149-head" class="div3head">
+Avantages spécifiques du critère de succès 2.4.4&nbsp;:</h3><ul>
+<li><p>Ce critère de succès aide les personnes ayant des difficultés de mouvement en leur
+permettant de passer les pages dont le contenu ne les intéresse pas, en évitant les commandes
+nécessaires pour visiter le contenu référencé puis revenir au contenu actuel.</p></li>
+<li><p>Les personnes ayant des limitations cognitives ne seront pas perturbées par une navigation
+superflue vers et depuis du contenu qui ne les intéresse pas.</p></li>
+<li><p>Les personnes ayant des limitations visuelles seront capables de déterminer la fonction du
+lien en explorant son contexte.</p></li></ul></div></div><div class="div3"><h2 id="navigation-mechanisms-refs-examples-head" class="section">
+Exemples pour le critère de succès 2.4.4</h2><ul><li><p>
+<strong>Un lien contient un texte qui donne une description concernant les informations à cette URI</strong>
+              </p><p>
+Une page contient la phrase «&nbsp;Il y eut beaucoup de massacres durant la période médiévale&nbsp;», où
+«&nbsp;période médiévale&nbsp;» est un lien.</p></li>
+<li><p><strong>Un lien est précédé d'une description textuelle concernant l'information à cette URI</strong></p>
+<p>Une page contient la phrase&nbsp;: «&nbsp;en savoir plus sur la Commission du gouvernement irlandais
+sur le vote électronique sur Allez voter&nbsp;!&nbsp;» où «&nbsp;Allez voter&nbsp;!&nbsp;» est un lien.</p></li>
+<li><p><strong>Une icône et un texte sont tous deux insérés dans un lien</strong>
+</p>
+<p>L'icône d'une machine à voter et le texte «&nbsp;Commission du gouvernement irlandais sur le vote
+électronique&nbsp;» sont combinés pour ne former qu'un seul lien. Le texte alternatif pour l'icône
+est vide puisque la fonction du lien est déjà décrite par le texte du lien à côté de
+l'icône.</p></li>
+<li><p><strong>Une liste de titres de livres</strong>
+</p>
+<p>Une liste de livres est disponible sous trois formats&nbsp;: HTML, PDF et mp3 (l'enregistrement
+d'une personne lisant le livre). Pour éviter d'avoir à entendre le titre de chaque livre
+trois fois (une fois pour chaque format), le premier lien pour chaque livre est le titre du
+livre, le second lien est «&nbsp;PDF&nbsp;» et le troisième «&nbsp;mp3&nbsp;».</p></li>
+<li><p><strong>Résumés d'articles d'actualités</strong></p>
+<p>Une page contient un ensemble d'articles d'actualités. La page principale donne les quelques
+premières phrases de chaque article, suivies d'un lien «&nbsp;Lire la suite&nbsp;». La commande d'un
+lecteur d'écran pour lire le paragraphe courant fournit le contexte permettant d'interpréter
+la fonction du lien.</p></li></ul></div><div class="resources"><h2 id="navigation-mechanisms-refs-resources-head" class="section">
+Ressources liées
+</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul><li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.useit.com/alertbox/980111.html">
+Using Link Titles to Help Users Predict Where They Are Going</a> – Utiliser les titres de lien pour aider les utilisateurs à savoir où ils vont
+ (en anglais)</p></li>
+ <li><p><a hreflang="en" href="http://www.webaim.org/techniques/hypertext/">Techniques Webaim sur les liens hypertextes (en anglais)</a>
+</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">
+Hidden barriers - out of sight</a> – Barrières cachées - hors de vue
+(en anglais)</p></li></ul></div><div class="div3"><h2 id="navigation-mechanisms-refs-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 2.4.4 - Fonction du lien (selon le contexte)</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="navigation-mechanisms-refs-150-head" class="div3head">
+Techniques suffisantes</h3><ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G91">
+G91&nbsp;: Fournir un intitulé de lien qui décrit la fonction du lien (en anglais)
+</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H30">
+H30&nbsp;: Fournir un intitulé de lien qui décrit la fonction du lien pour un élément anchor (en anglais)
+</a>  (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H24">
+H24&nbsp;: Fournir un équivalent textuel pour l'élément area d'une image à zones cliquables (en anglais)</a>  (HTML)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH27">FLASH27&nbsp;: Fournir des étiquettes de boutons qui en décrivent la fonction (en anglais)</a> (Flash)
+</p></li>
+<li><p>Permettre à l'utilisateur de choisir entre un texte de lien court ou long en utilisant l'une
+des techniques suivantes&nbsp;:</p><ul><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G189">
+G189&nbsp;: Fournir un élément de contrôle en début de page pour changer l'intitulé des liens (en anglais)</a></p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR30">
+SCR30&nbsp;: Utiliser des scripts pour changer l'intitulé des liens (en anglais)
+</a>  (programmation par script)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH7">FLASH7&nbsp;: Utiliser la programmation par script pour modifier les étiquettes des éléments de formulaire (en anglais)</a> (Flash)</p></li></ul></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G53">G53&nbsp;: Identifier la fonction d'un lien en combinant l'intitulé du lien avec le texte de la phrase qui contient ce lien (en anglais)</a></p></li>
+<li><p>Fournir des descriptions supplémentaires sur la fonction du lien en utilisant l'une des
+techniques suivantes&nbsp;:</p><ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H33">
+H33&nbsp;: Compléter l'intitulé du lien à l'aide de l'attribut title (en anglais)</a>  (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C7">
+C7&nbsp;: Utiliser les CSS pour masquer une partie du texte du lien (en anglais)</a>  (CSS) </p></li></ul></li><li><p>
+Identifier la fonction d'un lien en utilisant le texte du lien combiné à un contexte de lien
+déterminé par un programme informatique, en utilisant l'une des techniques suivantes&nbsp;:
+
+</p><ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H77">
+H77&nbsp;: Identifier la fonction du lien en combinant l'intitulé du lien avec l'item de liste contenant ce lien (en anglais)</a>  (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H78">
+H78&nbsp;: Identifier la fonction du lien en combinant le texte du lien avec le paragraphe contenant ce lien  (en anglais)</a>  (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H79">
+H79&nbsp;: Identifier la fonction du lien en combinant l'intitulé du lien avec la cellule de tableau contenant ce lien associée avec les cellules d'en-têtes du tableau (en anglais)</a>  (HTML)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H80">
+H80&nbsp;: Identifier la fonction du lien en combinant l'intitulé du lien avec l'élément d'en-tête précédent (en anglais)</a>  (HTML)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H81">
+H81&nbsp;: Identifier la fonction du lien dans une liste imbriquée en combinant l'intitulé du lien avec l'item de liste parent sous lequel la liste est imbriquée (en anglais)</a>  (HTML)</p></li></ul></li></ol></div>
+<div class="boxed"><h3 id="navigation-mechanisms-refs-151-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 2.4.4</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques recommandées suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H2">
+H2&nbsp;: Combiner en un même lien une image et un intitulé de lien pour la même ressource (en anglais)</a>  (HTML)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH5">FLASH5&nbsp;: Combiner le texte et l'image des boutons lorsqu'ils sont adjacents et concernent une même ressource (en anglais)</a> (Flash)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA1">
+ARIA1&nbsp;: Utiliser la propriété ARIA describedby pour fournir une étiquette descriptive aux contrôles de saisie (en anglais)</a>  (ARIA)
+</p></li></ul></div><div class="boxed"><h3 id="navigation-mechanisms-refs-152-head" class="div3head">
+Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 2.4.4</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.4.10.</p>
+<ul><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F63">
+F63&nbsp;: Échec du critère de succès 2.4.4 consistant à utiliser un contexte de lien qui n'est pas relié au lien (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F89">
+F89&nbsp;: Échec du critère de succès 2.4.4, 2.4.9 et 4.1.2 consistant à utiliser un attribut alt vide pour une image qui est le seul contenu d'un lien (en anglais)</a></p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2><dl class="keyterms">
+<dt class="label"><a name="ambiguouslinkdef" id="ambiguouslinkdef"></a>ambigu
+  pour tout utilisateur</dt>
+    <dd><p>l'intention ne peut être déterminée à partir du lien et de toute
+      l'information de la page Web présentée à l'utilisateur en même temps
+      que ce lien. (c'est-à-dire qu'un lecteur sans limitations fonctionnelles
+      ne connaîtrait pas la fonction d'un lien avant de l'activer)</p>
+      <div class="example">
+      <p class="prefix"><em>Exemple&nbsp;: </em>le mot goyave dans la phrase
+      suivante utilisé comme lien&nbsp;: «&nbsp;L'une des exportations importantes
+      est la goyave&nbsp;». Ce lien pourrait conduire à une définition de la
+      goyave, à un graphe présentant une liste des quantités de goyave
+      exportées ou à une photo de gens récoltant la goyave. Jusqu'à ce que
+      le lien soit activé, tout utilisateur est dans l'incertitude et une
+      personne handicapée n'est donc pas désavantagée.</p>
+      </div>
+    </dd>
+  <dt class="label"><a name="pdlinkcontextdef"
+  id="pdlinkcontextdef"></a>contexte du lien déterminé par un programme
+informatique</dt>
+    <dd><p>information supplémentaire qui peut être <a
+href="http://www.w3.org/Translations/wcag20-fr/#programmaticallydetermineddef" class="termref">déterminée par un
+      programme informatique</a> à partir des <a href="http://www.w3.org/Translations/wcag20-fr/#relationshipsdef"
+      class="termref">relations</a> avec un lien, combinée avec le texte du
+      lien et présentée aux utilisateurs sous différentes formes</p>
+      <div class="example">
+      <p class="prefix"><em>Exemple&nbsp;: </em>en HTML, l'information qui est
+      déterminée par un programme informatique à partir d'un lien en
+      français, y compris le texte qui est dans le même paragraphe, la même
+      liste ou la même cellule de tableau que le lien, ou une cellule
+      d'en-tête de tableau associée avec la cellule contenant le lien.</p>
+      </div>
+      <div class="note">
+      <p class="prefix"><em>Note&nbsp;: </em>puisque les lecteurs d'écran
+      interprètent la ponctuation, ils peuvent aussi fournir le contexte de la
+      phrase en cours, lorsque le focus est sur le lien contenu dans cette
+      phrase.</p>
+      </div>
+    </dd>
+<dt class="label"><a id="linkpurposedef" name="linkpurposedef"></a> fonction
+  du lien</dt>
+    <dd><p>nature d'un résultat obtenu par l'activation d'un lien</p>
+    </dd>
+</dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.4.3 [Parcours du focus]" href="navigation-mechanisms-focus-order.html"><strong>Précédent&nbsp;: </strong>CS 2.4.3 [Parcours du focus]</a></li><li><a title="Comprendre le CS 2.4.5 [Accès multiples]" href="navigation-mechanisms-mult-loc.html"><strong>Suivant&nbsp;: </strong>CS 2.4.5 [Accès multiples]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

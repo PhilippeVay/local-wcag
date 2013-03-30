@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.2.3  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.2.2 [Mettre en pause, arrêter, masquer]" href="time-limits-pause.html"><strong>Précédent&nbsp;: </strong>CS 2.2.2 [Mettre en pause, arrêter, masquer]</a></li><li><a title="Comprendre le CS 2.2.4 [Interruptions]" href="time-limits-postponed.html"><strong>Suivant&nbsp;: </strong> CS 2.2.4 [Interruptions]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#time-limits-no-exceptions-intent-head">Objectif</a></li><li><a href="#time-limits-no-exceptions-examples-head">Exemples</a></li><li><a href="#time-limits-no-exceptions-resources-head">Ressources liées</a></li><li><a href="#time-limits-no-exceptions-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="time-limits-no-exceptions" id="time-limits-no-exceptions"> </a><strong>Pas de délai d'exécution</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 2.2.3</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#time-limits-no-exceptions">2.2.3</a> Pas de délai
+d'exécution&nbsp;:</strong> le temps n'est pas un facteur <a
+href="#essentialdef"
+class="termref">essentiel</a> dans le déroulement de l'événement ou de
+l'activité, à l'exception des <a href="#synchronizedmediadef" class="termref">médias synchronisés</a> non
+interactifs et des <a href="#real-time-eventsdef" class="termref">événements en temps réel</a>.
+(Niveau AAA)</p>
+</div></blockquote><div class="intent"><h2 id="time-limits-no-exceptions-intent-head" class="section">
+Objectif de ce critère de succès
+</h2>
+<p>
+L'objectif de ce critère de succès est de minimiser le nombre d'occurrences d'un contenu qui nécessite une interaction soumise à une durée. Cela permet aux personnes aveugles, malvoyantes, ayant des limitations cognitives, ou des limitations motrices d'interagir avec le contenu. Cela diffère du critère de succès de niveau A pour lequel la seule exception concerne les événements en temps réel.
+</p>
+<div class="note"><p class="prefix"><em>Note&nbsp;: </em>
+un contenu vidéo seulement, comme la langue des signes, est traitée dans la
+<a href="http://www.w3.org/Translations/wcag20-fr/#text-equiv">règle 1.1</a>.
+            </p></div><div class="benefits"><h3 id="time-limits-no-exceptions-117-head" class="div3head">
+Avantages spécifiques du critère de succès 2.2.3&nbsp;:</h3><ul><li><p>
+Les personnes ayant des limitations physiques ont souvent besoin de plus de temps pour réagir, pour écrire et réaliser des activités. Les personnes malvoyantes ont besoin de plus de temps pour localiser les choses à l'écran et pour lire. Les personnes aveugles qui utilisent un lecteur d'écran peuvent avoir besoin de plus de temps pour comprendre la mise en forme des écrans, pour trouver une information et pour utiliser des contrôles. Les personnes qui ont des limitations cognitives ou de langage ont besoin de plus de temps pour lire et pour comprendre. Les personnes sourdes qui communiquent en langue des signes peuvent avoir besoin de plus de temps pour lire l'information écrite (ce qui, pour certaines d'entre elles constitue une seconde langue).
+</p></li><li><p>
+Dans les cas où un interprète en langue des signes traduit du contenu audio à un utilisateur sourd, le contrôle de la durée est également important.
+</p></li></ul></div></div><div class="div3"><h2 id="time-limits-no-exceptions-examples-head" class="section">
+Exemples pour le critère de succès 2.2.3</h2><ul><li><p>
+                <strong>
+Un test conçu de sorte que la durée pour le passer n'influe pas sur le score</strong>
+              </p><p>
+Plutôt que de jauger un test en ligne selon une durée maximum, le test se base sur le score obtenu par les utilisateurs, sans limite de temps.
+</p></li><li><p>
+                <strong>
+Un jeu conçu de sorte que les joueurs prennent leur tour au lieu de s'affronter en temps réel
+</strong>
+              </p><p>
+L'une des parties peut mettre le jeu en pause sans en compromettre l'aspect compétitif.
+</p></li></ul></div><div class="resources"><h2 id="time-limits-no-exceptions-resources-head" class="section">
+Ressources liées</h2><p>
+Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p><p>(Aucune ressource n'est actuellement documentée)</p></div><div class="div3"><h2 id="time-limits-no-exceptions-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 2.2.3 - Pas de délai d'exécution</h2>
+
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="time-limits-no-exceptions-118-head" class="div3head">
+Techniques suffisantes</h3><ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G5">
+G5&nbsp;: Permettre à l'utilisateur de compléter une activité sans aucune limite de temps (en anglais)</a>
+                </p></li></ol></div><div class="boxed"><h3 id="time-limits-no-exceptions-119-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 2.2.3</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<p>(Aucune technique n'est actuellement documentée)</p></div><div class="boxed"><h3 id="time-limits-no-exceptions-120-head" class="div3head">
+Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 2.2.3</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.2.3.</p>
+<p>(Aucun échec n'est actuellement documenté)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2><dl class="keyterms">
+<dt class="label"><a id="essentialdef" name="essentialdef"></a>
+  essentiel(le)</dt>
+    <dd><p>élément qui changerait fondamentalement les informations ou les
+      fonctionnalités du contenu s'il était supprimé <strong>et</strong>
+      informations et fonctionnalités qui ne pourraient être restituées
+      autrement d'une manière conforme</p>
+    </dd>
+  <dt class="label"><a name="real-time-eventsdef"
+  id="real-time-eventsdef"></a>événement en temps réel</dt>
+    <dd><p>événement qui a) se produit en même temps que la visualisation et
+      b) n'est pas entièrement généré par le contenu</p>
+      <div class="example">
+      <p class="prefix"><em>Exemple 1&nbsp;: </em>une diffusion Web d'une
+      représentation en direct (qui se produit en même temps que la
+      visualisation et qui n'est pas pré-enregistrée).</p>
+      <p class="prefix"><em>Exemple 2&nbsp;: </em>des enchères en ligne avec des
+      gens qui enchérissent (avec une visualisation en direct).</p>
+      <p class="prefix"><em>Exemple 3&nbsp;: </em>des humains interagissant dans un
+      monde virtuel grâce à des avatars (qui ne sont pas entièrement
+      générés par le contenu et qui se produisent en même temps que la
+      visualisation).</p>
+      </div>
+    </dd>
+<dt class="label"><a name="synchronizedmediadef"
+  id="synchronizedmediadef"></a>média synchronisé</dt>
+    <dd><p>flux <a href="#audiodef"
+      class="termref">audio</a> ou <a
+href="#videodef" class="termref">vidéo</a> synchronisé avec un autre
+      format pour présenter de l'information et/ou comportant des composants
+      temporels interactifs, à moins que le média soit un <a
+href="#multimedia-alt-textdef" class="termref">média de remplacement
+      pour un texte</a> clairement identifié comme tel</p>
+    </dd>
+</dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.2.2 [Mettre en pause, arrêter, masquer]" href="time-limits-pause.html"><strong>Précédent&nbsp;: </strong>2.2.2 [Mettre en pause, arrêter, masquer]</a></li><li><a title="Comprendre le CS 2.2.4 [Interruptions]" href="time-limits-postponed.html"><strong>Suivant&nbsp;: </strong> 2.2.4 [Interruptions]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

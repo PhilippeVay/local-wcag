@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.4.6  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.5 [Texte sous forme d'image]" href="visual-audio-contrast-text-presentation.html"><strong>Précédent&nbsp;: </strong>SC 1.4.5 [Texte sous forme d'image]</a></li><li><a title="Comprendre le CS 1.4.7 [Arrière-plan sonore de faible volume ou absent]" href="visual-audio-contrast-noaudio.html"><strong>Suivant&nbsp;: </strong>SC 1.4.7 [Arrière-plan sonore de faible volume ou absent]</a></li></ul>
+      <div class="navtoc">
+        <p>Sur cette page&nbsp;:</p>
+        <ul id="navbar">
+<li><a href="#visual-audio-contrast7-intent-head">Objectif</a></li>
+          <li><a href="#visual-audio-contrast7-examples-head">Exemples</a></li>
+          <li><a href="#visual-audio-contrast7-resources-head">Ressources liées</a></li>
+          <li><a href="#visual-audio-contrast7-techniques-head">Techniques et échecs</a></li>
+          <li><a href="#key-terms">Mots clés</a></li>
+        </ul>
+      </div>
+      <div class="skiptarget"><a id="maincontent" name="maincontent">-</a></div>
+      <h1><a name="visual-audio-contrast7" id="visual-audio-contrast7"></a><strong>Contraste
+        (amélioré)</strong><span class="screenreader">&nbsp;:</span>
+		<br/>Comprendre le <abbr title="critère de succès">CS</abbr> 1.4.6</h1>
+		<blockquote class="scquote">
+        <div>
+          <p class="sctxt"><strong class="sc-handle">
+          <a href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-contrast">1.4.6</a>Contraste (amélioré)&nbsp;:</strong> <span>la présentation visuelle du</span> <a href="#textdef" class="termref">texte</a> et du <a href="#images-of-textdef" class="termref">texte sous forme d'image</a> a un <a href="#contrast-ratiodef" class="termref">rapport de contraste</a> d'au moins 7:1, sauf dans les cas suivants&nbsp;: (Niveau AAA)</p>
+          <ul>
+<li><p><strong class="sc-handle">Texte agrandi&nbsp;:</strong> le <a href="#larger-scaledef" class="termref">texte agrandi</a> et le texte agrandi sous forme d'image ont un rapport de contraste d'au moins 4,5:1;</p></li>
+            <li><p><strong class="sc-handle">Texte décoratif&nbsp;:</strong> aucune exigence de contraste pour le texte ou le texte sous forme d'image qui fait partie d'un <a href="#user-interface-componentdef" class="termref">composant d'interface utilisateur</a> inactif, qui est <a href="#puredecdef" class="termref">purement décoratif</a>, qui est invisible pour tous ou qui est une partie d'une image contenant un autre contenu visuel significatif.</p></li>
+<li><p><strong class="sc-handle">Logotypes&nbsp;:</strong> aucune exigence de contraste pour le texte faisant partie d'un logo ou d'un nom de marque.</p></li>
+          </ul>
+        </div>
+      </blockquote><div class="intent"><h2 id="visual-audio-contrast7-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est de fournir un contraste suffisant entre le texte et son arrière-plan afin qu'il puisse être lu par des personnes avec une basse vision modérée (qui n'utilisent pas de technologies d'assistance améliorant les contrastes). Pour les personnes ne présentant pas de limitation de perception des couleurs, la teinte et la saturation ont peu ou pas d'effet sur la lisibilité comme cela a été démontré par la performance de lecture (Knoblauch et al., 1991). Les limitations de perception des couleurs peuvent quelque peu influer le contraste de luminosité. Par conséquent, dans la recommandation, le contraste est calculé de telle manière que la couleur ne soit pas un facteur clé pour que les personnes qui ont une limitation de perception des couleurs aient également un contraste satisfaisant entre le texte et l'arrière-plan.</p>
+<p>Le texte qui est décoratif et qui ne transmet pas d'information n'est pas concerné. Par exemple, si des mots aléatoires étaient utilisés pour créer un arrière-plan et que les mots pouvaient être réarrangés ou remplacés sans changer leur sens, alors ils seraient décoratifs et ne seraient pas concernés par ce critère.</p>
+<p>Un texte agrandi et avec des traits de caractères plus larges est plus facile à lire sur un contraste plus faible. L'exigence de contraste est donc plus faible pour un texte agrandi. Cela permet aux auteurs d'utiliser une gamme de choix de couleurs plus large pour les textes agrandis, ce qui est utile pour la conception de pages, en particulier pour les titres. Un texte en 18 points ou un texte en 14 points gras est jugé suffisamment grand pour exiger un plus faible rapport de contraste (voir les recommandations pour les grands caractères de la maison d'édition américaine pour les personnes aveugles et les recommandations pour les grands caractères de la bibliothèque du Congrès dans les <a href="#visual-audio-contrast7-resources-head">ressources</a>).
+«&nbsp;18 points&nbsp;» et «&nbsp;gras&nbsp;» peuvent avoir des représentations différentes selon différentes polices cependant, sauf pour les polices très minces ou inhabituelles, cela devrait être suffisant. Comme il existe de nombreuses polices différentes, des mesures génériques sont utilisées et une note sur les caractères fantaisistes ou les polices fines est incluse.</p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;:</em> lorsque les polices ont des systèmes anti-crénage qui leur sont appliqués pour leur donner un aspect plus lisse, elles peuvent devenir plus foncées ou plus claires. Le contraste peut ainsi être réduit. Des fûts plus épais réduiront cet effet (les polices de caractères fines pourront avoir des fûts plus minces sur toute leur longueur, et non uniquement aux extrémités). Il est recommandé d'utiliser des polices plus larges et de tester leur lisibilité dans les agents utilisateurs en activant le lissage des polices.</p>
+<p class="prefix"><em>Note 2&nbsp;:
+</em>comme certains logiciels de traitement d'images ne gèrent pas les différentes densités de pixels ((exemple 72 PPI ou 96 PPI), définir la taille des points des polices dans ces logiciels peut ne pas être fiable quand il s'agit de présenter du texte dans une taille spécifique. Lors de la création d'images avec du texte agrandi, les auteurs doivent s'assurer que le texte de l'image résultante est sensiblement équivalent à 1,2 et 1,5 em ou à 120% et 150% de la taille par défaut du corps de texte. Par exemple, pour une image à 72 PPI, un auteur aurait besoin d'utiliser des tailles de police approximativement  de 19 pt et 24 pt pour présenter correctement des images avec du texte agrandi à un utilisateur.</p></div>
+        <p>Les exigences de contraste précédemment mentionnées pour le texte s'appliquent également au texte sous forme d'image (texte qui a été rendu en pixels puis stocké sous un format d'image) comme indiqué dans le critère de succès 1.4.5.</p>
+        <p>Cette exigence s'applique aux situations dans lesquelles du texte sous forme d'image est destiné à être compris comme du texte. Le texte décoratif, comme celui sur les panneaux de signalisation pouvant apparaître sur les photographies, n'est pas concerné. N'est également pas concerné le texte qui, pour une raison ou une autre, est conçu pour être invisible à tous les utilisateurs. Le texte stylisé, comme sur les logos d'entreprises, doit être traité selon sa fonction sur la page, selon qu'il nécessite ou non l'ajout d'un contenu dans le texte de remplacement.
+Les éléments de la charte graphique d'une organisation, autres que le logo et le logotype, ne sont pas compris dans l'exception.</p>
+<p>Dans cette recommandation, il existe une exception pour ce «&nbsp;qui est une partie d'une image contenant un autre contenu significatif&nbsp;». Cette exception a pour but de distinguer les images qui ont du texte de celles qui en ont dans le but de remplacer du texte et d'obtenir une apparence particulière.</p>
+<p>Bien que ce critère de succès ne s'applique qu'aux textes, des questions similaires se présentent pour des données présentées dans des tableaux ou des graphiques. Un bon contraste de couleurs devrait également être fourni pour les données présentées dans ces formats.</p>
+        <h3 id="visual-audio-contrast7-82-head" class="div3head">Justification des ratios choisis</h3>
+        <p>Un rapport de contraste de 3:1 est le niveau minimum recommandé par <a href="appendixD.html#ISO-9241-3">[ISO-9241-3]</a> et <a href="appendixD.html#ANSI-HFES-100-1988">[ANSI-HFES-100-1988]</a> pour du texte et une vision standards. Le rapport de 4,5:1 est utilisé dans le critère de succès 1.4.3 pour tenir compte de la perte de contraste qui résulte d'une acuité visuelle modérément faible, des limitations de perception des couleurs congénitales ou acquises, ou de la perte de sensibilité aux contrastes qui accompagne en général le vieillissement.</p>
+<p>Le raisonnement est basé sur a) une adoption du rapport de contraste de 3:1 comme rapport de contraste minimum acceptable pour les observateurs normaux dans la norme ANSI, et b) la constatation empirique que dans la population, l'acuité visuelle de 20/40 est associée à une perte de sensibilité aux contrastes de l'ordre de 1,5 <a href="appendixD.html#ARDITI-FAYE">[ARDITI-FAYE]</a>. Un utilisateur avec 20/40 aurait besoin d'un rapport de contraste de 3 * 1,5 = 4,5 pour 1. À la suite de constatations empiriques analogues et en suivant la même logique, l'utilisateur avec une acuité visuelle de 20/80 aurait besoin d'un contraste de 7:1.</p>
+<p>Les teintes sont perçues différemment par les utilisateurs présentant des limitations de perception des couleurs (congénitales comme acquises), il en résulte des couleurs et contrastes de luminosité relative différents par rapport aux utilisateurs qui voient normalement. À cause de cela, le contraste efficace et la lisibilité sont différents pour cette population. Toutefois, les limitations de perception des couleurs sont tellement diverses qu'une prescription générale efficace sur l'utilisation de paires de couleurs (pour les contrastes) basée sur des données quantitatives n'est pas réalisable. Exiger un bon contraste de luminosité s'adapte bien à cela en exigeant un contraste qui est indépendant de la perception de la couleur. Heureusement, la plupart des apports de la luminosité passe par des récepteurs de moyennes et longues ondes qui se recoupent en grande partie dans leurs réponses spectrales. Le résultat est que le contraste de luminosité relative peut généralement être calculé sans tenir compte d'une limitation de perception des couleurs, sauf pour l'utilisation de couleurs principalement composées de grandes longueurs d'ondes et opposées à des couleurs sombres (qui apparaissent généralement noires) pour les personnes atteintes de protanopie. (Nous fournissons pour cette raison une technique recommandée sur l'évitement du rouge sur fond noir). Pour plus d'information, voir <a href="appendixD.html#ARDITI-KNOBLAUCH-1994">[ARDITI-KNOBLAUCH]</a> <a href="appendixD.html#ARDITI-KNOBLAUCH-1996">[ARDITI-KNOBLAUCH-1996]</a> <a href="appendixD.html#ARDITI">[ARDITI]</a>.</p>
+<p>Le rapport de contraste de 4,5:1 a été choisi pour le niveau AA car il compensait la perte de sensibilité au contraste généralement vécue par les utilisateurs avec une perte de vision à peu près équivalente à 20/40. (20/40 correspond environ à 4,5:1.) Fréquemment, il est rapporté que 20/40 correspond à l'acuité visuelle moyenne des personnes âgées d'environ 80 ans.  <a href="appendixD.html#GITTINGS-FOZARD">[GITTINGS-FOZARD]</a></p>
+<p>Le rapport de contraste de 7:1 a été choisi pour le niveau AAA, car il compensait la perte de sensibilité au contraste généralement vécue par les utilisateurs avec une perte de vision à peu près équivalente à 20/80. Les personnes ayant un degré de perte de vision supérieur utilisent généralement des technologies d'assistance pour accéder à leur contenu (et les technologies d'assistance disposent généralement d'un renforcement des contrastes, ainsi que des possibilités d'agrandissement intégrées). Le niveau 7:1 fournit donc généralement une compensation pour la perte de sensibilité au contraste rencontrée chez les utilisateurs avec une basse vision et qui n'utilisent pas de technologie d'assistance et il fournit également un renforcement des contrastes pour les daltoniens.</p>
+        <div class="note"><p class="prefix"><em>Note&nbsp;:</em> les méthodes de calculs dans <a href="appendixD.html#ISO-9241-3">[ISO-9241-3]</a> et <a href="appendixD.html#ANSI-HFES-100-1988">[ANSI-HFES-100-1988]</a> sont pour le corps du texte. Un rapport de contraste moins exigeant est fourni pour du texte qui est beaucoup plus grand.</p>
+        </div>
+        <h3 id="visual-audio-contrast7-83-head" class="div3head">Notes sur la formule</h3>
+        <p>La conversion des valeurs RGB non linéaires à linéaires est basée sur IEC/4WD 61966-2-1 <a href="appendixD.html#IEC-4WD">[IEC-4WD]</a> et sur «&nbsp;Un espace de couleur par défaut standard pour Internet - sRGB&nbsp;» <a href="appendixD.html#sRGB">[sRGB]</a>.
+        </p>
+        <p>La formule (L1/L2) pour le contraste est basée sur les normes <a href="appendixD.html#ISO-9241-3">[ISO-9241-3]</a> et <a href="appendixD.html#ANSI-HFES-100-1988">[ANSI-HFES-100-1988]</a>.</p>
+        <p>Le standard ANSI/HFS 100-1988 demande à ce que l'impact de la lumière ambiante soit inclus dans le calcul de L1 et L2. La valeur 0,05 utilisée est basée sur l'affichage du signal lumineux général <a href="appendixD.html#IEC-4WD">[IEC-4WD]</a> et l'article <a href="appendixD.html#sRGB">[sRGB]</a> de M. Stokes et al.</p>
+        <p>Ce critère de succès et ses définitions emploient les termes «&nbsp;rapport de contraste&nbsp;» et «&nbsp;luminosité relative&nbsp;» plutôt que «&nbsp;luminosité&nbsp;» pour refléter le fait que le contenu Web n'émet pas de lumière. Le rapport de contraste donne une mesure de la luminosité relative qui se traduirait à l'affichage. (Parce que c'est une proportion, sans dimension.)
+</p>
+        <div class="note"><p class="prefix"><em>Note 1&nbsp;:</em> se référer aux <a href="#visual-audio-contrast7-resources-head">ressources liées</a> pour obtenir une liste d'outils qui utilisent le rapport de contraste pour analyser le contraste de contenus Web.</p>
+          <p class="prefix"><em>Note 2&nbsp;:</em> voir également<em><a href="navigation-mechanisms-focus-visible.html">Comprendre le critère de succès 2.4.7 Visibilité du focus</a></em> pour les techniques pour indiquer le focus du clavier.</p>
+        </div>
+        <div class="benefits"><h3 id="visual-audio-contrast7-84-head" class="div3head">Avantages spécifiques du critère de succès 1.4.6&nbsp;:</h3>
+          <ul>
+<li><p>Les personnes ayant une basse vision ont souvent des difficultés à lire un texte qui n'est pas contrasté avec son arrière-plan. Cela peut être aggravé si la personne a une limitation de perception des couleurs qui diminue davantage le contraste. Fournir un rapport minimum de contraste de luminosité entre le texte et son arrière-plan peut rendre le texte plus lisible même si la personne ne voit pas toute la gamme de couleurs. Cela fonctionne également pour les rares personnes qui ne distinguent pas les couleurs.</p></li>
+</ul>
+        </div>
+      </div>
+ <div class="div3"><h2 id="visual-audio-contrast7-examples-head" class="section">Exemples pour le critère de succès 1.4.6</h2><p>(Aucun exemple n'est actuellement documenté)</p></div>
+<div class="resources"><h2 id="visual-audio-contrast7-resources-head" class="section">Ressources liées</h2>
+        <p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+        <ul><li><p><a hreflang="en" href="http://www.paciellogroup.com/resources/contrast-analyser.html">Analyseur de contrastes – Logiciel (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://juicystudio.com/services/luminositycontrastratio.php">Analyseur de rapports de contrastes – service en ligne (en anglais)</a>
+</p></li>
+<li><p><a hreflang="en" href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php">Analyseur de contrastes de couleurs – Extension Firefox (en anglais)</a> <abbr title="Note des traducteurs">NDT</abbr>&nbsp;: une version française est également disponible.
+</p></li>
+<li><p><a hreflang="en" href="http://snook.ca/technical/colour_contrast/colour.html">Vérificateur de contrastes de couleurs (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.msfw.com/accessibility/tools/contrastratiocalculator.aspx">Calculateur du rapport de contrastes (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://trace.wisc.edu/contrast-ratio-examples/">Échantillons de contrastes de couleurs (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/Graphics/atypical-color-response">Rendus de couleurs atypiques (en anglais)</a>
+</p></li>
+<li><p><a hreflang="en" href="http://www.colorsontheweb.com/colorcontrast.asp">Couleurs sur le Web analyseur de contrastes de couleurs (en anglais)</a></p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.aph.org/edresearch/lpguide.htm">American Printing House for the Blind Guidelines for Large Print</a> – Maison d'édition américaine pour les personnes aveugles recommandations pour les grands caractères (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.loc.gov/nls/reference/circulars/largeprint.html">National Library Service for the Blind and Physically Handicapped (NLS), The Library of Congress Guidelines for Large Print</a> – Service de la bibliothèque nationale pour les personnes aveugles et les personnes ave des limitations motrices (NLS), la bibliothèque du Congrès recommandations pour les grands caractères (en anglais)</p></li>
+
+        </ul>      </div>
+<div class="div3"><h2 id="visual-audio-contrast7-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 1.4.6 - Contraste (amélioré)</h2>
+        <p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+        <div class="boxed"><h3 id="visual-audio-contrast7-85-head" class="div3head">Techniques suffisantes</h3>
+          <p class="instructions"><strong>Consignes&nbsp;:</strong> choisissez parmi les situations suivantes celle qui correspond à votre contenu. Chaque situation comprend des techniques ou des combinaisons de techniques qui sont connues et documentées comme suffisantes par rapport à cette situation.</p>
+          <div><h4><a name="visual-audio-contrast7-situation-30-head" id="visual-audio-contrast7-situation-30-head"></a>Situation A&nbsp;: le texte est inférieur à 18 points s'il n'est pas en gras et le texte est inférieur à 14 points s'il est en gras</h4>
+            <ol class="enumar">
+              <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G17">G17&nbsp;: S'assurer qu'un rapport de contraste d'au moins 7 pour 1 existe entre le texte (et le texte sous forme d'image) et l'arrière-plan du texte (en anglais)</a></p></li>
+              <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G148">G148&nbsp;: Ne pas spécifier de couleur d'arrière-plan ni de couleur de texte et ne pas utiliser une technologie qui change ces couleurs par défaut (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G174">G174&nbsp;: Fournir un élément d'interface ayant un rapport de contraste suffisant afin de permettre à l'utilisateur de basculer vers une présentation offrant un contraste suffisant (en anglais)</a></p></li>
+            </ol>
+          </div>
+          <div>
+            <h4><a name="visual-audio-contrast7-situation-31-head" id="visual-audio-contrast7-situation-31-head"></a>Situation B&nbsp;: le texte est au moins de 18 points s'il n'est pas en gras et au moins de 14 points s'il est en gras</h4>
+            <ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G18">G18&nbsp;: S'assurer qu'un rapport de contraste d'au moins 4,5 pour 1 existe entre le texte (et le texte sous forme d'image) et l'arrière-plan du texte (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G148">G148&nbsp;: Ne pas spécifier de couleur d'arrière-plan ni de couleur de texte et ne pas utiliser une technologie qui change ces couleurs par défaut (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G174">G174&nbsp;: Fournir un élément d'interface ayant un rapport de contraste suffisant afin de permettre à l'utilisateur de basculer vers une présentation offrant un contraste suffisant (en anglais)</a></p></li>
+            </ol>
+          </div>
+        </div>
+        <div class="boxed"><h3 id="visual-audio-contrast7-86-head" class="div3head">Techniques (recommandées) supplémentaires pour 1.4.6</h3>
+          <p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+          <ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G156">G156&nbsp;: Utiliser une technologie qui permet de changer l'avant-plan et l'arrière-plan des blocs de texte dans des agents utilisateur communément disponibles (en anglais)</a></p></li>
+<li><p>Utiliser un contraste supérieur pour un texte placé sur un motif d'arrière-plan (lien à venir)
+</p></li>
+<li><p>Utiliser du texte Unicode et des feuilles de style plutôt que des textes sous forme d'images (lien à venir)</p></li>
+            <li><p>Utiliser un contraste supérieur pour les lignes d'un diagramme (lien à venir)</p></li>
+            <li><p>Utiliser un plus fort contraste pour une combinaison de rouge et de noir comme texte et arrière-plan</p></li>
+            <li><p>Utiliser des couleurs où prédominent les composantes du milieu du spectre visible pour les tons clairs et les couleurs de chaque extrêmité du spectre visible (longueurs d'onde bleues et rouges) pour les tons foncés.</p></li>
+            <li><p>Utiliser un arrière-plan de couleur pastel plutôt que blanc avec du texte noir afin de créer un contraste suffisant mais non extrême (lien à venir)</p></li>
+<li><p>Créer des icônes qui utilisent des lignes de couleur qui satisfont au niveau de contraste prévu pour le texte (lien à venir)</p></li>
+<li><p>Fournir un contraste suffisant dans les diagrammes et les graphes (lien à venir)</p></li>
+<li><p>Utiliser un niveau de contraste de 3 pour 1 ou mieux comme présentation par défaut (lien à venir)</p></li>
+<li><p>Fournir un contraste de couleurs suffisant pour un champ de texte vide (lien à venir)</p></li>
+          </ul>
+        </div>
+        <div class="boxed"><h3 id="visual-audio-contrast7-87-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 1.4.6</h3>
+          <p>Le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.4.6.</p>
+          <ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F24">F24&nbsp;: Échec du critère de succès 1.4.3, 1.4.6 et 1.4.8 consistant à spécifier la couleur du premier plan sans spécifier la couleur d'arrière-plan ou inversement (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F83">F83&nbsp;: Échec du critère de succès 1.4.3 et 1.4.6 consistant à utiliser une image d'arrière-plan qui n'offre pas un contraste suffisant avec le texte (ou l'image de texte) au premier plan (en anglais)</a></p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+        <dl class="keyterms">
+<dt class="label">
+          <a name="larger-scaledef" id="larger-scaledef"></a>(texte) agrandi</dt>
+          <dd>
+            <p>avec au minimum 18 points ou 14 points gras ou une taille de caractère équivalente pour les polices chinoises, japonaises ou coréennes (CJK) </p>
+            <div class="note"><p class="prefix">
+              <em>Note 1&nbsp;:</em> les polices avec des traits extraordinairement fins ou des aspects et des caractéristiques inhabituels qui réduisent la reconnaissance de la forme des lettres sont plus difficiles à lire, spécialement à des niveaux de contrastes bas.</p>
+              <p class="prefix"><em>Note 2&nbsp;:</em> la taille de caractère est la taille lorsque le contenu est affiché. Cela n'inclut pas le redimensionnement qui pourrait être fait par l'utilisateur.</p>
+              <p class="prefix"><em>Note 3&nbsp;:</em> la taille réelle des caractères qu'un utilisateur voit est dépendante à la fois de la définition de la taille faite par l'auteur, du périphérique de restitution de l'utilisateur ou du paramétrage de l'agent utilisateur. Pour la majorité des polices de corps de texte, 14 et 18 points est sensiblement équivalent à 1,2 et 1,5 em ou à 120% et 150% de la taille par défaut du corps de texte (en considérant que la police de corps est à 100%), mais les auteurs seraient tenus de vérifier cela pour les polices particulières qui seraient utilisées. Quand les polices sont définies en unités relatives, la taille réelle du point est mesurée par l'agent utilisateur pour l'affichage. La taille d'un point doit être obtenue auprès de l'agent utilisateur ou calculée sur la même base de mesure que celle de l'agent utilisateur, lors de l'évaluation de ce critère de succès. Les utilisateurs qui ont une basse vision auront à choisir les paramètres appropriés.</p>
+              <p class="prefix"><em>Note 4&nbsp;:</em> lors de l'utilisation de texte sans spécification de taille de caractère, la taille la plus petite utilisée dans les principaux navigateurs pour le texte dont la taille n'est pas spécifiée serait considérée comme une taille raisonnable pour la police. Si un titre de niveau 1 est restitué en 14pt gras ou plus sur les principaux navigateurs, alors il est raisonnable de considérer qu'il s'agit de texte agrandi. Le redimensionnement relatif peut être calculé de manière identique à partir de la taille par défaut.</p>
+              <p class="prefix"><em>Note 5&nbsp;:</em> la taille 18 ou 14 points pour les textes en alphabet latin est définie à partir de la taille minimum pour les grands caractères (14pt) et de la taille standard plus grande (18pt). Pour les autres polices telles que les langues CJK, les tailles «&nbsp;équivalentes&nbsp;» seraient la taille de grand caractère minimum utilisée pour ces langues et la taille de grands caractères plus grande suivante.</p>
+            </div>
+          </dd><dt class="label">
+          <a name="user-interface-componentdef"
+          id="user-interface-componentdef"></a>composant d'interface utilisateur</dt>
+          <dd>
+          <p>partie du contenu qui est perçue par les utilisateurs comme un élément de contrôle unique pour une fonction distincte</p>
+          <div class="note"><p class="prefix"><em>Note 1&nbsp;:</em> plusieurs composants d'interface utilisateur peuvent être implémentés au sein d'un seul programme. La notion de composant n'est pas liée ici aux techniques de programmation, mais plutôt à ce que les utilisateurs perçoivent comme des éléments de contrôle distincts.</p>
+            <p class="prefix"><em>Note 2&nbsp;:</em> les composants d'interface utilisateur incluent les éléments de formulaire et les liens aussi bien que des composants générés par scripts.</p>
+          </div>
+          <div class="example"><p class="prefix">
+<em>Exemple&nbsp;:</em> un microprogramme (applet) dispose d'un «&nbsp;élément de contrôle&nbsp;» permettant de se déplacer dans le contenu ligne par ligne, page par page ou au hasard. Puisque chacune de ces fonctions devrait avoir un nom et fonctionner indépendamment, elles constitueraient chacune un «&nbsp;composant d'interface utilisateur&nbsp;».</p>
+</div></dd>
+<dt class="label">
+          <a name="puredecdef" id="puredecdef"></a>purement décoratif</dt>
+          <dd>
+            <p>utilisé seulement dans un but esthétique, ne fournissant aucune information et n'ayant aucune fonctionnalité</p>
+            <div class="note"><p class="prefix"> <em>Note&nbsp;:</em> un texte est purement décoratif si les mots peuvent être réarrangés ou remplacés sans changer leur raison d'être.</p>
+            </div>
+            <div class="example">
+              <p class="prefix"><em>Exemple&nbsp;:</em> la page de couverture d'un dictionnaire présente un arrière-plan estompé et constitué de mots choisis au hasard.</p>
+            </div>
+          </dd>
+<dt class="label">
+          <a name="contrast-ratiodef" id="contrast-ratiodef">
+          </a>rapport de contraste</dt>
+          <dd>
+            <p>(L1 + 0,05) / (L2 + 0,05), où</p>
+            <ul>
+              <li><p>L1 est la  <a href="http://www.w3.org/Translations/WCAG20-fr/#relativeluminancedef" class="termref">luminosité relative</a> de la couleur la plus claire et</p></li>
+<li><p>L2 est la <a href="http://www.w3.org/Translations/WCAG20-fr/#relativeluminancedef" class="termref">luminosité relative</a> de la couleur la plus sombre.</p></li>
+            </ul>
+            <div class="note"><p class="prefix"><em>Note 1&nbsp;:</em> le rapport de contraste peut varier de 1 à 21 (communément écrit 1:1, 1 pour 1, à 21:1, 21 pour 1).</p>
+              <p class="prefix"><em>Note 2&nbsp;:</em> étant donné que les auteurs ne contrôlent pas la configuration de l'utilisateur concernant le rendu du texte (par exemple le lissage de police ou l'anti-crénelage), le rapport de contraste du texte peut être évalué en désactivant l'anti-crénelage.</p>
+              <p class="prefix"><em>Note 3&nbsp;:</em> en ce qui concerne les critères de succès 1.4.3 et 1.4.6, le contraste est mesuré en tenant compte de l'arrière-plan sur lequel le texte est normalement affiché. Si aucune couleur d'arrière-plan n'est spécifiée, il est considéré comme blanc.</p>
+              <p class="prefix"><em>Note 4&nbsp;:</em> la couleur d'arrière-plan est la couleur spécifiée du contenu sur lequel le texte est normalement affiché. Il est considéré comme une erreur de ne pas définir une couleur d'arrière-plan lorsque la couleur du texte est spécifiée, parce que la couleur d'arrière-plan de l'utilisateur est inconnue et ne peut donc pas être évaluée pour vérifier si le contraste est suffisant. Pour la même raison, il est aussi considéré comme une erreur de ne pas définir la couleur du texte lorsqu'une couleur d'arrière-plan est spécifiée.</p>
+              <p class="prefix"><em>Note 5&nbsp;:</em> lorsqu'il y a une bordure autour de la lettre, la bordure peut augmenter le contraste et serait utilisée dans le calcul du contraste entre la lettre et son arrière-plan. La couleur d'une bordure étroite autour de la lettre serait utilisée à la place de la lettre. Une bordure large autour de la lettre qui remplit l'espace dans lequel se découpe le détail de la lettre agit comme un halo et serait considérée comme un arrière-plan.</p>
+              <p class="prefix"><em>Note 6&nbsp;:</em> la conformité aux WCAG devrait être évaluée pour les paires de couleurs spécifiées dans le contenu qu'un auteur s'attendrait à voir apparaître de façon adjacente dans une présentation habituelle. Les auteurs n'ont pas besoin de prendre en considération les présentations inhabituelles comme les changements de couleurs faits par l'agent utilisateur sauf si ces changements sont provoqués par le code de l'auteur.</p>
+            </div>
+          </dd>
+<dt class="label">
+          <a name="textdef" id="textdef"></a>texte</dt>
+          <dd>
+            <p>séquence de caractères pouvant être
+            <a href="http://www.w3.org/Translations/WCAG20-fr/#programmaticallydetermineddef"
+            class="termref">déterminée par un programme informatique</a>, et exprimant quelque chose dans une
+            <a href="http://www.w3.org/Translations/WCAG20-fr/#human-langdef"
+            class="termref">langue</a> donnée</p>
+          </dd>
+<dt class="label">
+          <a name="images-of-textdef" id="images-of-textdef">
+          </a>texte sous forme d'image</dt>
+          <dd>
+            <p>texte qui est restitué sous une forme non textuelle (par exemple une image) dans le but de permettre un effet visuel particulier</p>
+            <div class="note">
+              <p class="prefix"><em>Note&nbsp;:</em> cela n'inclut pas le
+              <a href="http://www.w3.org/Translations/WCAG20-fr/#textdef"
+              class="termref">texte</a> qui est une partie d'une image qui contient d'autres contenus visuels signifiants.</p>
+            </div>
+            <div class="example"><p class="prefix">
+              <em>Exemple&nbsp;:</em> le nom d'une personne sur un badge dans une photographie.</p>
+            </div>
+</dd>
+</dl>
+      </div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.5 [Texte sous forme d'image]" href="visual-audio-contrast-text-presentation.html"><strong>Précédent&nbsp;: </strong>SC  1.4.5 [Texte sous forme d'image]</a></li><li><a title="Comprendre le CS 1.4.7 [Arrière-plan sonore de faible volume ou absent]" href="visual-audio-contrast-noaudio.html"><strong>Suivant&nbsp;: </strong>SC 1.4.7 [Arrière-plan sonore de faible volume ou absent]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.3.1  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 2.3 [Crises]" href="seizure.html"><strong>Précédent&nbsp;: </strong>Règle 2.3 [Crises]</a></li><li><a title="Comprendre le CS 2.3.2 [Trois flashs]" href="seizure-three-times.html"><strong>Suivant&nbsp;: </strong>Cs 2.3.2 [Trois flashs]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#seizure-does-not-violate-intent-head">Objectif</a></li><li><a href="#seizure-does-not-violate-examples-head">Exemples</a></li><li><a href="#seizure-does-not-violate-resources-head">Ressources liées</a></li><li><a href="#seizure-does-not-violate-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="seizure-does-not-violate" id="seizure-does-not-violate"> </a><strong>Pas plus de trois flashs ou
+sous le seuil critique</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 2.3.1</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#seizure-does-not-violate">2.3.1</a> Pas plus de trois flashs ou
+sous le seuil critique&nbsp;:</strong>
+une <a href="#webpagedef" class="termref">page Web</a> doit être exempte de tout
+élément qui flashe plus de trois fois dans n'importe quel intervalle d'une
+seconde ou ce <a href="#flash-def" class="termref">flash</a> doit se situer sous le <a href="#general-thresholddef" class="termref">seuil de flash générique et le
+seuil de flash rouge</a>.
+(Niveau A)
+</p><div class="note"><p class="prefix"><em>Note&nbsp;: </em>puisque tout contenu ne satisfaisant pas à
+ce critère de succès peut interférer avec la capacité de l'utilisateur à
+exploiter la page entière, tout le contenu présent dans la page Web (qu'il
+soit utilisé pour satisfaire à d'autres critères de succès ou non) doit
+satisfaire à ce critère de succès. Voir l'<em><a href="http://www.w3.org/Translations/wcag20-fr/#cc5">exigence de
+conformité 5&nbsp;: Non-interférence</a></em>.</p></div></div></blockquote><div class="intent"><h2 id="seizure-does-not-violate-intent-head" class="section">
+Objectif de ce critère de succès</h2><p>L'objectif de ce critère de succès est de permettre à l'utilisateur d'accéder au contenu complet d'un site sans causer des crises dûes à la photosensibilité.</p><p>Les personnes sujettes à des crises  causées par la photosensibilité peuvent avoir une crise causée par du contenu qui flashe à certaines fréquences pour plus de quelques flashs. Les personnes sont même plus sensibles au flash rouge qu'à d'autres couleurs, ainsi un test spécifique est proposé pour un flash de rouge saturé. Ces règles se basent sur des règles en vigueur dans l'industrie de la télévision adaptées aux écrans d'ordinateurs, devant lesquels le contenu
+est visionné à une distance plus courte (avec un angle de vision plus grand). </p>
+
+<p>Le flash peut être causé par l'affichage, par l'ordinateur restituant le contenu ou par le contenu restitué. L'auteur ne peut pas contrôler les deux premiers. Ils peuvent être réglés par la conception et la vitesse de l'affichage et de l'ordinateur. L'objectif de ce critère est d'assurer que le scintillement qui dépasse le seuil de flash n'est pas causé par le contenu lui-même. Par exemple, le contenu pourrait inclure un clip vidéo ou une image animée d'une série de flashs stroboscopiques ou des gros plans d'explosions à tir rapide. </p>
+<p>Ce critère de succès remplace un critère beaucoup plus restrictif des WCAG 1.0 qui ne permettait aucun flash (même d'un seul pixel) dans une large gamme de fréquence (3 à 50 Hz). Ce critère de succès est basé sur les spécifications existantes utilisées au Royaume-Uni et ailleurs pour la diffusion de la télévision et qui ont été adaptées à la visualisation sur un écran d'ordinateur. L'écran 1024 x 768 est utilisé comme la résolution d'écran de référence pour l'évaluation. Le bloc de pixel 341 x 256 représente un espace de restitution de 10 degrés à une distance habituelle de visualisation. (Le champ de 10 degrés est issu des spécifications originales et représente la partie de vision centrale de l'oeil où les gens sont plus sujets à des stimuli à la lumière.)</p>
+
+<p>La zone combinée de flashs qui se produisent simultanément et de façon contiguë signifie la zone totale qui flashe en même temps. Elle est calculée en additionnant la zone contiguë qui flashe simultanément dans un angle de vision de 10 degrés.</p>
+
+<div class="note"><p class="prefix"><em>Note&nbsp;: </em>les termes «&nbsp;clignotement&nbsp;» et «&nbsp;flash&nbsp;» peuvent parfois se référer au même contenu.</p>
+
+<ul><li><p>Le «&nbsp;clignotement&nbsp;» fait référence au contenu qui entraîne un problème de distraction. Le clignotement peut être permis pour une courte période dans la mesure où il s'arrête (ou peut être arrêté)</p>
+
+</li><li><p>Le «&nbsp;flash&nbsp;» fait référence au contenu qui peut déclencher une crise (s'il y en a plus de trois par seconde et s'ils sont assez larges et lumineux). Cela ne peut pas être permis, même pour une seconde, sinon il pourrait provoquer une crise. Et le fait d'arrêter le flash n'est pas non plus une option, puisque la crise peut se déclarer avant que la plupart des utilisateurs n'aient le temps
+d'arrêter le flash.</p>
+
+</li><li><p>Le clignotement ne se produit généralement pas à une vitesse de trois ou plus par seconde, mais cela est possible. Si le clignotement est plus rapide que 3 par seconde, il serait aussi considéré comme un flash.</p>
+</li></ul></div><div class="benefits">
+
+<h3 id="seizure-does-not-violate-129-head" class="div3head">
+	Avantages spécifiques du critère de succès 2.3.1&nbsp;:
+</h3>
+
+<ul><li><p>Les personnes sujettes à des crises en visualisant du contenu flashant pourront voir tout le contenu d'un site sans avoir de crise et sans avoir à perdre toute l'expérience du contenu en étant limitées aux équivalents textuels. Cela comprend les personnes ayant une épilepsie photosensible ainsi que d'autres troubles provoquant des crises photosensibles. </p></li></ul></div></div>
+
+<div class="div3"><h2 id="seizure-does-not-violate-examples-head" class="section">
+Exemples pour le critère de succès 2.3.1</h2>
+<ul><li><p>
+Un site Web contient la vidéo d'une gueule de mitraillette mais limite la taille de l'image flashante à une petite portion de l'écran au-dessous de la taille du seuil de flash.
+</p>
+
+</li><li><p>Un film contenant une scène comprenant des flashs d'une grande luminosité est affiché de façon à ce que la luminosité ne flashe que trois fois dans un intervalle d'une seconde.
+</p></li></ul>
+
+</div><div class="resources"><h2 id="seizure-does-not-violate-resources-head" class="section">
+Ressources liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul><li><p><a hreflang="en" href="http://www.hardingfpa.com/">Le site Web de Harding FPA </a>
+(en anglais)</p></li><li><p>
+<a hreflang="en" lang="en" xml:lang="en" href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</a>
+– l'outil d'analyse de l'épilepsie due à la photosensibilité du <span lang="en" xml:lang="en">Trace Center </span> (en anglais). </p></li><li><p>
+<a hreflang="en" xml:lang="en" lang="en" href="http://trace.wisc.edu/peat/photosensitive.php">Information about Photosensitive Seizure Disorders</a> – informations en anglais sur les crises causées par la photosensibilité.</p></li><li><p>
+<a hreflang="en" xml:lang="en" lang="en" href="http://www.epilepsy.org.uk">Epilepsy Action</a> – site britannique à propos de l'épilepsie.
+</p></li><li><p>
+<a hreflang="en" xml:lang="en" lang="en" href="http://www.epilepsyfoundation.org/about/photosensitivity/">Epilepsy Foundation</a> – site en anglais de la fondation pour l'épilepsie.</p></li><li><p>
+<a hreflang="en" lang="en" xml:lang="en" href="http://www.ofcom.org.uk/static/archive/itc/itc_publications/codes_guidance/flashing_images/index.asp.html">ITC Guidance Note for Licensees on Flashing Images and Regular Patterns in Television</a> – Note d'information en anglais sur les images qui flashent et les modèles en usage à la télévision.
+</p></li></ul>
+</div><div class="div3"><h2 id="seizure-does-not-violate-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 2.3.1 - Pas plus de trois flashs ou
+sous le seuil critique</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="seizure-does-not-violate-130-head" class="div3head">
+Techniques suffisantes</h3>
+<ol class="enumar"><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G19">G19&nbsp;: S'assurer qu'aucun composant du contenu ne flashe plus de 3 fois dans une même période d'une seconde (en anglais) </a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G176">G176&nbsp;: Garder la zone de flash suffisamment petite (en anglais) </a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G15">G15&nbsp;: Utiliser un outil pour s'assurer que le contenu ne viole pas le seuil de flash générique ou le seuil de flash rouge (en anglais) </a></p></li></ol></div>
+<div class="boxed"><h3 id="seizure-does-not-violate-131-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 2.3.1</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul><li><p>Réduire le contraste pour tout contenu flashant (lien à venir)</p></li>
+<li><p>Éviter les rouges entièrement saturés pour tout contenu flashant (lien à venir)   </p></li>
+<li><p>Réduire le nombre de flashs même si le seuil critique n'est pas dépassé (lien à venir)</p></li>
+<li><p>Fournir un mécanisme pour supprimer tout contenu flashant avant qu'il débute (lien à venir)</p></li>
+<li><p>Ralentir un contenu en direct pour éviter des flashs rapides (comme avec une ampoule de flash) (lien à venir)</p></li>
+<li><p>Figer une image momentanément si 3 flashs par seconde sont détectés (lien à venir)</p></li>
+<li><p>Réduire le niveau de contraste si 3 flashs par seconde sont détectés (lien à venir)</p></li>
+<li><p>Permettre à l'utilisateur de définir une fréquence de flash maximum (lien à venir)</p></li></ul></div>
+<div class="boxed"><h3 id="seizure-does-not-violate-132-head" class="div3head">
+Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 2.3.1</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.3.1.</p><p>(Aucun échec n'est actuellement documenté)</p></div></div>
+<div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms"><dt class="label"><a name="flash-def" id="flash-def"> </a>flash</dt>
+<dd><p>alternance de <a href="http://www.w3.org/translations/wcag20-fr/#relativeluminancedef" class="termref">luminosité relative</a> qui
+      peut causer des crises chez certaines personnes si leur taille est
+      suffisamment importante dans une gamme de fréquences spécifiques</p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>voir <a href="http://www.w3.org/Translations/wcag20-fr/#general-thresholddef" class="termref">seuil
+      de flash générique et seuil de flash rouge</a> pour plus d'informations
+      sur les types de flashs qui ne sont pas autorisés.</p>
+<p class="prefix"><em>Note 2&nbsp;:
+</em>voir aussi <a href="http://www.w3.org/Translations/wcag20-fr/#blinksdef" class="termref">clignotement</a>.</p></div>
+</dd>
+<dt class="label"><a name="webpagedef" id="webpagedef"> </a>Page Web</dt>
+<dd><p>
+une ressource autonome obtenue depuis un URI unique grâce au
+protocole HTTP, accompagnée de toutes les autres ressources utilisées
+dans la restitution ou conçues pour être restituées simultanément par
+un <a href="http://www.w3.org/translations/wcag20-fr/#useragentdef" class="termref">agent utilisateur</a>
+ </p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>bien que toutes les «&nbsp;autres
+ressources&nbsp;» seraient restituées avec la ressource primaire, elles ne
+sont pas nécessairement restituées simultanément.</p>
+<p class="prefix"><em>Note 2&nbsp;:
+</em>à des fins de conformité avec ces
+règles, une ressource doit être autonome à l'intérieur du périmètre
+de conformité pour être considérée comme une page Web.</p></div>
+<div class="example"><p class="prefix"><em>Exemple 1&nbsp;:
+</em>une ressource Web incluant toutes
+les images et médias liés.</p>
+<p class="prefix"><em>Exemple 2&nbsp;:
+</em>un programme Web de courrier
+électronique (Webmail) développé à l'aide d'AJAX (<span xml:lang="en"
+lang="en">Asynchronous JavaScript and XML</span>, JavaScript asynchrone
+et XML). Le programme réside intégralement à l'adresse
+http://exemple.com/mail, mais comprend une boîte de réception, un
+carnet d'adresses et un calendrier. Des liens et des boutons permettent
+d'afficher la boîte de réception, les contacts ou le calendrier, mais
+ne changent pas globalement l'URI de la page. </p>
+<p class="prefix"><em>Exemple 3&nbsp;:
+</em>un site portail personnalisable,
+dans lequel les utilisateurs peuvent choisir le contenu à afficher à
+partir d'un ensemble de modules de contenu.</p>
+<p class="prefix"><em>Exemple 4&nbsp;:
+</em>quand on saisit
+«&nbsp;http://shopping.exemple.com/&nbsp;» dans son navigateur, on entre dans
+un environnement commercial animé et interactif dans lequel on se
+déplace visuellement dans une boutique, retirant les produits
+directement depuis les rayons pour les placer dans un panier d'achat face
+à soi. Cliquer sur un produit déclenche une démonstration avec la
+fiche technique juste à côté. Cela peut être un site Web à page
+unique ou simplement une page à l'intérieur d'un site Web.</p></div></dd>
+<dt class="label"><a name="general-thresholddef" id="general-thresholddef"> </a>seuil de flash générique et seuil de flash
+rouge</dt>
+<dd><p>un <a href="http://www.w3.org/Translations/wcag20-fr/#flash-def" class="termref">flash</a> ou une séquence d'images changeant
+rapidement est en dessous du seuil de flash (c'est-à-dire que le contenu
+est <strong>conforme</strong>) si l'une des conditions suivantes est
+satisfaite&nbsp;:</p>
+<ol class="enumar"><li><p>il n'y a pas plus de trois <strong>flashs génériques
+</strong>et pas plus de trois <strong>flashs rouges</strong> par
+seconde&nbsp;; ou</p></li>
+<li><p>la surface d'affichage combinée des flashs simultanés ne
+représente pas plus de 0,006 stéradian dans chaque champ visuel de
+10 degrés sur l'écran (soit 25% de chaque champ visuel de 10
+degrés sur l'écran) à une distance habituelle de visualisation</p></li></ol>
+<p> où&nbsp;:</p>
+<ul><li><p>un <strong>flash générique </strong>est défini comme une
+alternance de <a href="http://www.w3.org/Translations/wcag20-fr/#relativeluminancedef" class="termref">luminosité relative</a> de 10% ou plus par rapport à la luminosité relative maximum, où la
+luminosité relative de l'image la plus sombre est en dessous de 0,80
+et où «&nbsp;une alternance&nbsp;» est définie comme étant une
+augmentation suivie d'une diminution ou une diminution suivie d'une
+augmentation, et</p></li>
+
+<li><p>un <strong>flash rouge</strong> est défini comme toute
+alternance de transition impliquant un rouge saturé.</p></li></ul>
+<p><em>Exception&nbsp;:</em> Le flash qui suit un modèle précis et
+équilibré comme du bruit blanc ou un modèle de damier alterné avec
+des «&nbsp;carrés&nbsp;» dont les côtés font moins de 0,1 degré (du champ
+visuel à une distance habituelle de visualisation) ne dépasse pas le
+seuil de flash.</p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;:
+</em>pour les logiciels ou le contenu
+Web, un rectangle de 341 x 256 pixels n'importe où sur la surface d'affichage de l'écran, quand la résolution est à 1024 x 768 pixels, fournit une bonne estimation de ce que représente 10 degrés du champ
+visuel sur l'écran pour un écran et une distance habituelle de visualisation (par exemple des écrans de 38 à 43 centimètres (15 à 17 pouces) à une distance de 55 à 65 centimètres (22-26 pouces)). (Un affichage à une résolution supérieure du même contenu produirait des images plus petites et plus sûres, c'est pourquoi des résolutions
+inférieures sont utilisées pour définir le seuil.)</p>
+<p class="prefix"><em>Note 2&nbsp;:
+</em>une transition est le changement,
+      dans un temps donné, de luminosité relative (ou de luminosité relative
+      ou de couleur pour le flash rouge) entre les pics et les creux adjacents
+      dans un ensemble de mesures de luminosité relative (ou de luminosité
+      relative ou de couleur pour le flash rouge)</p>
+<p class="prefix"><em>Note 3&nbsp;:
+</em> la définition couramment utilisée
+dans le domaine pour <strong>«&nbsp;deux transitions opposées de rouge
+saturé&nbsp;»</strong> est&nbsp;: pour chacun ou tous les états impliqués
+dans chacune des transitions, R/(R+ G + B) &gt;= 0,8, et le changement
+dans la valeur de (R-G-B)x320 est &gt; 20 (les valeurs négatives de
+(R-G-B)x320 sont considérées comme nulles) pour chacune des
+transitions. Les valeurs R, G, B se classent entre 0 et 1 tel que
+spécifié dans la définition de «&nbsp;luminosité relative&nbsp;». <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#HARDING-BINNIE">[HARDING-BINNIE]</a></p>
+<p class="prefix"><em>Note 4&nbsp;:
+</em>des outils sont disponibles pour
+effectuer l'analyse depuis des captures vidéos. Cependant, aucun outil
+n'est nécessaire pour évaluer cette condition si le flash est
+inférieur ou égal à 3 flashs par seconde. Le contenu est
+automatiquement conforme (voir #1 et #2 ci-dessus).</p></div></dd></dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 2.3 [Crises]" href="seizure.html"><strong>Précédent&nbsp;: </strong>Règle 2.3 [Crises]</a></li><li><a title="Comprendre le CS 2.3.2 [Trois flashs]" href="seizure-three-times.html"><strong>Suivant&nbsp;: </strong>Cs 2.3.2 [Trois flashs]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

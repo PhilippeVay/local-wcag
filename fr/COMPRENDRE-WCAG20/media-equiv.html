@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>Comprendre la règle 1.2  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.1.1 [Contenu non textuel]" href="text-equiv-all.html"><strong>Précédent&nbsp;: </strong>CS  1.1.1 [Contenu non textuel]</a></li><li><a title="Comprendre le CS  1.2.1 [Contenu seulement audio ou vidéo (pré-enregistré)]" href="media-equiv-av-only-alt.html"><strong>Suivant&nbsp;: </strong>CS 1.2.1 [Contenu seulement audio ou vidéo (pré-enregistré)]</a></li></ul><div class="mainbody">
+<div class="navtoc">
+            <p>Sur cette page&nbsp;: </p>
+<ul id="navbar"><li><a href="#media-equiv">Objectif</a></li>
+            <li><a href="#media-equiv">Techniques recommandées</a></li>
+            <li><a href="#media-equiv-sc">Critères de succès</a></li>
+            </ul></div>
+<div class="div1"><div class="skiptarget">
+            <a id="maincontent">-</a></div>
+<h1><a name="media-equiv" id="media-equiv"> </a><strong>Média temporel</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre la règle 1.2</h1>
+            <blockquote class="glquote"><div>
+            <p><strong>Règle 1.2&nbsp;: </strong>proposer des versions de remplacement aux médias temporels.</p></div></blockquote>
+            <div class="div2"> <h2 class="section"><a name="media-equiv-intent" id="media-equiv-intent"> </a>Objectif de la règle 1.2</h2>
+		<p>Le but de cette règle est d'assurer l'accès aux médias temporels et aux médias synchronisés. Cela inclut un média qui est&nbsp;:</p>
+		<ul><li><p>seulement audio </p></li>
+		<li><p>seulement vidéo </p></li>
+		<li><p>audio et vidéo </p></li>
+		<li><p>audio et/ou vidéo combiné avec de l'interactivité </p></li></ul>
+		<p>Pour faciliter le travail des auteurs pour déterminer rapidement quel critère de succès s'applique à leur contenu,
+
+		le type de média pour lequel chaque critère de succès s'applique est inclus dans son nom abrégé. </p>
+		<p>Pour un média <strong>seulement audio</strong> ou <strong>seulement vidéo</strong>, vous n'aurez besoin que d'appliquer le critère de succès qui stipule «&nbsp;<strong>seulement audio</strong>&nbsp;» ou «&nbsp;<strong>seulement vidéo</strong>&nbsp;» dans le nom abrégé.
+
+		 Si votre média n'est ni <strong>seulement audio</strong> ni <strong>seulement vidéo</strong>, alors tous les autres critères de succès s'appliquent.</p>
+		 <p>Un média peut être aussi <strong>en direct</strong> ou <strong>pré-enregistré</strong>.
+		 Chaque nom abrégé d'un critère de succès indique clairement s'il s'applique à un média <strong>en direct</strong> ou <strong>pré-enregistré</strong>. </p>
+		 <p><b>Un média synchronisé</b> est défini dans le glossaire comme&nbsp;:</p>
+		 <dl><dt class="label"><a name="synchronizedmediadef" id="synchronizedmediadef"> </a>média synchronisé</dt>
+		 <dd><p>flux <a  href="http://www.w3.org/Translations/WCAG20-fr/#audiodef" class="termref">audio</a> ou <a  href="http://www.w3.org/Translations/WCAG20-fr/#videodef" class="termref">vidéo</a> synchronisé avec un autre format pour présenter de l'information et/ou comportant des composants temporels interactifs, à moins que le média soit un <a  href="http://www.w3.org/Translations/WCAG20-fr/#multimedia-alt-textdef" class="termref">média de remplacement pour un texte</a> clairement identifié comme telle</p></dd></dl>
+      <p>Notez qu'un fichier audio accompagné d'interactivité est traité ici, tout
+comme un fichier seulement vidéo qui implique de l'interaction. Ils
+sont traités ici, car l'interactivité doit avoir lieu à un instant
+particulier. Avoir une transcription textuelle disant, «&nbsp;Pour plus
+ d'information, cliquer maintenant,&nbsp;» ne serait pas très utile puisque le
+lecteur ne saurait pas quand le flux audio disait «&nbsp;maintenant&nbsp;». En
+conséquence, des sous-titres synchronisés seront nécessaires.</p>
+       <p>Parfois, il y a tellement de dialogues que l'audio-description ne peut pas s'intégrer dans les pauses au sein du dialogue. L'option, pour le
+niveau A, de fournir une version de remplacement pour un média temporel plutôt
+qu'une audio-description pour un média synchronisé, permettra d'accéder
+à toute l'information dans le média synchronisé. Cette option permettra
+également l'accès à l'information visuelle sous une forme non visuelle
+lorsque l'audio-description n'est pas fournie pour d'autres raisons.</p>
+       <p>Pour un média synchronisé incluant une interaction, les éléments interactifs
+(par exemple, les liens) peuvent être insérés dans la version de remplacement du
+média temporel. </p>
+       <p>Cette règle inclut également (au niveau AAA) une interprétation en langue des signes pour un média
+synchronisé tout comme une approche appelée audio-description étendue.
+Lors d'une audio-description étendue, la vidéo est périodiquement gelée
+pour permettre d'ajouter davantage de contenu à l'audio-description par
+rapport à la capacité offerte par les pauses existantes du dialogue.
+C'est un cas où les critères de succès d'un niveau plus élevé sont basés sur
+les exigences d'un critère de succès de niveau inférieur dans
+l'intention d'avoir des exigences cumulatives, progressivement plus
+importantes.</p></div>
+<div class="div2"> <h2 class="section"><a name="media-equiv-advisory" id="media-equiv-advisory"> </a>Techniques recommandées pour la règle 1.2 (sans rattachement à un critère de succès spécifique)</h2>
+<div class="textbody"><p>Les techniques spécifiques pour satisfaire à
+chaque critère de succès de cette règle sont listées dans les sections
+Comprendre de chaque critère de succès (énumérés ci-dessous).
+Cependant, si des techniques permettant de traiter cette règle ne se
+rapportent à aucun critère de succès, elles sont listées ici. Ces
+techniques ne sont pas requises ou suffisantes pour satisfaire à un
+critère de succès, mais peuvent rendre certains types de contenus Web
+plus accessibles à un plus grand nombre de personnes.</p>
+ <ul><li>Toutes les techniques recommandées pour cette règle sont rattachées à un critère de succès spécifique et sont listées ci-dessous.</li></ul></div></div>
+ <hr/>
+ <h2 id="media-equiv-sc" class="section">Critères de succès pour cette règle&nbsp;: </h2>
+ <ul><li><a href="media-equiv-av-only-alt.html">
+Comprendre le critère de succès 1.2.1  [Seulement audio ou vidéo (pré-enregistré)]
+
+	</a></li><li><a href="media-equiv-captions.html">
+Comprendre le critère de succès 1.2.2  [Sous-titres (pré-enregistrés)]
+
+	</a></li><li><a href="media-equiv-audio-desc.html">
+Comprendre le critère de succès 1.2.3  [Audio-description ou version de remplacement  pour un média temporel (pré-enregistré)]
+
+	</a></li><li><a href="media-equiv-real-time-captions.html">
+Comprendre le critère de succès 1.2.4  [Sous-titres (en direct)]
+
+	</a></li><li><a href="media-equiv-audio-desc-only.html">
+Comprendre le critère de succès 1.2.5  [Audio Description (pré-enregistrée)]
+
+	</a></li><li><a href="media-equiv-sign.html">
+Comprendre le critère de succès 1.2.6  [Langue des signes (pré-enregistrée)]
+
+	</a></li><li><a href="media-equiv-extended-ad.html">
+Comprendre le critère de succès 1.2.7  [Audio-description étendue (pré-enregistrée)]
+
+	</a></li><li><a href="media-equiv-text-doc.html">
+Comprendre le critère de succès 1.2.8  [Version de remplacement pour un média temporel (pré-enregistrée)]
+
+	</a></li><li><a href="media-equiv-live-audio-only.html">
+Comprendre le critère de succès 1.2.9  [Seulement audio (en direct)]
+	</a></li></ul></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.1.1 [Contenu non textuel]" href="text-equiv-all.html"><strong>Précédent&nbsp;: </strong>CS 1.1.1 [Contenu non textuel]</a></li><li><a title="Comprendre le CS 1.2.1 [Contenu seulement audio ou vidéo (pré-enregistré)]" href="media-equiv-av-only-alt.html"><strong>Suivant&nbsp;: </strong>CS 1.2.1 [Contenu seulement audio ou vidéo (pré-enregistré)]</a></li></ul></div><div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

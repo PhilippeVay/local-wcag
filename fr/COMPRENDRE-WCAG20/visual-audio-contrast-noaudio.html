@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.4.7  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.6 [Contraste (amélioré)]" href="visual-audio-contrast7.html"><strong>Précédent&nbsp;: </strong>SC  1.4.6 [Contraste (amélioré)]</a></li><li><a title="Comprendre le CS 1.4.8 [Présentation visuelle]" href="visual-audio-contrast-visual-presentation.html"><strong>Suivant&nbsp;: </strong>SC 1.4.8 [Présentation visuelle]</a></li></ul>
+<div class="navtoc">
+<p>Sur cette page&nbsp;:</p>
+<ul id="navbar">
+<li><a href="#visual-audio-contrast-noaudio-intent-head">Objectif</a></li>
+<li><a href="#visual-audio-contrast-noaudio-examples-head">Exemples</a></li>
+<li><a href="#visual-audio-contrast-noaudio-resources-head">Ressources liées</a></li>
+<li><a href="#visual-audio-contrast-noaudio-techniques-head">Techniques et échecs</a></li>
+<li><a href="#key-terms">Mots clés</a></li>
+        </ul>
+      </div>
+      <div class="skiptarget"><a id="maincontent" name="maincontent">-</a></div>
+      <h1><a name="visual-audio-contrast-noaudio" id="visual-audio-contrast-noaudio"></a><strong>Arrière-plan sonore de faible volume ou absent</strong><span class="screenreader">&nbsp;:</span><br />
+        Comprendre le <abbr title="critère de succès">CS</abbr> 1.4.7</h1>
+      <blockquote class="scquote">
+        <div>
+          <p class="sctxt"><strong class="sc-handle"><a href=
+            "http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-noaudio">1.4.7</a>
+            Arrière-plan sonore de faible volume ou absent&nbsp;:</strong> pour un contenu <a href="#audio-onlydef" class="termref">seulement audio</a>
+			<a href="#prerecordeddef" class="termref">pré-enregistré</a>
+            qui (1) contient principalement de la parole au premier plan, (2) n'est pas un
+            <a href="#CAPTCHAdef" class="termref">CAPTCHA</a> ou un logo sonore et (3) qui n'est pas une vocalisation dont l'intention est principalement d'être musicale comme une chanson ou un rap, au moins l'une des conditions suivantes est vraie&nbsp;: (Niveau AAA)
+          </p>
+          <ul>
+<li><p><strong class="sc-handle">Sans arrière-plan&nbsp;:</strong> le contenu audio ne contient pas d'arrière-plan sonore.</p></li>
+<li><p><strong class="sc-handle">Désactivation&nbsp;:</strong> l'arrière-plan sonore peut être désactivé.</p></li>
+<li><p><strong class="sc-handle">20 dB&nbsp;:</strong> l'arrière-plan sonore est au moins 20 décibels plus faible que le contenu parlé au premier plan sauf pour certains effets sonores occasionnels durant seulement une ou deux secondes.</p>
+              <div class="note"><p class="prefix"><em>Note&nbsp;:</em> par la définition du «&nbsp;décibel&nbsp;», le volume de l'arrière-plan sonore correspondant à cette exigence est approximativement quatre fois plus faible que le contenu parlé au premier plan. </p></div>
+</li>
+</ul>
+</div>
+</blockquote>
+      <div class="intent"><h2 id="visual-audio-contrast-noaudio-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est de s'assurer que tous les sons qui ne sont pas de la parole soient suffisamment faibles pour que l'utilisateur qui est malentendant puisse séparer les paroles des fonds sonores ou d'autres contenus parlés de premier plan.</p>
+<p>La valeur de 20 dB a été choisie d'après <span xml:lang="en" lang="en">Large area assistive listening systems (ALS): Review and recommendation</span> (analyse et recommandations pour les systèmes
+d'assistance auditive, applicables aux lieux de grandes dimensions) <a href="appendixD.html#LAALS">[LAALS]</a> et <span xml:lang="en" lang="en">In-the-ear measurements of interference in hearing aids from digital wireless telephones</span> (Mesures intra-auriculaires des interférences dans les aides auditives, provoquées par les téléphones numériques sans fil) (<a href="appendixD.html#HEARING-AID-INT">[HEARING-AID-INT]</a>
+        </p>
+        <div class="benefits"><h3 id="visual-audio-contrast-noaudio-88-head" class="div3head">
+            Avantages spécifiques du critère de succès 1.4.7&nbsp;:</h3>
+          <ul>
+<li><p>Les personnes qui sont malentendantes ont souvent de grandes difficultés à séparer la parole de l'arrière-plan sonore.</p></li>
+</ul>
+</div>
+      </div>
+      <div class="div3"><h2 id="visual-audio-contrast-noaudio-examples-head" class="section">Exemples pour le critère de succès 1.4.7</h2>
+<p>(Aucun exemple n'est actuellement documenté)</p>
+      </div>
+      <div class="resources"><h2 id="visual-audio-contrast-noaudio-resources-head" class="section">Ressources liées</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels</a> – À propos des décibels (en anglais)</p></li>
+</ul>
+      </div>
+      <div class="div3"><h2 id="visual-audio-contrast-noaudio-techniques-head" class="section">Techniques et échecs pour le critère de succès 1.4.7 - Arrière-plan sonore de faible volume ou absent</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="visual-audio-contrast-noaudio-89-head" class="div3head">Techniques suffisantes</h3>
+          <ol class="enumar">
+            <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G56">G56&nbsp;: Mixer des fichiers audio de manière à ce que les sons sans parole soient d'au moins 20 décibels plus faibles que le contenu audio parlé (en anglais)</a></p></li>
+</ol>
+        </div>
+<div class="boxed"><h3 id="visual-audio-contrast-noaudio-90-head" class="div3head">Techniques (recommandées) supplémentaires pour 1.4.7</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+          <ul>
+<li><p>Fournir à l'utilisateur une façon d'ajuster indépendemment les niveaux sonores du premier plan et de l'arrière-plan (lien à venir)</p></li>
+<li><p>Fournir une piste sonore pour un média syncrhonisé incluant des sons d'arrière-plan qui sont au moins 20 décibels plus faibles que la parole (lien à venir)</p></li>
+          </ul>
+        </div>
+        <div class="boxed"><h3 id="visual-audio-contrast-noaudio-91-head" class="div3head">Échecs fréquents pour le <abbr title="critères de succès">CS</abbr> 1.4.7</h3>
+<p>Le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.4.7.</p>
+<p>(Aucun échec n'est actuellement documenté)</p>
+        </div>
+      </div>
+      <div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+        <dl class="keyterms">
+<dt class="label">
+<a name="CAPTCHAdef" id="CAPTCHAdef"></a>CAPTCHA
+          </dt>
+          <dd>
+            <p>sigle de <span xml:lang="en" lang="en">«&nbsp;Completely Automated Public Turing test to tell Computers and Humans Apart&nbsp;»</span> (test public de Turing entièrement automatique ayant pour but de distinguer les humains des ordinateurs)
+            </p>
+            <div class="note"><p class="prefix">
+                <em>Note 1&nbsp;:</em> les tests de type CAPTCHA demandent souvent à l'utilisateur de taper un texte présenté dans une image ou un extrait audio déformés.
+              </p>
+              <p class="prefix"><em>Note 2&nbsp;:</em> un test de Turing est tout système de tests conçu pour distinguer un humain d'un ordinateur. Il est nommé en l'honneur du célèbre informaticien Alan Turing. Ce terme a été popularisé par les chercheurs de l'Université <span xml:lang="en" lang="en">Carnegie Mellon</span>. <a href="http://www.w3.org/Translations/WCAG20-fr/#CAPTCHA">[CAPTCHA]</a>
+              </p>
+            </div>
+          </dd>
+<dt class="label">
+            <a name="prerecordeddef" id="prerecordeddef"></a>pré-enregistré
+          </dt>
+          <dd>
+            <p>information qui n'est pas diffusée en <a href=
+              "http://www.w3.org/Translations/WCAG20-fr/#livedef" class="termref">direct</a></p>
+</dd>
+<dt class="label">
+            <a name="audio-onlydef" id="audio-onlydef"></a>seulement audio
+          </dt>
+          <dd>
+<p>une présentation temporelle qui contient seulement de l'<a href=
+              "http://www.w3.org/Translations/WCAG20-fr/#audiodef" class="termref">audio</a>
+              (sans <a href="http://www.w3.org/Translations/WCAG20-fr/#videodef" class=
+              "termref">vidéo</a> ni interaction)</p>
+</dd>
+</dl>
+</div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.6 [Contraste (amélioré)]" href="visual-audio-contrast7.html"><strong>Précédent&nbsp;: </strong>SC 1.4.6 [Contraste (amélioré)]</a></li><li><a title="Comprendre le CS 1.4.8 [Présentation visuelle]" href="visual-audio-contrast-visual-presentation.html"><strong>Suivant&nbsp;: </strong>SC 1.4.8 [Présentation visuelle]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

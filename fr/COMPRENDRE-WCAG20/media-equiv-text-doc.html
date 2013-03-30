@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.2.8  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (Appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.2.7 [Audio-description étendue (pré-enregistrée)]" href="media-equiv-extended-ad.html"><strong>Précédent&nbsp;: </strong>CS 1.2.7 [Audio-description étendue (pré-enregistrée)]</a></li><li><a title="Comprendre le CS 1.2.9 [Seulement audio (en direct)]" href="media-equiv-live-audio-only.html"><strong>Suivant&nbsp;: </strong>SC 1.2.9 [Seulement audio (en direct)]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;: </p><ul id="navbar"><li><a href="#media-equiv-text-doc-intent-head">Objectif</a></li><li><a href="#media-equiv-text-doc-examples-head">Exemples</a></li><li><a href="#media-equiv-text-doc-resources-head">Ressources liées</a></li><li><a href="#media-equiv-text-doc-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div>
+<div class="skiptarget"><a id="maincontent">-</a></div>
+
+<h1><a name="media-equiv-text-doc" id="media-equiv-text-doc"> </a>
+<strong>Version de remplacement pour un média temporel (pré-enregistrée)</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 1.2.8</h1>
+<blockquote class="scquote"><div><p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/WCAG20-fr/#media-equiv-text-doc">1.2.8</a> Version de remplacement pour un média temporel (pré-enregistrée)&nbsp;: </strong>
+fournir une <a href="#alt-time-based-mediadef" class="termref">version de remplacement pour un
+média temporel</a>, pour tout contenu de type <a href="#synchronizedmediadef" class="termref">média synchronisé</a> <a href="#prerecordeddef" class="termref">pré-enregistré</a> et pour tout média pré-enregistré <a href="#video-onlydef" class="termref">seulement vidéo</a>.
+(niveau AAA)</p></div></blockquote>
+<div class="intent"><h2 id="media-equiv-text-doc-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est de rendre le matériel
+audio-visuel disponible pour les personnes dont la vision est trop
+basse pour lire de manière fiable les <a href="http://www.w3.org/Translations/wcag20-fr/#captionsdef">sous-titres</a> et pour celles dont l'audition est trop faible pour entendre un dialogue de manière fiable ainsi que l'<a href="http://www.w3.org/Translations/wcag20-fr/#audiodescdef">audio-description</a>. Cela est rendu possible grâce à la mise à disposition d'une version de remplacement pour un média temporel.</p>
+<p>Cette approche nécessite de fournir toute l'information présente
+dans le média synchronisé (à la fois visuelle et sonore) sous forme
+de texte. Une version de remplacement pour un média temporel fournit
+une description, au fur et à mesure, de ce qui se produit dans le
+contenu du média synchronisé. La version de remplacement pour un média
+temporel se lit comme un livre. Contrairement à l'audio-description, la
+description d'une partie de la vidéo n'est pas limitée aux seules
+pauses dans le dialogue. Les descriptions complètes sont fournies pour
+toute information visuelle, y compris le contexte visuel, les actions
+et expressions des acteurs et les autres matériaux visuels. De plus,
+les sons hors dialogue (rires, voix off, etc.) sont décrits et les
+transcriptions de tout le dialogue sont incluses. L'enchaînement de la
+description et des transcriptions du dialogue sont identiques à
+l'enchaînement dans le média synchronisé. Par conséquent, la version de
+remplacement pour un média temporel peut fournir une représentation
+bien plus complète du contenu du média synchronisé que l'audio-description
+seule. </p>
+<p>S'il existe de l'interactivité dans la présentation sous forme de
+média synchronisé (par exemple&nbsp;: «&nbsp;Appuyer maintenant pour répondre à la
+question&nbsp;»), alors la version de remplacement pour un média temporel
+devrait fournir des hyperliens ou quoique ce soit qui puisse assurer la
+même fonctionnalité.</p>
+<p>Les personnes dont la vision est trop basse pour lire fidèlement les
+sous-titres et celles dont l'audition est trop faible pour entendre
+un dialogue de manière fiable peuvent accéder à la version de
+remplacement pour un média temporel en utilisant un afficheur braille
+éphémère.</p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;: </em>
+pour 1.2.3, 1.2.5, et 1.2.7, si toute l'information de la piste vidéo
+est déjà fournie dans la piste audio, aucune audio-description n'est
+nécessaire.</p>
+<p class="prefix"><em>Note 2&nbsp;: </em>
+1.2.3, 1.2.5, et 1.2.8 se recoupent quelque peu. Cela permet de
+donner à l'auteur un choix au niveau de conformité minimal et de
+fournir des exigences supplémentaires aux niveaux supérieurs. Au
+niveau A pour le critère de succès 1.2.3, les auteurs ont le choix de
+fournir soit, une audio-description, soit, une version de remplacement
+textuelle. S'ils veulent être conformes au niveau AA, pour le critère
+de succès 1.2.5, les auteurs doivent fournir une audio-description, une
+exigence déjà satisfaite s'ils choisissent cette alternative pour
+le 1.2.3, autrement c'est une exigence supplémentaire. Au niveau AAA,
+pour le critère de succès 1.2.8, ils doivent fournir une description
+textuelle étendue. C'est une exigence supplémentaire, si, à la fois,
+1.2.3 et 1.2.5 ont été satisfaits en fournissant seulement une
+audio-description. Si, toutefois, 1.2.3 est satisfait en fournissant
+une description textuelle et l'exigence 1.2.5 pour une
+audio-description est satisfaite, alors 1.2.8 ne rajoute pas de
+nouvelles obligations.</p></div>
+<div class="benefits"><h3 id="media-equiv-text-doc-41-head" class="div3head">Avantages spécifiques du critère de succès 1.2.3&nbsp;: </h3>
+<ul><li><p>Les personnes ne pouvant pas bien voir ou pas du tout et
+celles qui ne peuvent pas bien entendre ou pas du tout, peuvent accéder
+à l'information des présentations audio visuelles.</p></li></ul></div></div>
+
+<div class="div3"><h2 id="media-equiv-text-doc-examples-head" class="section">Exemples pour le critère de succès 1.2.8</h2>
+<ul><li><p><strong>Exemple 1. version de remplacement pour un média temporel d'une vidéo de formation</strong></p>
+<p>Un centre de loisir achète une vidéo de formation pour qu'elle soit
+utilisée par ses clients et la met sur l'intranet du centre. Cette
+vidéo implique une explication de l'utilisation d'une nouvelle
+technologie et montre une personne parlant et montrant des choses en
+même temps. Le centre de loisir fournit une version de remplacement pour
+un média temporel que tous ses clients, en incluant ceux qui ne
+peuvent ni voir les démonstrations, ni entendre les explications
+contenues dans le média synchronisé, peuvent utiliser pour mieux
+comprendre ce qui leur est présenté. </p></li></ul></div>
+
+<div class="resources"><h2 id="media-equiv-text-doc-resources-head" class="section">Ressources liées</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul><li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</a> – une liste des services de transcription proposée par uiAccess</p></li><li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</a> – les transcriptions textuelles sur le Web&nbsp;: permettre aux internautes d'accéder à vos podcasts et vos vidéos</p></li></ul>
+</div>
+<div class="div3"><h2 id="media-equiv-text-doc-techniques-head" class="section">Techniques et échecs pour le critère de succès 1.2.8 - version de remplacement pour un média temporel (pré-enregistrée)</h2>
+<p>Chaque élément numéroté dans cette section représente une technique
+ou une combinaison de techniques que le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym>
+considère comme suffisante pour satisfaire à ce critère de
+ succès. Les techniques énumérées satisfont le critère de succès
+seulement si toutes les <a href="http://www.w3.org/translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées. </p>
+<div class="boxed"><h3 id="media-equiv-text-doc-42-head" class="div3head">Techniques suffisantes</h3>
+<p class="instructions"><strong> Consignes&nbsp;:</strong> choisissez parmi
+les situations suivantes celle qui correspond à votre contenu. Chaque
+situation comprend des techniques ou des combinaisons de techniques qui
+sont connues et documentées comme suffisantes par rapport à cette
+situation. </p>
+<div><h4><a name="media-equiv-text-doc-situation-20-head" id="media-equiv-text-doc-situation-20-head"> </a>Situation A&nbsp;: si le contenu est un média synchronisé pré-enregistré&nbsp;:</h4>
+<ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G69">G69&nbsp;: Fournir une version de remplacement pour un média temporel (en anglais)</a> en utilisant l'une des techniques suivantes
+</p>
+<ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G58">G58&nbsp;: Placer un lien vers la version de remplacement d'un média temporel immédiatement après le contenu non textuel (en anglais)</a>
+</p></li>
+<li><p>
+Placer un lien vers la version de remplacement pour un média temporel en utilisant l'une des techniques suivantes
+</p>
+<ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H53">H53&nbsp;: Utiliser le corps de l'élément object (en anglais)</a>  (HTML)
+</p></li></ul>
+</li></ul>
+</li></ol>
+</div>
+<div><h4><a name="media-equiv-text-doc-situation-21-head" id="media-equiv-text-doc-situation-21-head"> </a>Situation B&nbsp;: si le contenu est vidéo seulement pré-enregistré&nbsp;:</h4>
+<ol class="enumar">
+<li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G159">G159&nbsp;: Fournir une version de remplacement pour un média temporel seulement vidéo (en anglais)</a>
+</p></li></ol>
+</div></div>
+<div class="boxed">
+<h3 id="media-equiv-text-doc-43-head" class="div3head">Techniques (recommandées) supplémentaires pour 1.2.8</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques
+ supplémentaires suivantes devraient être envisagées afin de rendre le
+contenu plus accessible. Toutes ces techniques ne peuvent pas être
+utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul><li><p>
+ <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H46">H46&nbsp;: Utiliser noembed avec embed (en anglais)</a>  (HTML)
+</p></li>
+<li><p>Fournir un script corrigé (lien à venir)</p></li>
+<li><p>Détailler l'audio-description (lien à venir)
+</p></li></ul>
+</div>
+<div class="boxed"><h3 id="media-equiv-text-doc-44-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 1.2.8</h3>
+<p>Le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère les erreurs
+ fréquentes suivantes comme des échecs du critère de succès 1.2.8.</p>
+ <ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F74">F74&nbsp;: Échec du critère de succès 1.2.2 et 1.2.8 consistant à ne pas étiqueter
+une version de remplacement à un texte comme telle (en anglais)</a>
+</p></li></ul>
+</div></div>
+<div class="div3">
+<h2 id="key-terms" class="terms">Mots clés</h2><dl class="keyterms">
+<dt class="label"><a name="multimedia-alt-textdef" id="multimedia-alt-textdef"></a>média de remplacement pour un texte</dt>
+<dd><p>média qui ne donne pas plus d'information que ce que donne le texte
+      (directement ou via un équivalent textuel)</p>
+      <div class="note">
+     <p class="prefix"><em>Note&nbsp;: </em>une version de remplacement pour un
+      texte est fournie à ceux qui bénéficient de représentations
+      équivalentes du texte. Les versions de remplacement de texte peuvent
+      n'être que seulement audio, que seulement vidéo (y compris la vidéo en
+      langue des signes) ou audio-vidéo.</p></div>
+</dd>
+
+<dt class="label"><a name="synchronizedmediadef" id="synchronizedmediadef"></a>média synchronisé</dt>
+<dd><p>flux <a href="http://www.w3.org/Translations/WCAG20-fr/#audiodef" class="termref">audio</a> ou <a href="http://www.w3.org/Translations/WCAG20-fr/#videodef" class="termref">vidéo</a> synchronisé avec un autre format pour présenter de l'information et/ou comportant des composants
+      temporels interactifs, à moins que le média soit un <a href="http://www.w3.org/Translations/WCAG20-fr/#multimedia-alt-textdef" class="termref">média de remplacement pour un texte</a> clairement identifié comme tel</p>
+</dd>
+<dt class="label"><a name="prerecordeddef" id="prerecordeddef"></a>pré-enregistré</dt>
+<dd><p>information qui n'est pas diffusée <a href="http://www.w3.org/Translations/WCAG20-fr/#livedef" class="termref">en direct</a></p>
+</dd>
+<dt class="label"><a name="videodef" id="videodef"></a>vidéo</dt>
+    <dd><p>la technologie des images ou photos en mouvement ou en séquence</p>
+    <div class="note">
+    <p class="prefix"><em>Note&nbsp;: </em>une vidéo peut être constituée
+    d'images fixes ou animées ou des deux.</p></div>
+</dd>
+</dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.2.7 [Audio-description étendue (pré-enregistrée)]" href="media-equiv-extended-ad.html"><strong>Précédent&nbsp;: </strong>CS 1.2.7 [Audio-description étendue (pré-enregistrée)]</a></li><li><a title="Comprendre le CS 1.2.9 [Seulement audio (en direct)]" href="media-equiv-live-audio-only.html"><strong>Suivant&nbsp;: </strong>CS 1.2.9 [Seulement audio (en direct)]</a></li></ul></div>
+ <div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

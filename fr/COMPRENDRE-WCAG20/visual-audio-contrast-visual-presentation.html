@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.4.8  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.7 [Arrière-plan sonore de faible volume ou absent]" href="visual-audio-contrast-noaudio.html"><strong>Précédent&nbsp;: </strong>SC 1.4.7 [Arrière-plan sonore de faible volume ou absent]</a></li><li><a title="Comprendre le CS 1.4.9 [Texte sous forme d'image (sans exception)]" href="visual-audio-contrast-text-images.html"><strong>Suivant&nbsp;: </strong>SC 1.4.9 [Texte sous forme d'image (sans exception)]</a></li></ul>
+<div class="navtoc">
+        <p>Sur cette page&nbsp;:</p>
+        <ul id="navbar">
+          <li><a href="#visual-audio-contrast-visual-presentation-intent-head">Objectif</a></li>
+          <li><a href="#visual-audio-contrast-visual-presentation-examples-head">Exemples</a></li>
+          <li><a href="#visual-audio-contrast-visual-presentation-resources-head">Ressources liées</a></li>
+          <li><a href="#visual-audio-contrast-visual-presentation-techniques-head">Techniques et échecs</a></li>
+<li><a href="#key-terms">Mots clés</a></li>
+</ul>
+      </div>
+      <div class="skiptarget"><a id="maincontent" name="maincontent">-</a>
+      </div>
+      <h1><a name="visual-audio-contrast-visual-presentation" id=
+        "visual-audio-contrast-visual-presentation"></a><strong>Présentation visuelle</strong><span class="screenreader">&nbsp;:</span><br />
+        Comprendre le <abbr title="critère de succès">CS</abbr> 1.4.8
+      </h1>
+<blockquote class="scquote">
+        <div>
+          <p class="sctxt"><strong class="sc-handle"><a href=
+            "http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-visual-presentation">
+            1.4.8</a> Présentation visuelle&nbsp;:</strong> pour la présentation visuelle des <a href="#blockstextdef" class="termref">blocs de texte</a>, un <a href="#mechanismdef" class=
+            "termref">mécanisme</a> est disponible permettant de réaliser ce qui suit&nbsp;: (Niveau AAA)
+</p>
+          <ol class="enumar">
+            <li><p>Les couleurs de premier plan et d'arrière-plan peuvent être choisies par l'utilisateur.</p></li>
+            <li><p>La largeur n'excède pas 80 caractères ou glyphes (40 si <acronym title="chinois, japonais ou coréen">CJK</acronym>).</p></li>
+            <li><p>Le texte n'est pas justifié (aligné simultanément à droite et à gauche).</p></li>
+            <li><p>L'espacement entre les lignes (interlignage) est d'une valeur d'au moins 1,5 dans les paragraphes et l'espacement entre les paragraphes est au moins 1,5 fois plus grand que la valeur de l'interligne.</p></li>
+            <li><p>La taille du texte peut être redimensionnée jusqu'à 200 pour cent sans l'aide d'une technologie d'assistance et sans que l'utilisateur soit obligé de faire défiler le texte horizontalement pour lire une ligne complète <a href="#fullscreenwindowdef" class="termref">dans une fenêtre plein écran</a>.</p></li>
+</ol>
+</div>
+      </blockquote>
+      <div class="intent"><h2 id="visual-audio-contrast-visual-presentation-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est de s'assurer que le texte rendu visuellement est présenté de telle manière qu'il puisse être perçu sans que sa mise en forme n'interfère avec sa lisibilité. Les personnes ayant des limitations cognitives, de troubles du langage et de l'apprentissage ainsi que certains utilisateurs avec une basse vision ne peuvent pas percevoir le texte et/ou peuvent perdre le fil de la lecture si le texte est présenté d'une manière qui leur est difficile à lire.</p>
+<p>Les personnes ayant certaines limitations visuelles ou cognitives doivent être en mesure de sélectionner la couleur du texte et la couleur de l'arrière-plan. Elles choisissent parfois des combinaisons qui semblent peu intuitives pour quelqu'un n'ayant pas ces limitations. Parfois, ces combinaisons ont de très faibles contrastes. Parfois, seules des combinaisons de couleurs très spécifiques leurs sont adaptées. Le contrôle de la couleur et d'autres aspects de la présentation du texte influent de manière très différente sur leur compréhension.</p>
+<p>De longues lignes de textes peuvent devenir un obstacle important pour les personnes ayant des difficultés de lecture ou avec une limitation visuelle. Elles ont du mal à se situer dans le texte et à suivre le flux de texte. Il est plus facile pour elles de continuer sur la ligne suivante dans un bloc lorsqu'elles disposent d'un bloc de texte étroit. Les lignes ne devraient pas dépasser 80 caractères <span>ou glyphes (40 si <acronym title="chinois, japonais ou coréen">CJK</acronym>), où les glyphes sont l'unité d'écriture dans les systèmes d'écriture pour du texte</span>. Des études ont montré que les caractères chinois, japonais et coréens (CJK) sont approximativement deux fois plus larges que les caractères non-CJK lorsque les deux types de caractères sont affichés avec des caractéristiques permettant d'atteindre la même lisibilité, ainsi la longueur maximale d'une ligne pour les caractères CJK est la moitié de celle des caractères non-CJK.
+</p>
+<p>Les personnes ayant une limitation cognitive trouvent difficile de suivre un texte où les lignes sont rapprochées. Leur proposer plus d'espace entre les lignes et les paragraphes leur permet de mieux suivre la ligne suivante et de reconnaître quand elles ont atteint la fin d'un paragraphe. Le mieux est qu'il y ait plusieurs options possibles, par exemple, un espacement d'une valeur de un et demi et un double espace entre les lignes. Par espacement d'une valeur de un et demi on entend que le haut d'une ligne soit situé à 150% du haut de la ligne située en-dessous, ce qui est le cas lorsque le texte possède un «&nbsp;interligne simple&nbsp;» (l'espacement par défaut dans une police de caractères). L'espacement entre les paragraphes est au moins 1,5 fois plus grand que la valeur de l'interligne, on entend par cela que le haut de la dernière ligne d'un paragraphe soit situé à 250% du haut de la première ligne du paragraphe suivant (c'est-à-dire qu'il y a une ligne vide de séparation entre les deux paragraphes qui est de 150% par rapport à l'espace de la ligne de séparation seule).
+</p>
+<p>Les personnes ayant certaines limitations cognitives ont des problèmes de lecture du texte lorsque celui-ci est à la fois justifié à gauche et à droite. L'espacement inégal entre les mots d'un texte justifié peut provoquer des «&nbsp;rivières&nbsp;» d'espaces blancs qui courent jusqu'au bas de la page rendant la lecture difficile et dans certains cas impossible. La justification du texte peut également entraîner le rapprochement de mots de sorte qu'il devienne difficile pour elles de situer les limites des mots.
+</p>
+<p>La disposition pour le redimensionnement garantit que le texte rendu visuellement (les caractères qui ont été affichés de sorte qu'ils puissent être lus [à l'opposé des caractères qui sont encore sous forme de données comme les caractères définis en ASCII]) puisse être redimensionné sans exiger que wrapping
+l'utilisateur fasse défiler le contenu à gauche et à droite pour le voir entièrement. Lorsque le contenu a été écrit pour que cela soit possible, le contenu est dit redistribuable. Cela permet aux personnes malvoyantes et à celles ayant une limitation cognitive d'augmenter la taille du texte sans pour autant être désorientées.
+</p>
+<p>Le redimensionnement du contenu relève en premier lieu de la responsabilité de l'agent utilisateur. Les agents utilisateurs qui satisfont le point de contrôle 4.1 des UAAG 1.0 permettent aux utilisateurs de configurer la taille des textes. La responsabilité de l'auteur est de créer un contenu Web qui n'empêche pas l'agent utilisateur de redimensionner le contenu de manière efficace et qui permet de recomposer le contenu au sein de la largeur courante de la fenêtre. Voir <em><a href="visual-audio-contrast-scale.html">Comprendre le critère de succès 1.4.4 Redimensionnement du texte</a></em> pour des discussions supplémentaires sur le redimensionnement du texte.</p>
+<p>L'exigence à propos du défilement horizontal n'est pas destinée à être appliquée aux appareils à petit écran où les longs mots peuvent être affichés sur une seule ligne et vont nécessiter que les utilisateurs fassent défiler le contenu horizontalement. Pour l'application de cette exigence, les auteurs doivent s'assurer que le contenu répond à cette exigence à l'affichage sur les écrans d'ordinateurs de bureau ou portable de taille courante dont l'espace de restitution est maximisé. Du fait que les gens gardent leurs ordinateurs pendant plusieurs années, il est conseillé de ne pas se baser sur les dernières résolutions d'écrans des ordinateurs de bureau ou portable, mais de prendre en considération la plus représentative des résolutions d'écrans durant une période de plusieurs années précédant cette évaluation.</p>
+<p>La césure des mots devrait toujours être possible tant que les mots ne sont pas plus longs qu'un seul mot qui ne dépasse pas la moitié de la largeur d'un plein écran. Les très longues <acronym title="Uniform Resource Identifiers" xml:lang="en" lang="en">URI</acronym> peuvent glisser sur le côté sur des écrans agrandis mais elles ne seront pas considérées comme un texte «&nbsp;à lire&nbsp;» et ne seraient donc pas en violation de cette disposition.</p>
+<p>Cette disposition ne signifie pas qu'un utilisateur n'ait jamais besoin d'utiliser le défilement horizontal. Cela signifie seulement qu'il n'aurait pas besoin d'utiliser le défilement horizontal en avant et en arrière pour lire une ligne de texte. Par exemple, si une page se composait de deux colonnes de texte de même taille, cette disposition serait automatiquement satisfaite. L'agrandissement de la page conserverait la première colonne à l'écran et l'utilisateur aurait juste besoin de faire défiler la page verticalement pour la lire. Pour lire la seconde colonne, il ferait défiler la page horizontalement vers la droite, la colonne de droite tiendrait alors entièrement à l'écran et la lecture se ferait sans utiliser le défilement horizontal.</p>
+<div class="benefits"><h3 id="visual-audio-contrast-visual-presentation-92-head" class="div3head">
+Avantages spécifiques du critère de succès 1.4.8&nbsp;:</h3>
+<p>Ce critère de succès aide les utilisateurs ayant une basse vision en les laissant voir le texte sans éléments de présentation distrayants. Il leur permet de configurer le texte de manière à ce qu'il soit plus facile pour eux de le voir en leur permettant de contrôler la couleur et la taille des blocs de texte.</p>
+<p>Ce critère de succès aide les personnes ayant une limitation cognitive, un trouble du langage ou de l'apprentissage à percevoir le texte et à se retrouver dans les blocs de texte.</p>
+          <ul>
+<li><p>Les personnes ayant certaines limitations cognitives peuvent mieux lire le texte lorsqu'elles peuvent sélectionner leurs propres combinaisons de couleurs d'avant-plan et d'arrière-plan.</p></li>
+<li><p>Les personnes ayant certaines limitations cognitives peuvent se retrouver plus facilement quand les blocs de texte sont étroits et quand ils peuvent configurer la quantité d'espace entre les lignes et les paragraphes.</p></li>
+<li><p>Les personnes ayant certaines limitations cognitives peuvent plus facilement lire du texte lorsque les espaces entre les mots sont réguliers.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div3"><h2 id="visual-audio-contrast-visual-presentation-examples-head" class="section">Exemples pour le critère de succès 1.4.8</h2>
+        <p>Les images suivantes montrent des exemples d'un espacement simple entre les lignes, d'un espacement d'une valeur de un et demi et d'un espacement double d'un texte dans un paragraphe.</p><img src="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/images/single-space.gif" alt="Exemple d'un espacement simple du texte. (pas d'espace entre chaque ligne du texte)" /><img src="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/images/space-and-a-half.gif"
+alt="Exemple d'un espacement d'une valeur de un et demi. (un espace est égal à la moitié de la hauteur d'une ligne de texte)" /><img src="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/images/double-space.gif" alt="Exemple d'un espacement double du texte. (entre chaque ligne, un espace est égal à la hauteur d'une ligne de texte)" />
+<p>Des exemples de glyphes incluent «&nbsp;A&nbsp;», «&nbsp;→&nbsp;» (un symbole de flèche), et «&nbsp;さ&nbsp;» (un caractère japonais).</p></div>
+      <div class="resources"><h2 id="visual-audio-contrast-visual-presentation-resources-head" class="section">Ressources liées</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+        <ul>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/box.html">CSS 2 Box Model</a> – Le modèle des boîtes CSS 2 (en anglais)
+</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/visuren.html">CSS 2 Visual formatting Model</a> – Le modèle de mise en forme visuel CSS 2 (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.w3.org/TR/CSS2/visudet.html">CSS 2 Visual formatting Model Details</a> – Détails du modèle de mise en forme visuel CSS 2 (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://css-discuss.incutio.com/?page=CssLayouts">CssLayouts</a> – Mises en page CSS (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href=
+"http://www.456bereastreet.com/archive/200504/about_fluid_and_fixed_width_layouts/">About fluid and fixed width layouts</a> – À propos des largeurs fluides et fixes en mise en page (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://cookiecrook.com/AIR/2003/train/accessiblecss.php">Accessible CSS
+</a> – CSS accessible (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.maxdesign.com.au/presentation/em/">Ideal line length for content
+</a> – Longueur idéale d'une ligne pour du contenu (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://juicystudio.com/article/cognitive-impairment.php">Developing sites for users with Cognitive disabilities and learning difficulties</a> – Développer des sites pour des utilisateurs avec des limitations cognitives et des troubles de l'apprentissage (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.w3.org/TR/2007/WD-xhtml-rdfa-primer-20071026/">RDFA Primer
+</a> – Introduction à RDFa (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://oldwww.nr.no/dart/multifunk/Multifunk-NR-rapport.pdf">MULTIFUNK:
+Bringing computer-supported reading one step further</a> – faire avancer d'un pas la lecture assistée par ordinateur, Date&nbsp;: avril 2002, ISBN&nbsp;:
+82-539-0491-6, Auteur&nbsp;: Gjertrud W. Kamstrup, Eva Mjøvik, Anne-Lise Rygvold og Bjørn
+Gunnar Saltnes</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href=
+"http://www.eric.ed.gov/ERICWebPortal/custom/portlets/recordDetails/detailmini.jsp?_nfpb=true&amp;_&amp;ERICExtSearch_SearchValue_0=EJ601947&amp;ERICExtSearch_SearchType_0=eric_accno&amp;accno=EJ601947">ERIC Web portal</a> – Portail Web ERIC (en anglais)</p></li>
+<li><p>«&nbsp;<a xml:lang="en" lang="en" hreflang="en" href="http://www.sigaccess.org/community/newsletter/september_2005/sep05_10.php">Cognitive difficulties and access to information systems - an interaction design perspective</a>&nbsp;», – Difficultés cognitives et accès aux systèmes d'information - une perspective de design interatif (en anglais) Peter Gregor et Anna Dickinson, <span xml:lang="en" lang="en"> Applied Computing,</span> Université de Dundee</p></li>
+<li><p>«&nbsp;<a xml:lang="en" lang="en" hreflang="en" href="http://www.engsc.ac.uk/downloads/Disability/fizz.pdf">Case Study of a Dyslexic Person's Visual Perceptual Problems: A Fizz Effect</a>&nbsp;», – Étude de cas des problèmes de perception visuelle d'une personne dyslexique&nbsp;: un effet pétillant (en anglais), Nigel Beauchamp, groupe de recherche IMPACT, sciences informatiques, Université de Loughborough</p></li>
+<li><p>«&nbsp;<a xml:lang="en" lang="en" hreflang="en" href="http://www.techdis.ac.uk/resources/files/dyslexia.doc">A Dyslexic Perspective on e-Content Accessibility</a>&nbsp;» – Point de vue d'un dyslexique sur l'accessibilité des contenus numériques (en anglais), Peter Rainger, date de publication&nbsp;:
+20/01/03</p></li>
+<li><p>Legge, G.E., Pelli, D.G., Rubin, G.S., &amp; Schleske, M.M.:<span xml:lang="en" lang="en">Psychophysics of reading. I. Normal Vision, Vision Research</span>, Psychophysique de la lecture I. Vision Normale, Recherche sur la Vision, 25, 239-252, 1985.</p></li>
+<li><p>Legge, G.E., Rubin, G.S., Pelli, D.G., &amp; Schleske, M.M.:<span xml:lang="en" lang="en">Psychophysics of reading. II. Low Vision,Vision Research</span>, Psychophysique de la lecture. II. Basse Vision, Recherche sur la Vision, 25, 253-266, 1985.</p></li><li><p>Osaka,N. et Oda, K. (1991). <span xml:lang="en" lang="en"> Effective visual field size necessary for vertical reading during Japanese text processing. Bulletin of Psychonomic Society</span>, Dimensions du champ visuel efficace nécessaire pour une lecture verticale lors du traitement d'un texte en japonais, bulletin
+de la Société de Psychologie  29(4),345-347.</p></li><li><p>Beckmann, P.J. &amp; Legge, G.E. (1996). <span xml:lang="en" lang="en">Psychophysics of reading. XIV. The page-navigation problem in using magnifiers. Vision Research</span>, Psychophysique de la lecture. XIV. Le problème de la navigation dans une page à l'aide d'un agrandisseur. Recherche
+sur la Vision, 36, 3723-3733.</p></li><li><p>En japonais : <span xml:lang="ja" lang="ja">川嶋英嗣・小田浩一</span>(2003).<span xml:lang="ja" lang="ja">読書におけるスクロール方向とウィンドウ幅の影響　日本心理学会第</span>67<span xml:lang="ja" lang="ja">回大会</span>, 502.</p></li><li><p>En japonais <span xml:lang="ja" lang="ja">小田浩一・今橋真理子</span>(1995). <span xml:lang="ja" lang="ja">文字認知の閾値と読みの閾値</span>.  VISION, 7,
+                165-168.</p></li><li><p>Osaka,N. (1994). <span xml:lang="en" lang="en">Size of saccade and fixation duration of eye movements during reading: psychophysics of Japanese text processing. Journal of Optical Society of America </span> Mesure des sacades et de la durée de fixation des mouvements de l'oeil pendant la lecture&nbsp;: psychophysique du traitement d'un texte en langue japonaise. Journal de la Société Américaine d'Optique A, 9(1), 5-13.</p></li><li><p>En japonais <span xml:lang="ja" lang="ja">山中今日子・小田浩一</span> (2007). <span xml:lang="ja" lang="ja">漢字の画数と書体のウェイトが視認性に及ぼす影響. 視覚学会</span>2007<span xml:lang="ja" lang="ja">年夏季大会ポスター</span> 1p1 Vision, P.167.</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://paul-m-jones.com/?p=276">Line Length, Volume, and Density</a> – Longueur de ligne, volume et densité (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href=
+"http://www.thepickards.co.uk/index.php/200607/the-forgotten-people-designing-for-cognitive-disability/">The Forgotten People: Designing for Cognitive Disability</a> – Les personnes oubliées&nbsp;: concevoir pour les limitations cognitives (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.asset-uk.org.uk/public/ddapap.pdf">The Disability Discrimination Act, Developing an Accessible Information Policy (PDF)</a> – Loi contre la discrimination des personnes en situation de handicap, développer une politique d'information accessible (PDF) (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://ncdae.org/tools/cognitive/">Cognitive Disabilities and the Web: Where Accessibility and Usability Meet?</a> – Les limitations cognitives et le Web&nbsp;: où l'accessibilité et l'utilisabilité se rencontrent&nbsp;? (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.officefordisability.gov.uk/resources/background0602.asp">Guidance on accessible publishing
+</a> – Orientations pour l'édition accessible (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://usability.com.au/resources/cognitive.cfm">An Accessibility Frontier: Cognitive disabilities and learning difficulties</a> – Une frontière d'accessibilité&nbsp;: limitations cognitives et troubles de l'apprentissage (en anglais)</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://leftbrainrightbrain.co.uk/?p=145">Cognitive/Perceptual Difference And Good Web Design</a> – Différences cognitives/perceptuelles et bonnes conceptions Web (en anglais)</p></li>
+        </ul>
+      </div>
+      <div class="div3"><h2 id="visual-audio-contrast-visual-presentation-techniques-head" class="section">Techniques et échecs pour le critère de succès 1.4.8 - Présentation visuelle</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="visual-audio-contrast-visual-presentation-93-head" class="div3head">Techniques suffisantes</h3>
+<p><strong>Consignes&nbsp;:</strong> étant donné que ce critère de succès est en plusieurs parties, vous devez satisfaire à l'un des éléments numérotés pour chacune des exigences ci-dessous.</p>
+<div><h4><a name="visual-audio-contrast-visual-presentation-32-head" id="visual-audio-contrast-visual-presentation-32-head"></a>Première exigence&nbsp;: techniques pour veiller à ce que les couleurs de premier plan et d'arrière-plan puissent être sélectionnées par l'utilisateur</h4>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C23">C23&nbsp;: Spécifier les couleurs de texte et d'arrière-plan en CSS pour les contenus secondaires comme les bannières, les fonctionnalités et la navigation, sans spécifier les couleurs de texte et d'arrière-plan du contenu principal (en anglais)</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C25">C25&nbsp;: Spécifier les bordures et la mise en page en CSS pour délimiter les zones de la page Web, sans spécifier les couleurs de texte et d'arrière-plan (en anglais)</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G156">G156&nbsp;: Utiliser une technologie qui permet de changer l'avant-plan et l'arrière-plan des blocs de texte dans des agents utilisateur communément disponibles (en anglais)</a> OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G148">G148&nbsp;: Ne pas spécifier de couleur d'arrière-plan ni de couleur de texte et ne pas utiliser une technologie qui change ces couleurs par défaut (en anglais)</a> OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G175">G175&nbsp;: Fournir un outil de sélection multi-couleurs sur la page pour l'avant-plan et l'arrière-plan (en anglais)</a></p></li>
+</ol>
+          </div>
+          <div>
+<h4><a name="visual-audio-contrast-visual-presentation-33-head" id="visual-audio-contrast-visual-presentation-33-head"></a>Deuxième exigence&nbsp;: techniques pour assurer que la largeur ne soit pas supérieure à 80 caractères ou glyphes (40 si CJK)</h4>
+            <ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H87">H87&nbsp;: Ne pas interférer avec la redistribution du texte par l'agent utilisateur quand la fenêtre de visualisation est rétrécie (en anglais)</a> (HTML) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C20">C20&nbsp;: Utiliser des mesures relatives pour fixer la largeur des colonnes de sorte que les lignes puissent avoir une moyenne de 80 caractères ou moins en redimensionnant le navigateur (en anglais)</a> (CSS)</p></li>
+</ol>
+          </div>
+          <div>
+<h4><a name="visual-audio-contrast-visual-presentation-34-head" id="visual-audio-contrast-visual-presentation-34-head"></a>Troisième exigence&nbsp;: techniques pour assurer que le texte ne soit pas justifié (aligné simultanément à droite et à gauche)</h4>
+            <ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C19">C19&nbsp;: Spécifier l'alignement soit à gauche, soit à droite en CSS (en anglais)</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G172">G172&nbsp;: Fournir un mécanisme pour enlever la justification du texte (en anglais)</a> OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G169">G169&nbsp;: Aligner le texte d'un seul côté (en anglais)</a></p></li>
+</ol>
+          </div>
+          <div>
+<h4><a name="visual-audio-contrast-visual-presentation-35-head" id="visual-audio-contrast-visual-presentation-35-head"></a>Quatrième exigence&nbsp;: techniques pour assurer que l'espacement entre les lignes (interlignage) soit d'une valeur d'au moins 1,5 dans les paragraphes et l'espacement entre les paragraphes soit au moins 1,5 fois plus grand que la valeur de l'interligne</h4>
+            <ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G188">G188&nbsp;: Fournir un bouton sur la page pour augmenter l'espace entre les lignes et entre les paragraphes (en anglais)</a>OU
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C21">C21&nbsp;: Spécifier l'espacement entre les lignes en CSS (en anglais)</a> (CSS)</p></li>
+</ol>
+          </div>
+          <div>
+<h4><a name="visual-audio-contrast-visual-presentation-36-head" id="visual-audio-contrast-visual-presentation-36-head"></a>Cinquième exigence&nbsp;: techniques pour assurer que la taille du texte puisse être redimensionnée jusqu'à 200 pour cent sans l'aide d'une technologie d'assistance et sans que l'utilisateur soit obligé de faire défiler le texte horizontalement pour lire une ligne complète dans une fenêtre plein écran</h4>
+            <ol class="enumar">
+<li><p>Ne pas interférer avec la redistribution du texte par l'agent utilisateur quand la fenêtre de visualisation est rétrécie (Général, lien à venir) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G146">G146&nbsp;: Utiliser une mise en page fluide (en anglais)</a> <em>ET</em> utiliser pour le contenu des unités de mesure qui sont relatives par rapport à d'autres unités de mesure en utilisant au moins l'une des techniques suivantes&nbsp;:</p>
+                <ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C12">C12&nbsp;: Utiliser les pourcentages pour les tailles de caractères (en anglais)</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C13">C13&nbsp;: Utiliser les tailles de caractères nommées (en anglais</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C14">C14&nbsp;: Utiliser les unités en em pour les tailles de caractères (en anglais)</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C24">C24&nbsp;: Utiliser les pourcentages en CSS pour les dimensions des conteneurs (en anglais)</a> (CSS) OU</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH33">FLASH33&nbsp;: Utiliser des unités relatives pour les dimensions de l'objet Flash
+(en anglais)</a> (Flash)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR34">SCR34&nbsp;: Calculer la taille et la position d'une manière qui va s'agrandir avec le texte (en anglais)</a> (Programmation par script) OU</p></li>
+</ul>
+</li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C26">C26&nbsp;: Fournir, dans le contenu, des choix pour basculer à une mise en page qui n'exige pas que l'utilisateur fasse défiler horizontalement pour lire une ligne de texte (en anglais)</a> (CSS)</p></li>
+</ol>
+          </div>
+        </div>
+        <div class="boxed"><h3 id="visual-audio-contrast-visual-presentation-94-head" class="div3head">Techniques (recommandées) supplémentaires pour 1.4.8</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+          <ul>
+<li><p>Utiliser un effet de survol pour surligner un paragraphe, un élément de liste, ou une cellule de tableau (HTML, CSS) (lien à venir)</p></li>
+<li><p>Présenter le texte avec une police sans empattement ou fournir un mécanisme qui permet une telle présentation (CSS) (lien à venir)</p></li>
+<li><p>Utiliser une liste verticale (à puce ou numérotée) plutôt qu'une liste linéaire (lien à venir)</p></li>
+<li><p>Utiliser les majuscules et les minuscules conformément aux conventions de la langue du texte (lien à venir)</p></li>
+<li><p>Fournir du texte agrandi par défaut (lien à venir)</p></li>
+<li><p>Éviter l'utilisation de texte dans des images matricielles (lien à venir)</p></li>
+<li><p>Éviter de redimensionner des polices à une taille plus petite que la taille par défaut de l'agent utilisateur (lien à venir)</p></li>
+<li><p>Créer un espacement suffisant entre les lignes et entre les colonnes (lien à venir)</p></li>
+<li><p>Éviter le texte centré (lien à venir)</p></li>
+<li><p>Éviter les passages de texte en italique (lien à venir)</p></li>
+<li><p>Éviter la surutilisation de styles différents sur une même page dans les sites (lien à venir)</p></li>
+<li><p>Rendre les liens visuellement distincts (lien à venir)</p></li>
+<li><p>Fournir des puces extensibles (lien à venir)</p></li>
+<li><p>Permettre d'afficher ou de masquer les puces (lien à venir)</p></li>
+<li><p>Placer un cadratin ou deux espaces après les phrases (lien à venir)</p></li>
+          </ul>
+        </div>
+        <div class="boxed"><h3 id="visual-audio-contrast-visual-presentation-95-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 1.4.8</h3>
+<p>Le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.4.8.</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F24">F24&nbsp;: Échec du critère de succès 1.4.3, 1.4.6 et 1.4.8 consistant à spécifier la couleur du premier plan sans spécifier la couleur d'arrière-plan ou inversement (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F88">F88&nbsp;: Échec du critère de succès 1.4.8 consistant à utiliser du texte justifié (aligné à la fois à la marge gauche et droite) (en anglais)</a></p></li>
+</ul>
+        </div>
+      </div>
+      <div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+        <dl class="keyterms">
+          <dt class="label">
+            <a name="blockstextdef" id="blockstextdef"></a>blocs de texte
+          </dt>
+          <dd>
+            <p>plus d'une phrase de texte</p>
+          </dd>
+<dt class="label">
+            <a name="fullscreenwindowdef" id="fullscreenwindowdef"></a>dans une fenêtre plein écran
+          </dt>
+          <dd>
+            <p>sur les écrans d'ordinateur de bureau ou portable de taille courante dont l'espace de restitution est maximisé</p>
+            <div class="note"><p class="prefix">
+                <em>Note&nbsp;:</em> du fait que les gens gardent leurs ordinateurs pendant plusieurs années, il est conseillé de ne pas se baser sur les dernières résolutions d'écrans des ordinateurs de bureau ou portable, mais de prendre en considération la plus représentative des résolutions d'écrans durant une période de plusieurs années précédant cette évaluation.</p>
+            </div>
+          </dd>
+<dt class="label">
+            <a name="mechanismdef" id="mechanismdef"></a>mécanisme
+          </dt>
+          <dd>
+<p><a href="http://www.w3.org/Translations/WCAG20-fr/#processdef" class=
+              "termref">processus</a> ou technique pour obtenir un résultat</p>
+            <div class="note"><p class="prefix">
+                <em>Note 1&nbsp;:</em> le mécanisme peut être explicitement fourni par le contenu ou
+                <a href="http://www.w3.org/Translations/WCAG20-fr/#reliedupondef" class=
+                "termref">dépendre</a> de la plateforme ou de l'<a href=
+                "http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>, y compris les <a href="http://www.w3.org/Translations/WCAG20-fr/#atdef" class="termref">technologies d'assistance</a>.</p>
+              <p class="prefix"><em>Note 2&nbsp;:</em> le mécanisme doit satisfaire à tous les critères de succès (d'un niveau donné) pour déclarer un niveau de conformité.</p>
+            </div>
+          </dd>
+</dl>
+      </div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.7 [Arrière-plan sonore de faible volume ou absent]" href="visual-audio-contrast-noaudio.html"><strong>Précédent&nbsp;: </strong>SC  1.4.7 [Arrière-plan sonore de faible volume ou absent]</a></li><li><a title="Comprendre le CS 1.4.9 [Texte sous forme d'image (sans exception)]" href="visual-audio-contrast-text-images.html"><strong>Suivant&nbsp;: </strong>SC 1.4.9 [Texte sous forme d'image (sans exception)]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

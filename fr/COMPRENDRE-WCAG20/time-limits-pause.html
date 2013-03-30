@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.2.2  | Comprendre les WCAG 2.0
+ </title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.2.1 [Réglage du délai]" href="time-limits-required-behaviors.html"><strong>Précédent&nbsp;: </strong>CS 2.2.1 [Réglage du délai]</a></li><li><a title="Comprendre le CS 2.2.3 [Pas de délai d'exécution]" href="time-limits-no-exceptions.html"><strong>Suivant&nbsp;: </strong> CS 2.2.3 [Pas de délai d'exécution]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#time-limits-pause-intent-head">Objectif</a></li><li><a href="#time-limits-pause-examples-head">Exemples</a></li><li><a href="#time-limits-pause-resources-head">Ressources liées</a></li><li><a href="#time-limits-pause-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="time-limits-pause" id="time-limits-pause"> </a><strong>
+Mettre en pause, arrêter, masquer</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="le critère de succès">CS</abbr> 2.2.2</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#time-limits-pause">2.2.2</a> Mettre en pause, arrêter,
+masquer&nbsp;: </strong>pour toute information en mouvement, <a href="#blinksdef"
+class="termref">clignotante</a>, défilante ou mise à jour automatiquement,
+tous les points suivants sont vrais&nbsp;: (Niveau A)</p>
+<ul>
+  <li><p><strong class="sc-handle">Déplacement, clignotement, défilement&nbsp;:
+    </strong>pour toute information en mouvement, clignotante ou défilante qui
+    (1) démarre automatiquement, (2) dure plus de cinq secondes et (3) est
+    présentée conjointement avec un autre contenu, il y a un mécanisme à la
+    disposition de l'utilisateur pour la <a href="#pauseddef" class="termref">mettre en pause</a>, l'arrêter ou la
+    masquer, à moins que le mouvement, le clignotement ou le défilement
+    s'avère un élément <a     href="#essentialdef" class="termref">essentiel</a> au bon déroulement de
+    l'activité; et</p>
+  </li>
+  <li><p><strong class="sc-handle">Mise à jour automatique&nbsp;: </strong>pour
+    toute information mise à jour automatiquement qui (1) démarre
+    automatiquement (2) et est présentée conjointement avec un autre contenu,
+    il y a un mécanisme à la disposition de l'utilisateur pour la mettre en
+pause, l'arrêter ou pour en contrôler la fréquence des mises à jour à
+    moins que la mise à jour automatique s'avère essentielle au bon
+    déroulement de l'activité.</p>
+  </li>
+</ul>
+
+<div class="note">
+<p class="prefix"><em>Note 1&nbsp;: </em>pour les exigences relatives au contenu
+scintillant ou flashant, se référer à la <a href="seizure.html">règle
+2.3</a>.</p>
+
+<p class="prefix"><em>Note 2&nbsp;: </em>puisque tout contenu ne satisfaisant pas
+à ce critère de succès peut interférer avec la capacité de l'utilisateur
+à exploiter la page entière, tout le contenu présent dans la page Web (qu'il
+soit utilisé pour satisfaire à d'autres critères de succès ou non) doit
+satisfaire à ce critère de succès. Lire <a href="http://www.w3.org/Translations/wcag20-fr/#cc5">Exigence de
+conformité 5&nbsp;: Non-interférence</a>.</p>
+
+<p class="prefix"><em>Note 3&nbsp;: </em>il n'est pas exigé que le contenu mis à
+jour périodiquement par logiciel ou diffusé en flux à l'agent utilisateur
+conserve ou présente l'information générée ou reçue entre la mise en pause
+et la reprise de la présentation, puisque cela peut ne pas être techniquement
+possible et s'avérer trompeur dans beaucoup de situations.</p>
+
+<p class="prefix"><em>Note 4&nbsp;: </em>une animation survenant dans une phase de
+pré-chargement ou dans une situation similaire peut être considérée comme
+essentielle si aucune interaction n'est permise à tous les utilisateurs durant
+cette phase et si l'absence d'indication de progression est susceptible de
+perturber les utilisateurs ou de leur faire croire que le contenu est figé ou
+défectueux.</p>
+</div>
+</div></blockquote><div class="intent"><h2 id="time-limits-pause-intent-head" class="section">
+Objectif de ce critère de succès
+</h2><p>
+L'objectif de ce critère de succès est d'éviter que l'utilisateur ne soit distrait pendant qu'il interagit avec la page web.</p>
+<p>«&nbsp;En mouvement, clignotante et défilante&nbsp;» fait référence à du contenu dans lequel le contenu visible est porteur de sens grâce au mouvement. Les images animées, les présentations sous forme de média synchronisés, les animations, les jeux en temps réel et les bandeaux des cours de la bourse font partie des exemples classiques. «&nbsp;Mise à jour automatique&nbsp;» fait référence à du contenu qui se met à jour ou disparaît selon un intervalle de temps prédéfini. La mise à jour automatique de contenu comprend l'audio, les informations météo qui sont mises à jour automatiquement, les actualités, les mises à jour des cours de la bourse et les présentations et messages défilant automatiquement. Les exigences concernant les contenus en mouvement, clignotants et défilants et les contenus avec mise à jour automatique sont les mêmes, exception faite des cas suivants&nbsp;:
+</p><ul><li><p>
+Les auteurs ont la possibilité de fournir à l'utilisateur un moyen de contrôler la fréquence de mise à jour lorsque le contenu se met à jour automatiquement et</p></li><li><p>
+L'exception des 3 secondes ne s'applique pas puisque le fait de procéder à une mise à jour automatique dans les 3 secondes puis de l'arrêter a peu de sens.</p></li></ul>
+<p>
+Du contenu en mouvement ou qui se met à jour automatiquement peut être une barrière pour quiconque a des difficultés à lire rapidement un texte statique, également pour quiconque a du mal à suivre des objets en mouvement. Cela peut aussi poser des problèmes pour les lecteurs d'écran.
+</p><p>
+Du contenu en mouvement peut aussi perturber sérieusement certaines personnes. Certains groupes, en particulier ceux qui ont des troubles de l'attention, sont distraits par un contenu qui clignote et ont du mal à se concentrer sur les autres parties de la page Web.
+La limite des cinq secondes a été choisie car elle est suffisamment longue pour capter l'attention de l'utilisateur, mais pas au point qu'un utilisateur n'ait à attendre de ne plus être distrait pour utiliser la page, le cas échéant.
+</p><p>
+Un contenu mis en pause peut soit se poursuivre en temps réel, soit continuer la présentation à partir du point où l'utilisateur l'a laissée.
+</p><ol class="enumar"><li><p>
+Mettre en pause le contenu et le continuer à l'endroit où l'utilisateur l'a laissé est la meilleure solution pour les utilisateurs qui veulent mettre en pause pour lire le contenu et est celle qui fonctionne le mieux lorsque le contenu ne dépend pas d'un évènement ou d'un état en temps réel.
+</p><div class="note"><p class="prefix"><em>Note&nbsp;: </em>
+voir <em><a href="time-limits-required-behaviors.html">
+Comprendre le critère de succès 2.2.1 Réglage du délai</a></em>
+pour les exigences supplémentaires concernant les limites de durée liées à la lecture.</p></div></li><li><p>
+Mettre en pause et passer à l'affichage courant (lorsque la pause est relâchée) est la meilleure solution si l'information est de type temps réel ou porte sur un état. Par exemple, un radar météo, un cours de la bourse, une caméra pour le trafic routier, un compteur d'enchères risqueraient de présenter des informations trompeuses si la mise en pause provoquait l'affichage d'informations périmées au redémarrage du contenu.
+</p><div class="note"><p class="prefix"><em>Note&nbsp;: </em>
+le fait de masquer le contenu aurait le même effet que le fait de mettre en pause puis de passer à l'affichage actuel (au relâchement de la pause).</p></div></li></ol><div class="note"><p class="prefix"><em>Note&nbsp;: </em>
+les termes «&nbsp;clignotement&nbsp;» et «&nbsp;flashs&nbsp;» peuvent parfois faire référence au même contenu.</p><ul><li><p>«&nbsp;Le clignotement&nbsp;» fait référence à du contenu posant des problèmes de perte de concentration. Le clignotement peut être permis tant qu'il reste de courte durée et s'arrête (ou peut être arrêté).
+</p></li><li>
+  <p>
+«&nbsp;Flashant&nbsp;» fait référence à du contenu pouvant déclencher des crises (s'il dépasse le nombre de 3 flashs par secondes et est relativement grand et lumineux). Cela ne peut être autorisé, même pour une seconde, sous peine de provoquer une crise. Et le fait de permettre la désactivation des flashs ne peut pas non plus être autorisé dans la mesure où la crise peut survenir avant que l'utilisateur n'ait le temps d'arrêter le flash.
+</p></li><li><p>
+Généralement, les clignotements ne sont pas supérieurs à 3 par seconde ou plus, mais cela peut arriver. Si des clignotements sont supérieurs à 3 par seconde, ils sont aussi considérés comme un flash.
+</p></li></ul></div><div class="benefits"><h3 id="time-limits-pause-113-head" class="div3head">
+Avantages spécifiques du critère de succès 2.2.2&nbsp;:
+			</h3><ul><li><p>
+Fournir du contenu qui s'arrête de clignoter après cinq secondes ou fournir un mécanisme qui permette aux utilisateurs d'arrêter le clignotement du contenu, permet aux personnes ayant certaines limitations d'interagir avec la page web.
+</p></li><li>
+  <p>
+L'une des utilisations du clignotement de contenu consiste à attirer l'attention du visiteur sur ce contenu. Bien que ce soit une technique efficace pour les utilisateurs voyants, cela peut être un problème pour certains utilisateurs s'il est persistant. Pour certains groupes de personnes, dont celles ayant un faible niveau d'alphabétisation, des limitations de lecture et des limitations intellectuelles, et les personnes ayant des troubles de l'attention, un contenu clignotant peut leur rendre difficile, voire impossible, l'interaction avec le reste de la page web.
+              </p></li></ul></div></div><div class="div3"><h2 id="time-limits-pause-examples-head" class="section">
+				Exemples pour le critère de succès 2.2.2</h2><ul><li><p>
+                <strong>
+Une animation essentielle peut être mise en pause sans que cela n'en affecte le fonctionnement
+</strong>
+              </p><p>
+Un site Web aide les utilisateurs à comprendre «&nbsp;comment fonctionnent les choses&nbsp;» à travers des animations qui montrent la marche à suivre. Les animations sont munies des boutons «&nbsp;pause&nbsp;» et «&nbsp;relance&nbsp;».
+</p></li><li><p>
+                <strong>
+Un bandeau du cours de la bourse
+</strong>
+              </p><p>
+Un bandeau du cours de la bourse est muni des boutons «&nbsp;pause&nbsp;» et «&nbsp;relance&nbsp;». Le fait d'arrêter le bandeau provoque la pause sur l'affichage du cours actuel. Le redémarrage du bandeau le fait continuer à partir du point d'arrêt mais affiche une alerte indiquant que l'affichage est décalé. Étant donné que l'objectif du bandeau du cours de la bourse est généralement de fournir l'information en temps réel, il devrait aussi y avoir un bouton permettant de faire avancer le bandeau jusqu'aux valeurs les plus récentes des cours. </p></li><li><p>
+                <strong>
+Un jeu conçu de sorte que les joueurs prennent leur tour au lieu de s'affronter en temps réel
+</strong>
+              </p><p>
+L'une des parties peut mettre le jeu en pause sans en compromettre l'aspect compétitif.
+</p></li><li><p>
+                <strong>
+Une publicité web</strong>
+              </p><p>
+Une publicité clignote pour capter l'attention du spectateur mais s'arrête après cinq secondes
+</p></li><li><p>
+                <strong>
+Un signalement sur un formulaire</strong>
+              </p><p>
+Sur un formulaire, une flèche clignote près du bouton de soumission si l'utilisateur a fini de remplir le formulaire mais n'a pas activé le bouton de soumission. Le clignotement s'arrête après cinq secondes.
+</p></li><li><p>
+                <strong>Une animation</strong>
+              </p><p>
+Une animation clignote sur la partie supérieure de la page mais est munie d'un bouton «&nbsp;arrêter l'animation&nbsp;» en bas de l'animation.
+              </p></li><li><p>
+                <strong>Une animation en cours de chargement</strong>
+              </p><p>
+Une animation de préchargement s'affiche sur la page et nécessite qu'un certain pourcentage d'un gros fichier soit chargé avant de démarrer. L'animation constitue le seul contenu de la page et invite l'utilisateur à attendre pendant que la vidéo se charge. Puisque le contenu en mouvement n'est pas présenté en même temps que d'autres contenus, il n'est pas nécessaire de fournir de mécanisme pour la mettre en pause, l'arrêter ou la masquer même si l'animation peut s'exécuter pendant plus de cinq secondes pour les utilisateurs ayant une connexion à bas débit.
+</p></li><li><p>
+                <strong>
+Une publicité pleine page</strong>
+              </p><p>
+Un site requiert que tous les utilisateurs voient une publicité de 15 secondes avant de pouvoir accéder gratuitement au contenu de leur site. Étant donné qu'il est nécessaire que tous les utilisateurs voient la publicité et qu'elle n'est pas présentée en même temps que d'autres contenus, il n'est pas nécessaire de fournir de mécanisme pour la mettre en pause, l'arrêter ou la masquer.
+</p></li></ul></div><div class="resources"><h2 id="time-limits-pause-resources-head" class="section">
+				Ressources liées
+			</h2><p>
+
+Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.
+
+
+</p><p>(Aucune ressource n'est actuellement documentée)</p></div><div class="div3"><h2 id="time-limits-pause-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 2.2.2 - Mettre en pause, arrêter, masquer</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="time-limits-pause-114-head" class="div3head">
+Techniques suffisantes</h3><ol class="enumar"><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G4">
+G4&nbsp;: Permettre de mettre le contenu en pause et de redémarrer là où il a été mis en pause (en anglais)
+</a></p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR33">
+SCR33&nbsp;: Utiliser un script pour faire défiler le contenu et fournir un mécanisme pour le mettre en pause (en anglais)</a>  (programmation par script)
+			</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH35">FLASH35&nbsp;: Utiliser la programmation par script pour faire défiler un contenu Flash et fournir un mécanisme pour le mettre en pause (en anglais)</a> (Flash)
+</p></li>
+<li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G11">
+G11&nbsp;: Créer du contenu qui clignote moins de 5 secondes (en anglais)</a>
+                </p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G187">
+G187&nbsp;: Utiliser une technologie pour inclure du contenu clignotant qui peut être arrêté via l'agent utilisateur (en anglais)</a></p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G152">
+G152&nbsp;: Configurer les gifs animés pour qu'ils s'arrêtent de clignoter après n cycles (pendant 5 secondes)
+(en anglais) </a></p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR22">
+SCR22&nbsp;: Utiliser des scripts pour contrôler le clignotement et l'arrêter en 5 secondes ou moins
+(en anglais)</a>  (programmation par script)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH36">FLASH36&nbsp;: Utiliser la programmation par script pour contrôler le clignotement et l'arrêter au bout de 5 secondes ou moins (en anglais)</a> (Flash)</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G186">
+G186&nbsp;: Placer un élément d'interface dans la page pour arrêter le contenu en mouvement, clignotant ou mis à jour automatiquement
+(en anglais) </a> </p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G191">
+G191&nbsp;: Fournir un lien, un bouton ou un autre mécanisme pour recharger la page sans aucun contenu clignotant (en anglais)</a>
+</p></li></ol></div><div class="boxed"><h3 id="time-limits-pause-115-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 2.2.2</h3><p>
+Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.
+</p><ul><li><p>
+Fournir un mécanisme pour arrêter tous les contenus qui clignotent dans une page Web (lien à venir)</p></li><li><p>
+Fournir à l'utilisateur un moyen d'arrêter un contenu en mouvement même s'il s'arrêtent automatiquement en moins de 5 secondes (lien à venir)</p></li></ul></div><div class="boxed"><h3 id="time-limits-pause-116-head" class="div3head">
+Échecs fréquents pour <abbr title="le critère de succès">CS</abbr> 2.2.2</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.2.2.</p>
+<ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F16">
+F16&nbsp;: Échec du critère de succès 2.2.2 consistant à inclure un contenu défilant lorsque le mouvement n'est pas essentiel à l'activité sans inclure
+aussi un mécanisme pour mettre ce contenu en pause et pour le redémarrer (en anglais)</a></p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F47">
+F47&nbsp;: Échec du critère de succès 2.2.2 consistant à utiliser l'élément blink (en anglais)</a></p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F4">
+F4&nbsp;: Échec du critère de succès 2.2.2 consistant à utiliser text-decoration:blink sans mécanisme pour l'arrêter en moins de 5 secondes (en anglais)</a></p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F50">
+F50&nbsp;: Échec du critère de succès 2.2.2 consistant à utiliser un script pour créer un effet de clignotement sans mécanisme pour arrêter ce clignotement
+à 5 secondes ou moins (en anglais)</a></p></li><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F7">
+F7&nbsp;: Échec du critère de succès 2.2.2 consistant à utiliser un objet ou un applet, comme Java ou Flash, qui contient du contenu clignotant sans mécanisme
+pour arrêter le clignotement qui dure plus de 5 secondes (en anglais)</a></p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2><dl class="keyterms">
+<dt class="label"><a name="blinksdef" id="blinksdef"></a>clignotement</dt>
+    <dd><p>alternance entre deux états visuels d'une façon qui veut attirer
+      l'attention </p>
+      <div class="note">
+      <p class="prefix"><em>Note&nbsp;: </em>voir aussi <a
+href="http://www.w3.org/Translation/wcag20-fr/#flash-def" class="termref">flash</a>.
+      Il est possible que quelque chose soit suffisamment gros et clignote de
+      façon suffisamment lumineuse à la fréquence appropriée pour être
+      aussi considéré comme un flash.</p>
+      </div>
+    </dd>
+  <dt class="label"><a id="essentialdef" name="essentialdef"></a>
+  essentiel(le)</dt>
+    <dd><p>élément qui changerait fondamentalement les informations ou les
+      fonctionnalités du contenu s'il était supprimé <strong>et</strong>
+      informations et fonctionnalités qui ne pourraient être restituées
+      autrement d'une manière conforme</p>
+    </dd>
+  <dt class="label"><a name="pauseddef" id="pauseddef"></a>mis en pause</dt>
+    <dd><p>arrêté par une action de l'utilisateur et relancé seulement sur
+      demande de l'utilisateur</p>
+    </dd>
+</dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.2.1 [Réglage du délai]" href="time-limits-required-behaviors.html"><strong>Précédent&nbsp;: </strong> CS 2.2.1 [Réglage du délai]</a></li><li><a title="Comprendre le CS 2.2.3 [Pas de délai d'exécution]" href="time-limits-no-exceptions.html"><strong>Suivant&nbsp;: </strong> CS 2.2.3 [Pas de délai d'exécution]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

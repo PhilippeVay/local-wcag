@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.1.1  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 2.1 [Accessibilité au clavier]" href="keyboard-operation.html"><strong>Précédent&nbsp;: </strong>Règle 2.1 [Accessibilité au clavier]</a></li><li><a title="Comprendre le CS 2.1.2 [Pas de piège au clavier]" href="keyboard-operation-trapping.html"><strong>Suivant&nbsp;:</strong> CS 2.1.2 [Pas de piège au clavier]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#keyboard-operation-keyboard-operable-intent-head">Objectif</a></li><li><a href="#keyboard-operation-keyboard-operable-examples-head">Exemples</a></li> <li><a href="#keyboard-operation-keyboard-operable-resources-head">Ressources liées</a></li><li><a href="#keyboard-operation-keyboard-operable-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="keyboard-operation-keyboard-operable" id="keyboard-operation-keyboard-operable"> </a><strong>Clavier</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 2.1.1</h1>
+<blockquote class="scquote"><div><p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#keyboard-operation-keyboard-operable">2.1.1</a>
+Clavier&nbsp;:</strong> toutes les <a href="#functiondef" class="termref">fonctionnalités</a>
+sont utilisables à l'aide d'une
+<a href="#keybrd-interfacedef" class="termref">interface clavier</a>
+sans exiger un rythme de frappe propre à l'utilisateur, sauf lorsque la fonction sous-jacente nécessite une saisie qui dépend du tracé du mouvement effectué par l'utilisateur et pas seulement des points de départ et d'arrivée de ce tracé. (Niveau A)</p><div class="note"><p class="prefix"><em>
+Note 1&nbsp;:</em> cette exception ne concerne que la fonction sous-jacente et non la technique de saisie. Par exemple, lorsqu'on utilise l'écriture manuscrite pour saisir du texte, la technique de saisie (l'écriture manuscrite) nécessite une saisie qui dépend d'un tracé, mais la fonction sous-jacente (la saisie de texte) ne le requiert pas.</p>
+<p class="prefix"><em>Note 2&nbsp;:</em>
+cela n'interdit pas et ne devrait pas décourager l'utilisation de la souris ou de toute autre méthode de saisie en plus de l'utilisation du clavier.</p>
+</div></div></blockquote>
+<div class="intent">
+<h2 id="keyboard-operation-keyboard-operable-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est de garantir, partout où cela est possible, que le contenu peut être manipulé à l'aide d'un clavier ou d'une interface clavier (un clavier alternatif peut donc être utilisé). À l'aide d'un clavier ou d'un clavier alternatif, le contenu peut être manipulé par des personnes qui n'ont pas de vision (qui ne peuvent utiliser de périphériques comme les souris nécessitant une coordination de l’œil et de la main) ainsi que par les personnes qui doivent se servir de claviers alternatifs ou de périphériques de saisie qui agissent comme des émulateurs de clavier. Les émulateurs de clavier incluent les logiciels de saisie par commande vocale, les logiciels de commande par le souffle, les claviers virtuels, les logiciels reposant sur le balayage et de nombreuses technologies d'assistance et claviers alternatifs. Les personnes malvoyantes peuvent aussi avoir des difficultés à suivre un pointeur et trouver plus facile (ou n'avoir que cette possibilité) d'utiliser un logiciel si elles peuvent le contrôler à l'aide d'un clavier.</p>
+<p>Des exemples de «&nbsp;rythme de frappe propre à l'utilisateur&nbsp;» incluent les situations dans lesquelles un utilisateur serait amené à répéter ou exécuter plusieurs commandes dans un court laps de temps ou dans lesquelles une touche doit être maintenue enfoncée pendant une période prolongée avant que la commande ne soit prise en compte.</p>
+<p>La phrase «&nbsp;sauf lorsque la fonction sous-jacente nécessite une saisie qui dépend du tracé du mouvement effectué par l'utilisateur et pas seulement des points de départ et d'arrivée&nbsp;» a été ajoutée pour distinguer ces éléments qui ne peuvent raisonnablement être contrôlés au clavier.</p>
+<p>La plupart des actions réalisables à l'aide d'un périphérique de pointage peuvent également l'être au clavier (par exemple, cliquer, sélectionner, déplacer, redimensionner). Il existe cependant un petit ensemble de commandes effectuées à l'aide d'un périphérique de pointage qui ne peuvent être faites au clavier de quelque manière connue que ce soit sans requérir un nombre démesuré de commandes. Dessiner à main levée, faire du coloriage, faire voler un hélicoptère par dessus des obstacles sont autant de fonctions nécessitant une saisie qui dépend du tracé du mouvement. Tracer des lignes droites, des formes géométriques courantes, redimensionner des fenêtres et déplacer des objets à un endroit (dès lors que le tracé vers cet endroit n'est pas significatif), ne nécessitent pas de saisie qui dépend du tracé du mouvement.</p>
+<p>L'utilisation de <span lang="en" xml:lang="en">MouseKeys</span> ne satisferait pas à ce critère de succès car il ne s'agit pas d'un équivalent du clavier du point de vue de l'application&nbsp;; c'est un équivalent de la souris (du point de vue applicatif, c'est une souris).</p>
+<p>Il est admis que le développement de fonctionnalités de saisie utilisateur prend en compte le fait que les fonctionnalités d'accessibilité par le clavier du système d'exploitation peuvent être utilisées. Par exemple, les touches de modification peuvent se trouver verrouillées. Dans un tel environnement, le contenu fonctionne toujours, n'envoie pas d'évènements qui entreraient en conflit avec les touches de modification verrouillées et produiraient des résultats indésirables.
+</p>
+<div class="benefits"><h3 id="keyboard-operation-keyboard-operable-100-head" class="div3head">Avantages spécifiques du critère de succès 2.1.1&nbsp;:</h3>
+<ul>
+ <li>  <p>Les personnes aveugles (qui ne peuvent utiliser de périphériques comme les souris qui nécessitent une coordination de l’œil et de la main)</p>
+ </li>
+  <li>  <p>Les personnes malvoyantes (qui peuvent avoir du mal à trouver ou à suivre le symbole du pointeur sur l'écran)</p>
+  </li>
+  <li>  <p>Certaines personnes ayant des tremblements de la main trouvent l'utilisation de la souris très difficile et se servent donc habituellement d'un clavier</p>
+  </li>
+</ul>
+</div>
+</div>
+<div class="div3"><h2 id="keyboard-operation-keyboard-operable-examples-head" class="section">Exemples pour le critère de succès 2.1.1
+</h2>
+<ul>
+ <li><p><strong>Exemple 1&nbsp;: un programme de dessin</strong></p>
+  <p>Un programme de dessin permet aux utilisateurs de créer, dimensionner, positionner et faire pivoter des objets à partir du clavier.</p>
+  </li>
+  <li><p>  <strong>Exemple 2&nbsp;: une fonctionnalité de glisser-déplacer</strong></p>
+  <p>Une application qui utilise le glisser-déplacer prend également en charge le couper-coller ou des contrôles de formulaire pour déplacer les objets.</p>
+  </li>
+  <li><p>  <strong>Exemple 3&nbsp;: déplacer et relier entre eux des points distants</strong></p>
+  <p>Un programme de liaison de points permet à l'utilisateur de se déplacer d'un point à l'autre sur l'écran et d'utiliser la barre d'espace pour relier le point courant au précédent.</p>
+  </li>
+  <li><p>  <strong>Exemple 4&nbsp;: exception - un programme de coloriage</strong></p>
+  <p>Un programme de coloriage est considéré comme une exception dans la mesure où le maniement du pinceau varie en fonction de la vitesse et de la durée du mouvement.</p>
+  </li>
+  <li>  <p><strong>Exemple 5&nbsp;: exception - simulateur pour apprendre à voler sur des modèles d'hélicoptère</strong></p>
+  <p>Un simulateur pour apprendre à voler sur des modèles d'hélicoptère est considéré comme une exception car la nature même du simulateur est d'enseigner le comportement en temps réel par rapport à un modèle d'hélicoptère.</p>
+  </li>
+  <li>  <p><strong>Exemple 6&nbsp;: un assistant numérique personnel avec un clavier en option</strong></p>
+  <p>Un assistant numérique personnel qui est généralement utilisé via un stylet possède en option un clavier que l'on peut connecter. Le clavier permet de naviguer sur le web de manière tout à fait standard. Le contenu web est complètement utilisable puisqu'il a été conçu pour fonctionner au clavier seulement.</p>
+  </li>
+</ul>
+</div>
+<div class="resources"><h2 id="keyboard-operation-keyboard-operable-resources-head" class="section">Ressources liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit
+pas d'une approbation.</p><p>(Aucune ressource n'est actuellement documentée)</p></div>
+<div class="div3"><h2 id="keyboard-operation-keyboard-operable-techniques-head" class="section">Techniques et échecs pour le critère de succès 2.1.1 - Clavier</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="keyboard-operation-keyboard-operable-101-head" class="div3head">Techniques suffisantes</h3>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G202">G202&nbsp;: Garantir le contrôle par le clavier pour toutes les fonctionnalités (en anglais)</a></p></li>
+<li><p>Garantir le contrôle par le clavier en utilisant l'une des techniques suivantes</p>
+<ul><li>
+<p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H91">
+H91&nbsp;: Utiliser des éléments de formulaire et des liens HTML (en anglais)</a>  (HTML)
+			</p></li></ul></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G90">G90&nbsp;: Fournir des événements déclenchés au clavier
+(en anglais) </a> en utilisant l'une des techniques suivantes&nbsp;:</p>
+<ul><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR20">SCR20&nbsp;: Utiliser à la fois des fonctions au clavier et spécifiques à d'autres périphériques (en anglais) </a>  (programmation par script)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR35">SCR35&nbsp;: Rendre les actions au clavier accessibles en utilisant l'événement onclick sur les liens et les boutons
+(en anglais) </a>  (programmation par script)		</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR2">SCR2&nbsp;: Utiliser des événements redondants au clavier et à la souris (en anglais) </a>  (programmation par Script)
+</p></li>
+</ul></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH17">FLASH17&nbsp;: Fournir l'accès aux objets Flash à l'aide du clavier et éviter les pièges au
+clavier (en anglais)</a> (Flash)
+    	 <strong>ET</strong> utiliser les techniques suivantes lorsque applicable&nbsp;:</p><ul><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH22">FLASH22&nbsp;: Ajouter des actions réalisables à l'aide d'une interface clavier aux éléments
+statiques (en anglais)</a> (Flash)
+    	</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH16">FLASH16&nbsp;: Rendre les actions réalisables à l'aide d'une interface clavier en utilisant
+le gestionnaire d'événement clic sur les composants standards (en anglais)</a> (Flash)
+    	</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH14">FLASH14&nbsp;: Utiliser des gestionnaires d'événement souris et clavier redondants dans Flash (en anglais)</a> (Flash)
+    	</p></li></ul></li></ol>
+</div>
+<div class="boxed"><h3 id="keyboard-operation-keyboard-operable-102-head" class="div3head">Techniques (recommandées) supplémentaires pour 2.1.1</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul><li><p>Utiliser les attributs XHTML role, state et value si des éléments statiques
+réutilisés ont des composants interactifs (lien à venir) ET
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR29">
+SCR29&nbsp;: Ajouter des actions au clavier accessibles à des éléments HTML statiques (en anglais) </a>  (programmation par script)
+</p></li>
+<li><p>Fournir des raccourcis clavier pour les liens et contrôles de formulaire importants (lien à venir)
+</p></li>
+<li><p>Utiliser des combinaisons uniques de lettres pour débuter chaque élément d'une liste (lien à venir). </p></li>
+<li><p>Choisir le déclencheur d'événement le plus abstrait (lien à venir) (Programmation par script)</p></li>
+<li><p>Utiliser l'événement onactivate (lien à venir) (programmation par script)</p></li>
+<li><p>Éviter l'utilisation à d'autres fins des commandes au clavier communément utilisées par les agents utilisateurs (lien à venir) </p></li></ul>
+</div>
+<div class="boxed"><h3 id="keyboard-operation-keyboard-operable-103-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 2.1.1</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.1.1.</p>
+<ul><li><p>
+<a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F54">F54&nbsp;: Échec du critère de succès 2.1.1 consistant à utiliser seulement des événements au pointeur (y compris par geste) pour une fonction (en anglais) </a>
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F55">
+F55&nbsp;: Échec du critère de succès 2.1.1, 2.4.7 et 3.2.1 consistant à utiliser un script pour enlever le focus lorsque le focus est reçu (en anglais) </a>
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F42">
+F42&nbsp;: Échec du critère de succès 1.3.2 et 2.1.1 consistant à utiliser des événements de scripts pour émuler des liens d'une manière qui n'est pas déterminable par un programme informatique (en anglais) </a>
+</p></li></ul>
+</div></div>
+<div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms">
+<dt class="label">
+<a name="functiondef" id="functiondef"> </a>
+fonctionnalité</dt>
+<dd><p><a href="http://www.w3.org/translations/wcag20-fr/#processdef" class="termref">processus</a>
+ et résultats atteignables par une action de l'utilisateur
+</p>
+</dd>
+<dt class="label"><a name="keybrd-interfacedef" id="keybrd-interfacedef"> </a>
+interface clavier</dt><dd>
+<p>
+interface utilisée par un logiciel pour obtenir une saisie au
+clavier</p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;:</em>
+une interface clavier permet aux
+      utilisateurs de fournir aux programmes une saisie au clavier même si la
+      technologie native ne comporte pas de clavier.</p>
+<div class="example"><p class="prefix"><em>Exemple&nbsp;: </em>
+un assistant numérique personnel
+      (PDA) à écran tactile possède une interface clavier intégrée à son
+      système d'exploitation et un connecteur pour des claviers externes. Les
+      applications dans le PDA peuvent utiliser l'interface pour obtenir une
+      saisie au clavier externe ou par d'autres applications qui simulent une
+      sortie clavier comme les interpréteurs d'écriture manuscrite ou les
+      applications de transcription vocale en texte avec des fonctionnalités
+      «&nbsp;d'émulation clavier&nbsp;».</p>
+</div><p class="prefix"><em>Note 2&nbsp;:</em>
+l'utilisation d'une application (ou
+      de parties d'une application) à travers un pointeur souris dirigé au
+      clavier, comme <span lang="en" xml:lang="en">MouseKeys</span>, ne constitue pas une opération réalisée au
+      travers d'une interface clavier car l'utilisation du programme passe par
+      l'interface de pointage et non pas par l'interface clavier.</p>
+</div></dd>
+</dl>
+</div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre la règle 2.1 [Accessibilité au clavier]" href="keyboard-operation.html"><strong>Précédent&nbsp;: </strong>Règle 2.1 [Accessibilité au clavier]</a></li><li><a title="Comprendre le CS 2.1.2 [Pas de piège au clavier]" href="keyboard-operation-trapping.html"><strong>Suivant&nbsp;:</strong> CS 2.1.2 [Pas de piège au clavier]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

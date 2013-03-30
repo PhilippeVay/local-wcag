@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.4.2  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.1 [Utilisation de la couleur]" href="visual-audio-contrast-without-color.html"><strong>Précédent&nbsp;: </strong>SC 1.4.1 [Utilisation de la couleur]</a></li><li><a title="Comprendre le CS 1.4.3 [Contraste (minimum)]" href="visual-audio-contrast-contrast.html"><strong>Suivant&nbsp;: </strong>SC 1.4.3 [Contraste (minimum)]</a></li></ul>
+<div class="navtoc">
+		<p>Sur cette page&nbsp;:</p>
+		<ul id="navbar">
+			<li><a href="#visual-audio-contrast-dis-audio-intent-head">Objectif</a></li>
+			<li><a href="#visual-audio-contrast-dis-audio-examples-head">Exemples</a></li>
+<li><a href="#visual-audio-contrast-dis-audio-resources-head">Ressources liées</a></li>
+<li><a href="#visual-audio-contrast-dis-audio-techniques-head">Techniques et échecs</a></li>
+			<li><a href="#key-terms">Mots clés</a></li>
+		</ul>
+	</div>
+	<div class="skiptarget"><a id="maincontent">-</a></div>
+	<h1><a name="visual-audio-contrast-dis-audio" id="visual-audio-contrast-dis-audio"> </a><strong>Contrôle du son</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 1.4.2</h1>
+	<blockquote class="scquote">
+		<div><p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-dis-audio">1.4.2</a> Contrôle du son&nbsp;:</strong>
+                si du son sur une page Web est audible automatiquement pendant plus de 3 secondes, un <a class="termref" href="#mechanismdef">mécanisme</a> est disponible pour le mettre en pause, l'arrêter ou pour en contrôler le volume de façon indépendante du niveau de volume du système général. (Niveau A)
+			</p>
+			<div class="note">
+				<p class="prefix"><em>Note&nbsp;: </em>puisque tout contenu ne satisfaisant pas à ce critère de succès peut interférer avec la capacité de l'utilisateur à exploiter la page entière, tout le contenu présent dans la page Web (qu'il soit utilisé pour satisfaire à d'autres critères de succès ou non) doit satisfaire à ce critère de succès. Voir l'<em><a href="http://www.w3.org/Translations/WCAG20-fr/#cc5">exigence de conformité 5&nbsp;: Non-interférence</a></em>.</p>
+			</div>
+		</div>
+	</blockquote>
+	<div class="intent"><h2 id="visual-audio-contrast-dis-audio-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>Les personnes qui utilisent un logiciel de lecture d'écran peuvent avoir des difficultés à entendre le contenu parlé si d'autres sons sont joués en même temps. Cette difficulté est aggravée lorsque la sortie son du contenu parlé du lecteur d'écran est basée sur une solution logicielle (comme la plupart le sont aujourd'hui) et est contrôlée par le même contrôle du volume que le son. Il est par conséquent important que l'utilisateur soit en mesure de désactiver l'arrière-plan sonore. Note&nbsp;: avoir le contrôle sur le volume inclut d'être en mesure de réduire le volume à zéro.</p>
+		<div class="note"><p class="prefix"><em>Note&nbsp;: </em>le démarrage automatique d'un son à l'arrivée sur une page peut affecter la capacité d'un utilisateur de lecteur d'écran à trouver le mécanisme pour l'arrêter car il navigue en écoutant et le son démarré automatiquement peut interférer avec cette navigation. Par conséquent, nous déconseillons la pratique de démarrage automatique de sons (surtout s'ils durent plus de 3 secondes) et nous recommandons que le son soit <em>lancé</em> par une action initiée par l'utilisateur après avoir atteint la page plutôt que d'exiger que le son soit <em>arrêté</em> par une action de l'utilisateur après son arrivée sur la page.</p>
+		</div>
+		<p>Voir également <em><a href="visual-audio-contrast-noaudio.html">Comprendre le critère de succès 1.4.7 Arrière-plan sonore de faible volume ou absent</a></em>.</p>
+		<div class="benefits">
+			<h3 id="visual-audio-contrast-dis-audio-64-head" class="div3head">Avantages spécifiques du critère de succès 1.4.2&nbsp;:</h3>
+<ul>
+<li><p>Les personnes qui utilisent les technologies de lecture d'écran peuvent entendre le lecteur d'écran sans qu'aucun autre son ne soit joué. Cela est particulièrement important pour ceux qui sont malentendants et pour ceux dont les lecteurs d'écran utilisent le volume du système (ils ne peuvent donc pas baisser le volume du système général et monter celui du lecteur d'écran).</p></li>
+				<li><p>Ce critère de succès bénéficie également aux personnes qui ont des difficultés à se concentrer sur le contenu visuel (y compris le texte) lorsqu'un son est joué.</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="div3"><h2 id="visual-audio-contrast-dis-audio-examples-head" class="section">Exemples pour le critère de succès 1.4.2</h2>
+		<ul>
+			<li><p>Un fichier audio est lu automatiquement lorsqu'une page est ouverte. Toutefois, l'audio peut être interrompu par l'utilisateur en sélectionnant un lien «&nbsp;muet&nbsp;» en haut de la page.</p></li>
+			<li><p>Une page de garde Flash avec du son qui se joue et puis s'arrête en moins de 3 secondes.</p></li>
+			<li><p>Une page de garde Flash avec du son qui se joue automatiquement possède un contrôle en haut qui permet aux utilisateurs de désactiver le son.</p></li>
+		</ul>
+	</div>
+<div class="resources"><h2 id="visual-audio-contrast-dis-audio-resources-head" class="section">
+Ressources liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.
+</p><p>(Aucune ressource n'est actuellement documentée)</p></div>
+<div class="div3"><h2 id="visual-audio-contrast-dis-audio-techniques-head" class="section">Techniques et échecs pour le critère de succès 1.4.2 - Contrôle du son</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées. </p>
+<div class="boxed"><h3 id="visual-audio-contrast-dis-audio-65-head" class="div3head">Techniques suffisantes</h3>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G60">G60&nbsp;: Jouer un son qui s'arrête automatiquement dans les 3 secondes (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G170">G170&nbsp;: Fournir un élément d'interface près du début de la page Web permettant d'arrêter le son qui démarre automatiquement (en anglais)</a></p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G171">G171&nbsp;: Jouer les sons seulement sur demande de l'utilisateur (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH18">FLASH18&nbsp;: Fournir un élément de contrôle permettant de désactiver les sons qui se déclenchent automatiquement dans Flash
+(en anglais)</a> (Flash)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH34">FLASH34&nbsp;: Utiliser la détection d'un lecteur d'écran pour désactiver les sons qui se déclenchent automatiquement
+(en anglais)</a> (Flash)
+</p></li>
+</ol>
+</div>
+<div class="boxed"><h3 id="visual-audio-contrast-dis-audio-66-head" class="div3head">Techniques (recommandées) supplémentaires pour 1.4.2</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul>
+<li><p>Fournir des préférences s'appliquant à l'ensemble d'un site afin de désactiver le son en plus de fournir un élément de contrôle à proximité du début
+de la page Web qui permet d'arrêter le son qui joue automatiquement (lien à venir)
+</p></li>
+</ul>
+</div>
+<div class="boxed"><h3 id="visual-audio-contrast-dis-audio-67-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 1.4.2</h3>
+<p>Le groupe de travail des <acronym xml:lang="en" title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.4.2.</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F23">F23&nbsp;: Échec du critère de succès 1.4.2 consistant à jouer un son pendant plus de 3 secondes sans mécanisme pour l'arrêter (en anglais)</a></p></li>
+</ul>
+</div>
+</div>
+<div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms">
+<dt class="label"><a name="mechanismdef" id="mechanismdef"> </a>mécanisme</dt>
+<dd>
+<p><a href="http://www.w3.org/Translations/WCAG20-fr/#processdef" class="termref">processus</a> ou technique pour obtenir un résultat</p>
+				<div class="note">
+					<p class="prefix"><em>Note 1&nbsp;: </em>le mécanisme peut être explicitement fourni par le contenu ou <a href="http://www.w3.org/Translations/WCAG20-fr/#reliedupondef" class="termref">dépendre</a> de la plateforme ou de l'<a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>, y compris les <a href="http://www.w3.org/Translations/WCAG20-fr/#atdef" class="termref">technologies d'assistance</a>.</p>
+					<p class="prefix"><em>Note 2&nbsp;: </em>le mécanisme doit satisfaire à tous les critères de succès (d'un niveau donné) pour déclarer un niveau de conformité.</p>
+				</div>
+			</dd>
+		</dl>
+	</div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.4.1 [Utilisation de la couleur]" href="visual-audio-contrast-without-color.html"><strong>Précédent&nbsp;: </strong>SC 1.4.1 [Utilisation de la couleur]</a></li><li><a title="Comprendre le CS 1.4.3 [Contraste (minimum)]" href="visual-audio-contrast-contrast.html"><strong>Suivant&nbsp;: </strong>SC  1.4.3 [Contraste (minimum)]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

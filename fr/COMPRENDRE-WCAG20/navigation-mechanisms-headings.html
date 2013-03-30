@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 2.4.10  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.4.9 [Fonction du lien (lien uniquement)]" href="navigation-mechanisms-link.html"><strong>Précédent&nbsp;: </strong>CS 2.4.9 [Fonction du lien (lien uniquement)]</a></li><li><a title="Comprendre la règle  3.1 [Lisible]" href="meaning.html"><strong>Suivant&nbsp;: </strong>Règle 3.1 [Lisible]</a></li></ul>
+<div class="navtoc"><p>Sur cette page&nbsp;:</p><ul id="navbar"><li><a href="#navigation-mechanisms-headings-intent-head">Objectif</a></li><li><a href="#navigation-mechanisms-headings-examples-head">Exemples</a></li><li><a href="#navigation-mechanisms-headings-resources-head">Ressources liées</a></li><li><a href="#navigation-mechanisms-headings-techniques-head">Techniques et échecs</a></li><li><a href="#key-terms">Mots clés</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="navigation-mechanisms-headings" id="navigation-mechanisms-headings"> </a><strong>
+En-têtes de section</strong><span class="screenreader">&nbsp;:</span><br/>Comprendre le <abbr title="critère de succès">CS</abbr> 2.4.10</h1>
+<blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#navigation-mechanisms-headings">2.4.10</a> En-têtes de section&nbsp;:</strong>
+ les en-têtes de <a href="#sectiondef" class="termref">section</a> sont utilisés pour organiser le
+contenu. (Niveau AAA) </p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;: </em>«&nbsp;en-tête&nbsp;» est utilisé dans le sens
+général et comprend les titres et autres moyens de structurer les différents
+types de contenus. </p>
+<p class="prefix"><em>Note 2&nbsp;: </em>ce critère de succès concerne les
+contenus de sections et non les <a
+href="#user-interface-componentdef" class="termref">composants d'interface
+utilisateur</a>. Les composants d'interface utilisateur sont traités par le <a
+href="#ensure-compat-rsv">critère de succès 4.1.2</a>.</p>
+</div>
+</div></blockquote><div class="intent"><h2 id="navigation-mechanisms-headings-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p>L'objectif de ce critère de succès est de fournir des en-têtes pour les sections d'une page Web, lorsque la page est organisée en sections. Par exemple, les longs documents sont souvent divisés en plusieurs chapitres, les chapitres ont des sous-parties et les sous-parties sont divisées en plusieurs sections, les sections en paragraphes etc. Lorsqu'il existe de telles sections, elles doivent comporter un en-tête permettant de les présenter. Cela indique clairement l'organisation du contenu, facilite la navigation à travers le contenu, et fournit des repères mentaux qui aident à la compréhension du contenu. D'autres éléments de la page peuvent venir en complément des en-têtes pour améliorer la présentation (exemple les traits horizontaux et les boîtes), mais la présentation visuelle ne suffit pas à identifier les sections d'un document.</p>
+<p>Cette disposition est incluse au niveau AAA car elle ne peut pas être appliquée à tous les types de contenu et il n'est pas toujours possible d'insérer des en-têtes. Par exemple, lorsqu'on publie sur le Web un document préexistant, les en-têtes qui n'ont pas été inclus par l'auteur dans le document original ne peuvent être insérés. Ou une longue lettre traite souvent de différents sujets, mais le fait de mettre des en-têtes dans une lettre paraîtrait très étrange. Toutefois, lorsqu'un document peut être partagé en sections à l'aide d'en-têtes, cela en facilite à la fois la compréhension et la navigation.</p>
+<div class="benefits"><h3 id="navigation-mechanisms-headings-173-head" class="div3head">Avantages spécifiques du critère de succès 2.4.10&nbsp;:</h3>
+<ul><li><p>Les personnes aveugles sauront qu'elles se déplacent d'une section à l'autre d'une page Web et connaîtront le but de chaque section.</p></li>
+<li><p>Les personnes ayant certaines difficultés d'apprentissage auront la possibilité d'utiliser les en-têtes pour comprendre plus facilement l'organisation générale du contenu de la page.</p></li>
+<li><p>Les personnes qui naviguent à l'aide du clavier pourront déplacer le focus d'en-tête en en-tête, ce qui leur permet de trouver rapidement le contenu qui les intéresse.</p></li>
+<li><p>Dans les pages où une partie du contenu se met à jour, les en-têtes peuvent être utilisés pour accéder rapidement au contenu mis à jour.</p></li></ul></div></div><div class="div3"><h2 id="navigation-mechanisms-headings-examples-head" class="section">Exemples pour le critère de succès 2.4.10</h2>
+<ul><li><p>Un menu contient différentes sections pour différentes catégories. Chaque section possède un en-tête&nbsp;: amuse-bouche, salade, soupe, entrée, dessert.</p></li>
+<li><p>Une application Web possède une page de paramétrages divisée en groupes de paramètres ayant un rapport entre eux. Chaque section possède un en-tête décrivant la classe de paramètres.</p></li></ul></div><div class="resources"><h2 id="navigation-mechanisms-headings-resources-head" class="section">
+Ressources liées</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul><li><p><a xml:lang="en" lang="en" hreflang="en" href="http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">
+Quick tips for accessible headings</a> – Conseils en anglais pour créer des en-têtes accessibles
+</p></li>
+</ul></div><div class="div3"><h2 id="navigation-mechanisms-headings-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 2.4.10 - En-têtes de section</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.</p>
+<div class="boxed"><h3 id="navigation-mechanisms-headings-174-head" class="div3head">
+Techniques suffisantes</h3><ol class="enumar"><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G141">
+G141&nbsp;: Organiser une page en utilisant les en-têtes de section (en anglais)
+</a></p></li></ol></div><div class="boxed"><h3 id="navigation-mechanisms-headings-175-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 2.4.10</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul><li>
+<p>Utiliser la propriété live pour les régions actives (lien à venir) (ARIA)
+</p></li><li><p>
+Fournir un mécanisme pour naviguer vers les différentes sections du contenu d'une page Web (lien à venir)</p></li></ul></div><div class="boxed"><h3 id="navigation-mechanisms-headings-176-head" class="div3head">
+Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 2.4.10</h3>
+<p>Le groupe de travail des <acronym lang="en" xml:lang="en" title="Web Content Accessibility Guidelines">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 2.4.10.</p>
+<p>(Aucun échec n'est actuellement documenté)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms">
+<dt class="label"><a name="user-interface-componentdef"
+  id="user-interface-componentdef"></a>composant d'interface utilisateur</dt>
+    <dd><p>partie du contenu qui est perçue par les utilisateurs comme un
+      élément de contrôle unique pour une fonction distincte</p>
+      <div class="note"><p class="prefix"><em>Note 1&nbsp;: </em>plusieurs composants d'interface
+      utilisateur peuvent être implémentés au sein d'un seul programme. La
+      notion de composant n'est pas liée ici aux techniques de programmation,
+      mais plutôt à ce que les utilisateurs perçoivent comme des éléments
+      de contrôle distincts.</p>
+      <p class="prefix"><em>Note 2&nbsp;: </em>les composants d'interface
+      utilisateur incluent les éléments de formulaire et les liens aussi bien
+      que des composants générés par scripts.</p>
+      </div>
+      <div class="example"><p class="prefix"><em>Exemple&nbsp;: </em>un microprogramme (applet) dispose
+      d'un «&nbsp;élément de contrôle&nbsp;» permettant de se déplacer dans le
+      contenu ligne par ligne, page par page ou au hasard. Puisque chacune de
+      ces fonctions devrait avoir un nom et fonctionner indépendamment, elles
+      constitueraient chacune un «&nbsp;composant d'interface utilisateur&nbsp;».</p>
+      </div>
+</dd>
+  <dt class="label"><a name="sectiondef" id="sectiondef"></a>section</dt>
+    <dd><p>une portion autonome de contenu écrit qui traite d'un ou plusieurs
+      sujets ou idées liés entre eux</p>
+      <div class="note"><p class="prefix"><em>Note&nbsp;: </em>une section peut consister en un ou
+      plusieurs paragraphes et inclure des graphiques, des tableaux, des listes
+      et des sous-sections.</p>
+      </div>
+</dd></dl></div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 2.4.9 [Fonction du lien (lien uniquement)]" href="navigation-mechanisms-link.html"><strong>Précédent&nbsp;: </strong>CS 2.4.9 [Fonction du lien (lien uniquement)]</a></li><li><a title="Comprendre la règle  3.1 [Lisible]" href="meaning.html"><strong>Suivant&nbsp;: </strong>Règle 3.1 [Lisible]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

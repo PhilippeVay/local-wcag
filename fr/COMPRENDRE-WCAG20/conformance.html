@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>Comprendre la conformité | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/><style type="text/css">
+blockquote.scquote {margin: 0 1em 1em 1em;}
+</style> </head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 4.1.2 [Nom, rôle et valeur]" href="ensure-compat-rsv.html"><strong>Précédent&nbsp;: </strong>CS 4.1.2 [Nom, rôle et valeur]</a></li><li><a title="Faire référence aux WCAG 2.0" href="appendixA.html"><strong>Suivant&nbsp;: </strong> Faire référence aux WCAG 2.0</a></li></ul><div class="mainbody">
+<div class="navtoc">
+  <p>Sur cette page&nbsp;:</p>
+  <ul id="navbar">
+    <li><a href="#uc-conformance-whatis-head">Que signifie la conformité&nbsp;?</a></li>
+    <li><a href="#uc-conformance-requirements-head">Comprendre les exigences de conformité</a></li>
+    <li><a href="#uc-conformance-claims-head">Comprendre les déclarations de conformité</a> </li>
+    <li><a href="#uc-levels-head">Comprendre les niveaux de conformité</a> </li>
+    <li> <a href="#uc-accessibility-support-head">Comprendre la compatibilité avec l'accessibilité</a></li>
+    <li><a href="#uc-programmatically-determined-head">Comprendre «&nbsp;déterminable par un programme informatique&nbsp;»</a></li>
+    <li><a href="#uc-conforming-alt-versions-head">Comprendre «&nbsp;version de remplacement conforme&nbsp;»</a></li>
+    <li><a href="#uc-web-page-head">Comprendre «&nbsp;page Web&nbsp;»</a></li>
+    <li><a href="#uc-text-alternatives-head">Comprendre «&nbsp;équivalent textuel&nbsp;»</a></li>
+    <li><a href="#uc-conformance-terms-head">Mots clés</a> </li> </ul>
+</div>
+<div class="div1"><div class="skiptarget"><a id="maincontent">-</a></div><h1 class="normal"><a name="conformance" id="conformance"> </a> Comprendre la conformité</h1>
+<p>Tous les critères de succès des WCAG 2.0 sont écrits comme des critères testables permettant de déterminer objectivement si le contenu les satisfait. Tester les critères de succès impliquerait une combinaison de tests automatisés et d'évaluation humaine. Le contenu doit être testé par ceux qui comprennent comment les personnes ayant différents types de limitations utilisent le Web.</p>
+<p>Tester et testable réfèrent, dans ce contexte, à des tests fonctionnels, c'est-à-dire vérifier que le contenu fonctionne comme prévu, ou dans ce cas, qu'il satisfait les critères de succès. Bien que le contenu satisfasse à tous les critères de succès, le contenu n'est pas toujours utilisable par des personnes ayant une grande variété de limitations. Par conséquent, les tests d'utilisabilité sont recommandés, en plus des tests fonctionnels requis. Les tests d'utilisabilité ont pour but de déterminer à quel point les gens peuvent utiliser le contenu selon sa fonction. Il est recommandé que des utilisateurs en situation de handicap soient inclus dans des groupes de test lors de la réalisation des tests d'utilisabilité.</p>
+<div class="div3">  <h2 id="uc-conformance-whatis-head" class="section">Que signifie la conformité&nbsp;?</h2>
+  <p>La conformité à un standard signifie que les «&nbsp;exigences&nbsp;» de ce standard sont rencontrées ou satisfaites. Dans les WCAG 2.0 les «&nbsp;exigences&nbsp;» sont les critères de succès. Pour vous conformer aux WCAG 2.0, vous devez satisfaire les critères de succès, c'est-à-dire qu'il n'y ait aucun contenu qui viole les critères de succès.</p>
+  <div class="note">
+    <p class="prefix"><em>Note&nbsp;: </em>cela signifie que s'il n'y a aucun contenu auquel s'applique un critère de succès, ce critère de succès est satisfait.</p></div>
+  <p>La plupart des standards ont un seul niveau de conformité. Afin de tenir compte des différentes situations qui peuvent exiger ou permettre des niveaux plus élevés d'accessibilité, les WCAG 2.0 comportent trois niveaux de conformité et, par conséquent, trois niveaux de critères de succès.</p></div>
+<div class="div3"><h2 id="uc-conformance-requirements-head" class="section">Comprendre les exigences de conformité</h2>
+<p>Il y a cinq conditions à remplir pour que le contenu soit classé comme «&nbsp;conforme&nbsp;» aux WCAG 2.0. Cette section fournit de brèves notes concernant ces exigences. Cette section sera développée au fil du temps pour répondre aux questions qui pourraient se poser ou pour fournir de nouveaux exemples des façons de satisfaire aux différentes exigences de conformité.</p>
+<h3 id="uc-conf-req1-head" class="div3head">Comprendre l'exigence 1</h3>
+<blockquote class="scquote" id="cc1" cite="http://www.w3.org/Translations/wcag20-fr/#cc1">
+  <div class="div3"><p class="sctxt"><strong class="sc-handle">1. Niveau de conformité&nbsp;:</strong> l'un des niveaux de conformité suivants est atteint entièrement.</p>
+    <ul>
+<li><p> <strong class="sc-handle">Niveau A&nbsp;: </strong>pour une conformité de niveau A (le niveau minimal de conformité), la <a href="#webpagedef" class="termref">page Web</a> <a href="#satisfiesdef" class="termref">satisfait</a> à tous les critères de succès de niveau A ou une <a href="#conforming-alternate-versiondef" class="termref">version de remplacement conforme</a> est fournie.</p></li>
+<li><p> <strong class="sc-handle">Niveau AA&nbsp;: </strong>pour une conformité de niveau AA, la page Web remplit tous les critères de succès de niveau A et AA ou une version de remplacement conforme au niveau AA est fournie.</p></li>
+<li><p> <strong class="sc-handle">Niveau AAA&nbsp;: </strong>pour une conformité de niveau AAA, la page Web remplit tous les critères de succès de niveau A, AA et AAA ou une version de remplacement conforme au niveau AAA est fournie.</p></li>
+</ul>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;: </em>bien que la conformité se définisse par paliers, les auteurs sont invités à mentionner (dans leur déclaration) tous les critères de succès satisfaits au-delà du niveau de conformité atteint.</p>
+<p class="prefix"><em>Note 2&nbsp;: </em>il n'est pas recommandé de se fixer le niveau AAA comme objectif à l'échelle de sites entiers car il n'est pas possible de satisfaire à tous les critères de succès du niveau AAA pour certains contenus.</p></div>
+  </div>
+</blockquote>
+<p> La première exigence traite des niveaux de conformité. Elle dit essentiellement que toutes les informations sur une page sont conformes ou comportent une <a href="http://www.w3.org/Translations/wcag20-fr/#conforming-alternate-versiondef">version de remplacement conforme</a> qui est disponible à partir de la page. L'exigence explique aussi qu'aucune conformité n'est possible sans au moins satisfaire à tous les critères de succès de niveau A.</p>
+<p>La note fait ressortir que les auteurs sont encouragés à aller au-delà de la conformité à un niveau particulier et à compléter et rapporter s'ils le désirent, tout progrès vers des niveaux plus élevés de conformité.</p>
+<p>Voir aussi <a href="#uc-conforming-alt-versions-head">Comprendre «&nbsp;version de remplacement conforme&nbsp;»</a> qui inclut des techniques pour fournir une version de remplacement conforme.</p>
+<h3 id="uc-conf-req2-head" class="div3head"> Comprendre l'exigence 2</h3>
+<blockquote class="scquote" id="cc2" cite="http://www.w3.org/Translations/wcag20-fr/#cc2">
+  <div class="div3">
+<p class="sctxt"><strong class="sc-handle">2. Pages complètes&nbsp;:</strong> la <a href="#conformancedef" class="termref">conformité</a> (et le niveau de conformité) s'entend uniquement pour des <a href="#webpagedef" class="termref">pages Web</a> complètes et ne peut être atteinte si une partie de la page Web est exclue. </p>
+<div class="note"><p class="prefix"><em>Note 1&nbsp;: </em>dans le but de déterminer la conformité, les versions de remplacement à une partie du contenu de la page sont considérées comme une partie de la page quand les versions de remplacement peuvent être obtenues directement depuis la page, comme par exemple, une description longue ou la présentation de remplacement d'une vidéo.</p>
+<p class="prefix"><em>Note 2&nbsp;: </em>les auteurs de pages Web qui ne peuvent être considérées comme conformes en raison d'un contenu qui n'est pas sous le contrôle de l'auteur peuvent envisager d'utiliser une <a href="/Translations/wcag20-fr/#conformance-partial">déclaration de conformité partielle</a>.</p>
+    </div>
+  </div>
+</blockquote>
+<p>Cette disposition exige simplement que la page entière soit conforme. Des déclarations sur «&nbsp;une partie d'une page conforme&nbsp;» ne peuvent pas être faites.</p>
+<p>Parfois, des informations supplémentaires pourront être disponibles à partir d'une autre page d'informations sur une page. L'attribut <code>longdesc</code> en HTML est un exemple. Avec un <code>longdesc</code>, une longue description d'un graphique peut être présentée sur une page distincte où l'utilisateur peut se déplacer à partir de la page présentant le graphique. Il est donc clair qu'un tel contenu est considéré comme faisant partie de la page Web, de sorte que l'exigence 2 est satisfaite pour l'ensemble combiné des pages Web considérées comme une seule page Web. Des versions de remplacement peuvent également être fournies sur la même page. Par exemple, créer un équivalent d'un contrôle de l'interface utilisateur.</p>
+<div class="note">  <p class="prefix"><em>Note 1&nbsp;: </em>en raison de l'exigence de conformité 5, une page entière peut être conforme, même si certaines parties d'une page utilisent des technologies qui ne sont pas compatibles avec l'accessibilité tant que ces parties n'interfèrent pas avec le reste de la page et que toutes les informations et les fonctionnalités sont disponibles ailleurs sur la même page ou à partir de cette page.</p>
+  <p class="prefix"> <em>Note 2&nbsp;: </em>il est possible d'inclure des contenus non conformes. Voir <a href="conformance.html#uc-conf-req5-head"> Comprendre l'exigence de conformité 5</a>.</p>
+</div>
+<h3 id="uc-conf-req3-head" class="div3head">Comprendre l'exigence 3</h3>
+<blockquote class="scquote" id="cc3" cite="http://www.w3.org/Translations/WCAG20-fr/#cc3">
+<div class="div3"><p class="sctxt"><strong class="sc-handle">3. Processus complets&nbsp;:</strong> quand une <a href="#webpagedef" class="termref">page Web</a> fait partie d'un ensemble représentant un <a href="#processdef" class="termref">processus</a> (comme une succession d'étapes devant être complétées afin d'accomplir une activité), toutes les pages Web du processus sont conformes au moins au niveau spécifié. (La conformité à un certain niveau est impossible s'il existe une page de ce processus qui n'atteint pas au moins ce niveau.)</p>
+  <div class="example"><p class="prefix"><em>Exemple&nbsp;: </em>une boutique en ligne présente une série de pages permettant de sélectionner et d'acheter des produits. Toutes les pages de la séquence depuis le début jusqu'à la fin (le paiement) sont conformes afin que toute page faisant partie du processus soit conforme.</p> </div>
+</div>
+</blockquote>
+<p>Cette disposition empêche une page Web qui fait partie d'un processus plus large d'être considérée comme conforme si le processus dans son ensemble ne l'est pas. Cela permettrait d'éviter qu'un site de commerce soit classé comme conforme si le passage à la caisse ou d'autres fonctionnalités du site qui font partie des processus de vente ou d'achat ne sont pas conformes.</p>
+<h3 id="uc-conf-req4-head" class="div3head">Comprendre l'exigence 4</h3>
+<blockquote class="scquote" id="cc4" cite="http://www.w3.org/Translations/wcag20-fr/#cc4">
+  <div class="div3"><p class="sctxt"><strong class="sc-handle">4. L'usage des technologies selon des méthodes exclusivement compatibles avec l'accessibilité&nbsp;:</strong> la satisfaction à un critère de succès ne <a href="#reliedupondef" class="termref">dépend</a> que des méthodes d'utilisation des <a href="#technologydef" class="termref">technologies</a> qui sont <a href="#accessibility-supporteddef" class="termref">compatibles avec l'accessibilité</a>. Toute information ou fonctionnalité proposée d'une manière non compatible avec l'accessibilité est également disponible sous une forme compatible avec l'accessibilité. (Voir <a href="conformance.html#uc-accessibility-support-head">Comprendre la compatibilité avec l'accessibilité</a>.) </p>
+  </div>
+</blockquote>
+<p>Cette exigence de conformité est expliquée plus bas dans <a href="conformance.html#uc-accessibility-support-head">Comprendre la compatibilité avec l'accessibilité</a>.</p>
+<h3 id="uc-conf-req5-head" class="div3head">Comprendre l'exigence 5</h3>
+<blockquote class="scquote" id="cc5" cite="http://www.w3.org/Translations/wcag20-fr/#cc5">
+  <div class="div3"><p class="sctxt"><strong class="sc-handle">5. Non-interférence&nbsp;:</strong> si des <a href="#technologydef" class="termref">technologies</a> sont employées de manière non <a href="#accessibility-supporteddef" class="termref">compatible avec l'accessibilité</a> ou non conforme, alors elles n'empêchent pas les utilisateurs d'accéder au reste de la page. En outre, la <a href="#webpagedef" class="termref">page Web</a> dans sa globalité continue de répondre aux exigences de conformité dans chacun des cas suivants&nbsp;: </p>
+<ol class="enumar">
+  <li><p>quand toute technologie non <a href="#reliedupondef" class="termref">dépendante</a> est activée dans l'agent utilisateur,</p></li>
+  <li><p>quand toute technologie non dépendante est désactivée dans l'agent utilisateur et</p></li>
+  <li><p>quand toute technologie non dépendante n'est pas reconnue par l'agent utilisateur</p></li>
+</ol>
+<p class="sctxt">De plus, les critères de succès suivants s'appliquent à tout le contenu de la page, y compris au contenu dont on ne dépend pas autrement pour atteindre la conformité, car un échec à les satisfaire pourrait perturber toute utilisation de la page&nbsp;:</p>
+<ul>
+  <li><p><strong>1.4.2 - Contrôle du son</strong>,</p></li>
+  <li><p><strong>2.1.2 - Pas de piège au clavier</strong>,</p></li>
+  <li><p><strong>2.3.1 - Pas plus de trois flashs ou sous le seuil critique</strong> et</p></li>
+  <li><p><strong>2.2.2 - Mettre en pause, arrêter, masquer</strong>.</p> </li>
+</ul>
+</div>
+</blockquote>
+<p>Cela dit essentiellement que les technologies qui ne sont <strong>pas compatibles avec l'accessibilité</strong> peuvent être utilisées tant que toutes les informations sont également disponibles en utilisant les technologies qui <strong>sont compatibles avec l'accessibilité</strong> et tant que la <strong>non-compatibilité avec l'accessibilité</strong> de certains contenus n'interfère pas.</p>
+<p>Les technologies qui ne sont pas compatibles avec l'accessibilité peuvent être utilisées, ou des technologies qui sont compatibles avec l'accessibilité peuvent être utilisées d'une manière non conforme, tant que toutes les informations sont aussi disponibles en utilisant les technologies qui sont compatibles avec l'accessibilité, d'une manière qui est conforme, et tant que la non compatibilité avec l'accessibilité de certains contenus n'interfère pas.</p>
+<p>Il y a quatre dispositions qui traitent notamment des questions d'interférence avec l'utilisation de la page. Ces quatre dispositions sont incluses dans une note ici. Une note sur chacune de ces dispositions indique en effet que ces critères de succès doivent être respectés pour tous les contenus y compris le contenu créé en utilisant des technologies qui ne sont pas compatibles avec l'accessibilité.</p>
+<div class="example"> <p class="prefix"><em>Exemple&nbsp;: </em>une page Web intègre une nouvelle technologie graphique interactive appelée «&nbsp;ZAP&nbsp;». Bien que «&nbsp;ZAP&nbsp;» soit compatible avec l'accessibilité, l'information qui est présentée dans «&nbsp;ZAP&nbsp;» est également présentée sur la page en HTML, ainsi l'utilisation de dépend pas de «&nbsp;ZAP&nbsp;». Ainsi donc, cette page satisferait l'exigence de conformité 1. Toutefois, si l'utilisateur tente de se déplacer avec la touche tabulation dans le contenu ZAP, le focus entrera dans l'objet ZAP et y restera coincé. Une fois dans l'objet, il n'y a rien que l'utilisateur puisse faire pour en retirer le focus. Ainsi les utilisateurs du clavier ne peuvent pas utiliser la moitié inférieure de la page. Le contenu ZAP flashe aussi vivement et continuellement à des fréquences variées sans s'arrêter. Ainsi, les personnes ayant un déficit d'attention sont distraites et celles ayant des troubles épileptiques photosensibles peuvent avoir des convulsions. La conformité à l'exigence 5 empêche de telles situations de se produire sur une page conforme.</p>
+</div>
+</div>
+<div class="div3">  <h2 id="uc-conformance-claims-head" class="section">Comprendre les déclarations de conformité</h2>
+  <p>Il n'est pas nécessaire de faire une déclaration de conformité en vue de se conformer. Si une déclaration est faite cependant, les règles doivent être suivies.</p>
+  <p>Parfois, quelqu'un peut vouloir faire une déclaration seulement pour un contenu qui a été ajouté après une certaine date. Ou bien quelqu'un peut vouloir déclarer la conformité aux WCAG 1.0 pour le contenu jusqu'à une certaine date et la conformité aux WCAG 2.0 pour le contenu qui a été créé ou modifié après cette date. Les WCAG 2.0 n'interdisent aucune de ces pratiques tant qu'il ressort clairement quelles pages sont déclarées conformes à quelle version des WCAG.</p>
+  <div class="note"> <p class="prefix"> <em>Note 1&nbsp;: </em>quand on parle de technologies dont «&nbsp;dépend&nbsp;» l'utilisation du contenu, on parle des technologies Web (HTML, CSS, JavaScript, etc.), et non des agents utilisateurs (navigateurs, technologies d'assistance, etc.).</p>
+    <p class="prefix"><em>Note 2&nbsp;: </em>les déclarations de conformité ne sont généralement pas situées sur chaque page Web dans le périmètre de conformité.</p>
+  </div>
+  <h3 id="uc-256-head" class="div3head">Informations sur les mesures supplémentaires prises qui vont au-delà des critères de succès</h3>
+  <p>Un des composants optionnels d'une revendication de conformité est «&nbsp;l'information sur les mesures supplémentaires prises qui vont au-delà des critères de succès pour améliorer l'accessibilité.&nbsp;» Cela peut inclure des critères de succès supplémentaires qui ont été satisfaits, les techniques recommandées qui ont été mises en œuvre, des informations sur tous les protocoles additionnels utilisés pour faciliter l'accès pour les personnes en situation de handicap ou ayant des besoins particuliers, etc. Toute information qui serait utile pour une meilleure compréhension de l'accessibilité des pages peut être incluse.</p>
+  <h3 id="uc-meta-claims-head" class="div3head">L'utilisation des métadonnées pour faire une déclaration de conformité</h3>
+  <p>La façon la plus utile de rattacher les déclarations de conformité au contenu serait de le faire sous une forme standard lisible par machine. Lorsque cette pratique est généralisée, des moteurs de recherche ou des agents utilisateurs spéciaux seront en mesure d'utiliser cette information pour trouver et offrir un contenu qui est plus accessible ou les agents utilisateurs pourront s'ajuster au contenu. Il existe un certain nombre d'options de déclarations basées sur les métadonnées qui sont en cours de développement et les auteurs et les développeurs d'outils sont encouragés à les utiliser.</p>
+  <p>En outre, les métadonnées peuvent être utilisées pour faire rapport de la conformité aux différents critères de succès, une fois que le niveau A de conformité a été atteint.</p>
+  <p>Il existe également des formats de rapport programmés (EARL) <a href="http://www.w3.org/WAI/intro/earl.php" hreflang="en" xml:lang="en" lang="en">Evaluation and Report Language (EARL)</a> qui sont en cours d'élaboration et qui pourraient fournir des formats lisibles par machine pour des renseignements détaillés sur la conformité. Lorsque les formats de rapport seront formalisés et le soutien développé, ils seront documentés ici.</p>
+  <h3 id="uc-examples-head" class="div3head">Exemples de déclarations de conformité</h3>
+  <div><h4><a name="uc-68-head" id="uc-68-head"> </a>Exemples des composantes exigées pour une déclaration de conformité</h4>
+    <div class="example"><p class="prefix"><em>Exemple 1&nbsp;: </em>le 20 septembre 2009, toutes les pages Web à http://www.example.com sont conformes aux Règles pour l'accessibilité des contenus Web 2.0 à http://www.w3.org/TR/2008/REC-WCAG20-20081211/. Conformité de niveau A.</p>
+      <ul>
+<li><p>L'ensemble documenté des technologies compatibles avec l'accessibilité dont <strong>dépend</strong> l'utilisation du contenu faisant l'objet de cette déclaration est un sous-ensemble de l'ISA- AsCTset#1-2008 à http://ISA.example.gov/AsCTsets/AS2-2008.</p></li>
+</ul>
+<p class="prefix"><em>Exemple 2&nbsp;: </em>(en utilisant une expression régulière) Le 12 août 2009, les pages correspondant au modèle http://www.example.com/ (marketing | Ventes | contact) / .* sont conformes aux Règles pour l'accessibilité des contenus Web 2.0 à http://www.w3.org/TR/2008/REC-WCAG20-20081211/. Conformité de niveau AA.</p>
+<ul>
+<li><p>Les technologies dont <strong>dépend</strong> l'utilisation de ce contenu sont&nbsp;: XHTML 1.0 Transitional, CSS 2.0 et JavaScript 1.2.</p></li>
+</ul>
+<p class="prefix"><em>Exemple 3&nbsp;: </em>(en utilisant la logique booléenne) Le 6 janvier 2009, http://example.com/ ET NON (http://example.com/archive/ OU http://example.com/publications/archive/) est conforme aux Règles pour l'accessibilité des contenus Web 2.0 à  http://www.w3.org/TR/2008/REC-WCAG20-20081211/. Conformité de niveau AA.</p>
+<ul>
+<li><p>L'ensemble documenté des technologies compatibles avec l'accessibilité dont <strong>dépend</strong> l'utilisation du contenu faisant l'objet de cette déclaration inclut XHTML 1.0 et SMIL de ISA- AsCTset#1-2008 à http://ISA.example.gov/AsCTsets/AS2-2008</p></li>
+</ul>
+</div>
+</div>
+<div><h4><a name="uc-69-head" id="uc-69-head"> </a>Exemples de déclaration de conformité contenant des composants optionnels</h4>
+<div class="example"><p class="prefix"><em>Exemple 1&nbsp;: </em>le 5 mai 2009, la page «&nbsp;G7&nbsp;: Une introduction&nbsp;» à  http://telcor.example.com/nav/G7/intro.html est conforme aux Règles pour l'accessibilité des contenus Web 2.0 à http://www.w3.org/TR/2008/REC-WCAG20-20081211/. Conformité de niveau AA.</p>
+<ul>
+<li><p>Les critères de succès supplémentaires suivants ont également été satisfaits&nbsp;: 1.1.2, 1.2.5, et 1.4.3.</p></li>
+<li><p>L'ensemble documenté des technologies compatibles avec l'accessibilité utilisées pour cette déclaration est AsCTset#1-2006 à http://UDLabs.org/AsCTset#1-2006.html.</p></li>
+<li><p>Les technologies dont <strong>dépend</strong> l'utilisation de ce contenu sont&nbsp;: XHTML 1.0 (Strict), et <span lang="en" xml:lang="en">Real Video</span>.</p></li>
+<li><p>Les technologies qui sont <strong>«&nbsp;utilisées mais dont ne dépend pas&nbsp;»</strong> l'utilisation du contenu sont&nbsp;: JavaScript 1.2, CSS2.</p></li>
+</ul>
+<p class="prefix"><em> Exemple 2&nbsp;: </em>le 21 juin 2009, l'ensemble du contenu commençant par l'URI http://example.com/nav et http://example.com/docs est conforme aux Règles pour l'accessibilité des contenus Web 2.0 à http://www.w3.org/TR/2008/REC-WCAG20-20081211/. Conformité de niveau AAA.</p>
+<ul>
+<li><p>L'ensemble documenté des technologies compatibles avec l'accessibilité utilisées pour cette déclaration est SMITH- AsCTset#2-2008 à http://smithreports.example.com/AsCTsets/AS2-2008. </p></li>
+<li><p>Les technologies dont <strong>dépend</strong> l'utilisation de ce contenu sont&nbsp;: XHTML 1.0 (Strict), CSS2, JavaScript 1.2, JPEG, PNG. </p></li>
+<li><p>Les agents utilisateur, y compris les technologies d'assistance avec lesquels ce contenu a été testé, peuvent être trouvés à http://example.com/docs/WCAG20/test/technologies.html.</p></li>
+</ul>
+<p class="prefix"><em>Exemple 3&nbsp;: </em>le 23 mars 2009, tous les contenus disponibles sur le serveur à http://www.wondercall.example.com sont conformes aux Règles pour l'accessibilité des contenus Web 2.0 à http://www.w3.org/TR/2008/REC-WCAG20-20081211/. Conformité de niveau simple A.</p>
+<ul>
+<li><p>La technologie dont <strong>«&nbsp;dépend</strong>&nbsp;» l'utilisation de ce contenu est&nbsp;: HTML 4.01. </p></li>
+<li><p>Les technologies qui sont <strong>«&nbsp;utilisées mais dont ne dépend pas&nbsp;»</strong> l'utilisation du contenu sont&nbsp;: CSS2 et GIF.</p></li>
+<li><p>Ce contenu a été testé avec les technologies d'assistance et les agents utilisateurs suivants&nbsp;: Firefox 1.5 sur Windows Vista avec le lecteur d'écran X 4.0, Firefox 1.5 sur Windows XP SP2 avec le lecteur d'écran X 3.5, IE 6.0 sur Windows 2000 SP4 avec le lecteur d'écran Y 5.0, IE 6.0 sur Windows 2000 SP4 avec le lecteur d'écran Z 2.0 et Firefox 1.5 sur Windows XP SP2 avec le lecteur d'écran X 4.0, Safari 2.0 avec OS X 10.4.</p></li>
+</ul>
+</div>
+</div>
+  <h3 id="uc-claims-tech-head" class="div3head">  Techniques pour les déclarations de conformité</h3>
+  <div><h4><a name="uc-70-head"
+id="uc-70-head"> </a>Techniques recommandées</h4>
+    <ul>
+<li><p>Faire une déclaration de conformité aux WCAG 2.0 dans les éléments <span lang="en" xml:lang="en">Dublin Core</span> (lien à venir)</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="div3"><h2 id="uc-levels-head" class="section">Comprendre les niveaux de conformité</h2>
+  <p>Premièrement, il y a un certain nombre de conditions qui doivent être remplies pour qu'un critère de succès puisse être inclus. Il s'agit notamment de&nbsp;:</p>
+  <ol class="enumar">
+<li><p>Tous les critères de succès doivent représenter des <strong>enjeux d'accès importants </strong>pour les personnes avec des limitations fonctionnelles qui traitent des problèmes qui se situent au-delà des problèmes d'utilisabilité pouvant être rencontrés par tous les utilisateurs. En d'autres mots, l'enjeu de l'accès doit poser un problème proportionnellement plus important pour les personnes en situation de handicap que celui qu'il pose pour les personnes sans handicaps, afin d'être considéré comme un problème d'accessibilité (et d'être couvert par ces règles pour l'accessibilité).</p></li>
+<li>
+  <p>Tous les critères de succès doivent également être vérifiables. Cela est important car autrement il ne serait pas possible de déterminer si une page a satisfait ou non aux critères de succès. Les critères de succès peuvent être testés par une combinaison d'évaluation mécanique et humaine tant qu'il est possible de déterminer, avec un niveau de confiance élevé, si un critère de succès a été satisfait ou non.</p></li>
+</ol>
+  <p>Les critères de succès ont été affectés à l'un des trois niveaux de conformité par le groupe de travail après avoir pris en considération un large éventail de questions en interaction. Parmi les facteurs communs évalués lors de la fixation du niveau, on retrouvait&nbsp;:</p>
+<ul>
+<li><p>si le critère de succès est essentiel (en d'autres termes, si le critère de succès n'est pas satisfait et que même la technologie d'assistance ne peut pas rendre le contenu accessible)&nbsp;;</p></li>
+<li><p>s'il est possible de satisfaire au critère de succès pour <strong>tous les sites Web et les types de contenus</strong> auxquels les critères de succès seraient applicables (par exemple différents sujets, des types de contenus, des types de technologies Web)&nbsp;;</p>
+</li>
+<li><p>si le critère de succès exige un niveau de compétence qui pourrait raisonnablement être atteint par les créateurs de contenu (c'est-à-dire que les connaissances et les compétences pour satisfaire aux critères de succès pourraient être acquises dans une formation d'une semaine ou moins)&nbsp;;</p>
+</li>
+<li><p>si le critère de succès impose des limites «&nbsp;à l'apparence et à la convivialité&nbsp;» ou à la fonction de la page Web (limites à la fonction, à la présentation, à la liberté d'expression, à la liberté de conception ou à l'esthétique que le critère de succès pourrait représenter pour les auteurs)&nbsp;;</p></li>
+<li><p>s'il n'existe pas de moyen de contournement dans le cas où les critères de succès ne sont pas satisfaits.</p></li>
+</ul>
+</div>
+<div class="div3"> <h2 id="uc-accessibility-support-head" class="section">Comprendre la compatibilité avec l'accessibilité</h2>
+  <p>Plusieurs des critères de succès traitent de l'accessibilité avec des technologies d'assistance ou avec les fonctions d'accessibilité propres aux agents utilisateurs ordinaires (par exemple, une option «&nbsp;afficher les sous-titres&nbsp;» dans un lecteur multimédia). Autrement dit, les critères de succès exigent que quelque chose soit fait dans le contenu Web qui permette aux technologies d'assistance de présenter avec succès les informations du contenu à l'utilisateur. Par exemple, une image sur laquelle vous devriez cliquer pour aller à un sujet particulier ne serait pas accessible à une personne qui serait aveugle, à moins que des équivalents textuels pour cette photo n'aient été fournis d'une façon que les agents utilisateurs y compris les technologies d'assistance puissent les trouver et les afficher. La clé ici est que l'équivalent textuel doit être inclus d'une façon que les agents utilisateurs, y compris les technologies d'assistance, peuvent comprendre et utiliser - d'une façon qui est «&nbsp;compatible avec l'accessibilité&nbsp;».</p>
+  <p>Un autre exemple serait un contrôle personnalisé qui est inclus sur une page Web. Dans ce cas, un agent utilisateur standard ne serait pas normalement en mesure de présenter une version de remplacement à l'utilisateur. Toutefois, si l'information sur le contrôle, y compris son nom, son rôle, sa valeur, comment le configurer, etc. est fournie d'une façon que les technologies d'assistance peuvent comprendre et utiliser, alors les utilisateurs des technologies d'assistance seront en mesure d'utiliser ce contrôle.</p>
+  <p>Lorsque de nouvelles technologies sont introduites, deux conditions doivent être remplies pour que les personnes utilisant les technologies d'assistance soient en mesure d'y accéder. Premièrement, les technologies doivent être conçues de façon à ce que les agents utilisateurs, y compris les technologies d'assistance, aient accès à toute l'information dont ils ont besoin pour présenter le contenu à l'utilisateur. Deuxièmement, les agents utilisateurs et les technologies d'assistance peuvent avoir besoin d'être repensés ou modifiés pour être en mesure de fonctionner efficacement avec ces nouvelles technologies.</p>
+  <p><strong>«&nbsp;Compatible avec l'accessibilité&nbsp;»</strong> signifie que ces deux conditions ont été remplies et que la technologie va fonctionner avec les agents utilisateurs et les technologies d'assistance.</p>
+  <h3 id="uc-support-level-head" class="div3head">Niveau de compatibilité requis pour la «&nbsp;compatibilité avec l'accessibilité&nbsp;»</h3>
+  <p>Ce sujet pose la question de savoir combien et quelles technologies d'assistance doivent être compatibles avec une technologie Web pour que cette technologie Web soit considérée comme «&nbsp;compatible avec l'accessibilité&nbsp;». Le groupe de travail des WCAG et le W3C ne précisent pas quelle technologie d'assistance ou combien de ces technologies doivent être compatibles avec une technologie Web afin que cette technologie Web soit classée comme compatible avec l'accessibilité. Il s'agit d'un sujet complexe et qui varie à la fois selon l'environnement et selon la langue. Il y a nécessité d'un dialogue avec l'extérieur, un dialogue international sur ce sujet. Voici quelques notes pour vous aider à comprendre et à explorer ce thème&nbsp;:</p>
+<ol class="enumar">
+    <li><p>La compatibilité avec l'accessibilité varie selon l'environnement</p>
+<ul>
+<li><p>Dans une société où tous les employés sont équipés avec des agents utilisateurs particuliers et des technologies d'assistance, les technologies Web ont seulement besoin d'être compatibles avec ces agents utilisateurs et les technologies d'assistance plus anciennes.</p></li>
+<li><p>Le contenu affiché sur le site Web public doit fonctionner avec un éventail plus large d'agents utilisateurs et de technologies d'assistance.</p></li>
+</ul>
+</li>
+<li><p>La compatibilité avec l'accessibilité varie selon la langue (et le dialecte)</p>
+<ul>
+<li><p>Il existe différents niveaux de compatibilité avec l'accessibilité pour les anciennes technologies d'assistance dans différentes langues et dans différents pays. Certains milieux ou pays peuvent fournir gratuitement les technologies d'assistance.</p></li>
+    </ul>
+</li>
+<li><p>Les nouvelles technologies ne seront pas compatibles avec les anciennes technologies d'assistance</p>
+<ul>
+<li><p>De toute évidence, une nouvelle technologie ne peut pas être compatible avec toutes les anciennes technologies d'assistance, ainsi donc il n'est pas possible d'exiger qu'une technologie soit compatible avec toutes les technologies d'assistance.</p></li>
+</ul>
+</li>
+<li><p>La compatibilité avec une seule ancienne technologie d'assistance n'est généralement pas suffisante</p>
+<ul>
+<li><p>La compatibilité avec une seule technologie d'assistance (pour un type de limitation donné) ne serait généralement pas suffisante, surtout si la plupart des utilisateurs qui en ont besoin afin d'accéder au contenu n'ont pas cette technologie d'assistance et n'ont pas les moyens de se l'offrir. L'exception dans ce cas serait de diffuser l'information aux salariés de l'entreprise qui ont tous une technologie d'assistance (de ce type).</p></li>
+</ul>
+</li>
+<li><p>Actuellement, les technologies d'assistance qui sont abordables pour le grand public sont souvent très pauvres</p>
+<ul>
+<li><p>Créer un contenu qui ne peut pas être utilisé par le public ayant des limitations fonctionnelles en général doit être évité. Dans de nombreux cas, le coût des technologies d'assistance est trop élevé pour les utilisateurs qui en ont besoin. En outre, les capacités des technologies d'assistance gratuites ou à faible coût sont souvent si pauvres aujourd'hui que le contenu Web ne peut être restreint de façon réaliste à ce plus petit commun dénominateur (ou même moyen). Cela crée un dilemme très difficile qui doit être pris en compte.</p></li>
+</ul>
+</li>
+</ol>
+  <p>Par conséquent, le groupe de travail s'est borné à définir ce qu'est la compatibilité et le jugement de comment, combien et quelle technologies d'assistance doivent être compatibles avec une technologie est renvoyé à la communauté et à des entités plus proches de chaque situation qui fixent des critères pour une organisation, pour l'achat, pour une communauté, etc.</p>
+  <p>Le Groupe de travail encourage davantage de discussions à ce sujet dans le forum général de la société parce que ce manque de technologies d'assistance robustes disponibles partout est un problème qui dessert les utilisateurs, les développeurs de technologies et les auteurs.</p>
+<h3 id="uc-accessibility-supported-definition-head" class="div3head">Définition technique de «&nbsp;compatible avec l'accessibilité&nbsp;»</h3>
+  <p>Fondamentalement, une technologie Web sera «&nbsp;compatible avec l'accessibilité&nbsp;» lorsque les technologies d'assistance des utilisateurs fonctionneront avec les technologies Web et lorsque les fonctionnalités d'accessibilité des technologies courantes fonctionneront avec cette technologie. Plus précisément, pour être considérée comme une technologie compatible avec l'accessibilité, les conditions suivantes doivent être remplies pour cette technologie&nbsp;:</p>
+  <dl>
+    <dt class="label"><a name="accessibility-supporteddef" id="accessibility-supporteddef"> </a> compatible avec l'accessibilité</dt>
+    <dd>
+      <p>compatible avec les <a href="http://www.w3.org/Translations/wcag20-fr/#atdef" class="termref">technologies d'assistance</a> des utilisateurs aussi bien qu'avec les fonctionnalités d'accessibilité des navigateurs et des autres <a href="http://www.w3.org/Translations/wcag20-fr/#useragentdef" class="termref">agents utilisateurs</a> </p>
+      <p>Pour qu'une technologie Web (ou une fonctionnalité d'une technologie) soit considérée comme compatible avec l'accessibilité, les conditions 1 et 2 doivent être toutes deux remplies pour une technologie Web (ou une fonctionnalité)&nbsp;:</p>
+<ol class="enumar">
+<li><p><strong>La manière dont la <a href="http://www.w3.org/Translations/wcag20-fr/#technologydef" class="termref">technologie Web</a> est utilisée doit être compatible avec les technologies d'assistance des utilisateurs (TA).</strong> Cela signifie que la manière dont la technologie est utilisée a été testée pour l'interopérabilité avec la technologie d'assistance des utilisateurs dans la <a href="http:// www.w3.org/Translations/wcag20-fr/#human-langdef" class="termref">langue</a> du contenu,</p>
+          <p> <strong>ET</strong> </p>
+	</li>
+	<li><p><strong>La technologie Web doit avoir des agents utilisateurs compatibles avec l'accessibilité qui sont disponibles aux utilisateurs.</strong> Cela signifie qu'au moins l'une des quatre affirmations suivantes est vérifiée&nbsp;:</p>
+          <ol class="enumla">
+	<li><p>la technologie est prise en charge en mode natif dans les agents utilisateurs largement distribués, qui sont aussi compatibles avec l'accessibilité (tels que HTML et CSS)&nbsp;;</p>
+	<p> <strong>OU</strong> </p>
+	</li>
+	<li><p>la technologie est prise en charge dans un module d'extension  largement distribué qui est aussi compatible avec l'accessibilité&nbsp;;</p>
+              <p> <strong>OU</strong> </p>
+            </li>
+	<li><p>le contenu est disponible dans un environnement fermé, comme une université ou un réseau d'entreprise, où l'agent utilisateur requis par la technologie et utilisé par l'organisation est également compatible avec l'accessibilité&nbsp;;</p>
+              <p> <strong>OU</strong> </p></li>
+	<li><p>L'agent ou les agents utilisateur(s) qui prennent en charge la technologie sont compatibles avec l'accessibilité et sont disponibles pour le téléchargement ou l'achat d'une manière qui&nbsp;:</p>
+              <ul>
+		<li><p>ne coûte pas plus cher à une personne ayant une limitation fonctionnelle, qu'à une personne sans handicap <strong>et</strong></p></li>
+	<li><p>est aussi facile à trouver et à obtenir pour une personne avec une limitation fonctionnelle que pour une personne sans handicap.</p></li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="note"><p class="prefix"><em>Note 1&nbsp;: </em>le groupe de travail des WCAG et le W3C ne précisent pas quelles technologies d'assistance ou le niveau de prise en charge qu'elles doivent avoir pour une utilisation particulière d'une technologie Web afin que cette technologie Web soit classée comme compatible avec l'accessibilité. (Voir <a href="conformance.html#uc-support-level-head">Niveau de compatibilité requis pour la «&nbsp;compatibilité avec l'accessibilité&nbsp;»</a>.)</p>
+        <p class="prefix"><em>Note 2&nbsp;: </em>les technologies Web peuvent être utilisées de manières qui ne sont pas compatibles avec l'accessibilité tant que l'utilisation du contenu n'en <a href="http://www.w3.org/Translations/wcag20-fr/#reliedupondef" class="termref">dépend</a> pas et que la page dans son ensemble satisfait aux exigences de conformité, y compris l'exigence de conformité <em><a href="http://www.w3.org/Translations/wcag20-fr/#cc4">4&nbsp;: L'usage des technologies selon des méthodes exclusivement compatibles avec l'accessibilité</a></em> et l'exigence de conformité <em><a href="http://www.w3.org/Translations/WCAG20-fr/#cc5">5&nbsp;: Non-interférence</a></em>.</p>
+        <p class="prefix"><em>Note 3&nbsp;: </em>quand une <a href="http://www.w3.org/Translations/wcag20-fr/#technologydef" class="termref">technologie Web</a> est utilisée d'une manière qui est «&nbsp;compatible avec l'accessibilité&nbsp;», cela n'implique pas que l'ensemble de la technologie ou toutes les utilisations de cette technologie sont compatibles avec l'accessibilité. La plupart des technologies, notamment HTML, ne sont pas compatibles avec au moins l'une de leurs caractéristiques ou l'une de leurs utilisations. Les pages sont conformes aux WCAG si seulement les usages de la technologie qui sont compatibles avec l'accessibilité sont ceux dont on dépend pour répondre aux exigences des WCAG.</p>
+        <p class="prefix"><em>Note 4&nbsp;: </em>quand on cite les technologies Web qui ont plusieurs versions, la ou les version(s) compatibles devraient être précisées.</p>
+        <p class="prefix"><em>Note 5&nbsp;: </em>un moyen pour les auteurs de localiser les utilisations d'une technologie qui sont compatibles avec l'accessibilité serait de consulter les compilations des utilisations qui sont documentées comme compatibles avec l'accessibilité. (Voir <a href="conformance.html#uc-documented-lists-head">Comprendre les usages des technologies Web qui sont compatibles avec l'accessibilité</a>.) Les auteurs, les entreprises, les fournisseurs de technologie ou d'autres peuvent documenter les usages des technologies Web qui sont compatibles avec l'accessibilité. Toutefois, tous les usages des technologies documentés devront satisfaire à la définition de compatibilité avec l'accessibilité pour les technologies Web énoncée plus haut.</p>
+      </div>
+    </dd>
+  </dl>
+  <h3 id="uc-documented-lists-head" class="div3head">Comprendre les usages des technologies Web qui sont compatibles avec l'accessibilité</h3>
+  <p>Les auteurs individuels ne seront généralement pas en mesure de faire tous les tests nécessaires pour déterminer lesquels des usages des technologies Web sont réellement compatibles avec les versions des technologies d'assistance et les agents utilisateurs. Les auteurs pourront donc compter sur des compilations publiques qui documentent quelles technologies d'assistance sont compatibles avec quelles façons d'utiliser les technologies Web. Par publique, nous ne voulons pas dire que la compilation et sa documentation sont nécessairement générées par un organisme public, mais seulement qu'ils sont à la disposition du public. N'importe qui peut créer des compilations publiques documentées des «&nbsp;usages des technologies Web et de leur compatibilité avec l'accessibilité&nbsp;». Les gens peuvent créer des compilations et leur donner des noms auxquels les auteurs peuvent se référer. Tant qu'ils sont publiquement documentés, les auteurs ou les clients, etc. peuvent sélectionner facilement les usages qui répondent à leurs besoins. Les clients ou d'autres peuvent choisir les technologies qui correspondent à leur environnement ou leur langue à tout moment et préciser celles qui doivent être utilisées dans la création de leur contenu. Les auteurs sont fortement encouragés à utiliser des sources qui ont une réputation bien établie pour leur exactitude et leur utilité. Les développeurs de technologies sont fortement encouragés à fournir des informations sur la compatibilité avec l'accessibilité de leurs technologies. Le Groupe de travail prévoit qu'à long terme seuls les documents qui fourniront des informations précises et profiteront à la fois aux auteurs et aux utilisateurs pourront obtenir une reconnaissance du marché.</p>
+  <p>Les WCAG n'exigent pas qu'une compilation publique documentée soit utilisée ou que seulement les usages documentés des technologies par de telles compilations soient utilisés. Les compilations publiques documentées sont seulement décrites comme une méthode facilitant une appréciation critique mais un peu compliquée de ces aspects de la conformité par les auteurs qui ne sont pas eux-mêmes experts en matière de technologie d'assistance (ou qui n'ont tout simplement pas le temps de suivre les progrès des technologies usuelles et des technologies d'assistance et de leur compatibilité mutuelle).</p>
+  <p>Les auteurs, les sociétés ou d'autres personnes peuvent souhaiter créer et utiliser leurs propres compilations des usages des technologies compatibles avec l'accessibilité et cela est admis pour satisfaire aux WCAG. Les clients, les entreprises ou d'autres peuvent toutefois préciser que les usages des technologies sont tirés d'une compilation publique ou personnalisée. Voir <a href="appendixB.html">Annexe B&nbsp;: documenter la compatibilité avec l'accessibilité pour l'utilisation d'une technologie Web</a>. </p>
+  <h3 id="uc-support-statements-head" class="div3head">Déclaration de compatibilité avec l'accessibilité</h3>
+  <p>Voici des exemples de moyens par lesquels une déclaration de conformité pourrait documenter la compatibilité avec l'accessibilité&nbsp;: </p>
+  <ol class="enumar">
+    <li><p>Cette déclaration de conformité satisfait à l'exigence de compatibilité avec l'accessibilité en se fondant sur des tests dans la ou les langue(s) du contenu avec les agents utilisateurs A, B et C, et les technologies d'assistance X, Y et Z. Cela signifie que nous avons réussi à satisfaire à tous les critères de succès pour le niveau A des WCAG 2.0 en utilisant ces produits.</p></li>
+<li><p>Cette déclaration de conformité satisfait à l'exigence de compatibilité avec l'accessibilité pour la ou les langue(s) du contenu en se fondant sur l'utilisation de techniques et de notes sur l'agent utilisateur documentées dans les Techniques pour les WCAG 2.0. Elle est également fondée sur la documentation sur la compatibilité avec l'accessibilité pour les technologies (dont dépend la conformité), qui est disponible dans «&nbsp;Documentation de l'organisation XYZ sur la compatibilité avec l'accessibilité&nbsp;».</p></li>
+<li><p>Cette déclaration de conformité satisfait à l'exigence de compatibilité avec l'accessibilité pour la ou les langue(s) du contenu en se fondant sur l'utilisation de la technologie Z tel qu'indiqué dans «&nbsp;Techniques pour la compatibilité avec l'accessibilité de la technologie Z pour les WCAG 2.0&nbsp;».</p></li>
+<li><p>Cette déclaration de conformité satisfait à l'exigence de compatibilité avec l'accessibilité pour la langue du contenu en se fondant sur l'utilisation des règles pour l'accessibilité de la technologie A et de la technologie B. L'information sur la compatibilité avec les agents utilisateurs et les technologies d'assistance peut être trouvée dans «&nbsp;Exigences de compatibilité avec l'accessibilité du produit XYZ&nbsp;» qui sont documentées dans ces règles.</p></li>
+  </ol>
+</div>
+<div class="div3">  <h2 id="uc-programmatically-determined-head" class="section">Comprendre «&nbsp;déterminable par un programme informatique&nbsp;»</h2>
+  <p>Plusieurs critères de succès exigent que le contenu (ou certains aspects du contenu) puissent être «&nbsp;déterminés par un programme informatique&nbsp;». Cela signifie que le contenu est conçu de telle façon que les agents utilisateurs, y compris les technologies d'assistance, puissent accéder à l'information.</p>
+  <p>Pour que le contenu créé avec des technologies Web (telles que HTML, CSS, PDF, GIF, MPEG, Flash, etc.) puisse être accessible aux personnes présentant différents types de limitations, il est essentiel que les technologies utilisées soient compatibles avec les fonctionnalités d'accessibilité des navigateurs et des autres agents utilisateurs, y compris les technologies d'assistance. Pour que quelque chose puisse satisfaire à un critère de succès qui l'oblige à être «&nbsp;déterminable par un programme informatique&nbsp;», il devra être mis en œuvre en utilisant une technologie qui est compatible avec les technologies d'assistance.</p>
+  <p>Un contenu qui peut être «&nbsp;déterminé par un programme informatique&nbsp;» peut être transformé (par les agents utilisateurs y compris les technologies d'assistance) dans différents formats sensoriels (par exemple visuel, auditif) ou styles de présentation selon les besoins de chaque utilisateur. Si les technologies d'assistance existantes ne peuvent pas le faire, alors l'information ne peut pas être considérée comme déterminable par un programme informatique.</p>
+  <p>Le terme a été créé afin de permettre au groupe de travail chargé d'identifier clairement les endroits où l'information devait être accessible aux technologies d'assistance (et autres agents utilisateurs agissant en qualité d'aide à l'accessibilité), sans préciser exactement comment ceci devait être fait. Cela est important en raison de la nature en évolution constante des technologies. Le terme permet aux règles d'accessibilité de déterminer ce qui doit être «&nbsp;déterminé par un programme informatique&nbsp;» afin de respecter les règles et de présenter dans des documents distincts (comment satisfaire à une règle, comprendre une règle et appliquer les techniques) qui peuvent mettre à jour au fil du temps la liste des techniques particulières qui fonctionneront et seront suffisantes à n'importe quel point dans le temps en fonction de l'agent utilisateur et de la compatibilité avec les technologies d'assistance.</p>
+  <h3 id="uc-ASvsPD-head" class="div3head">«&nbsp;Compatibilité avec l'accessibilité&nbsp;» vs «&nbsp;déterminable par un programme informatique&nbsp;»</h3>
+  <p>La «&nbsp;compatibilité avec l'accessibilité&nbsp;» se rapporte à la compatibilité avec les agents utilisateurs (incluant les technologies d'assistance) des usages particuliers des technologies Web. Les usages des technologies Web qui sont compatibles avec l'accessibilité fonctionneront avec les technologies d'assistance et les fonctionnalités d'accès des agents utilisateurs usuels (les navigateurs, les lecteurs, etc.).</p>
+  <p>«&nbsp;Déterminable par un programme informatique&nbsp;» se rapporte aux informations dans les contenus Web. Si les technologies qui sont compatibles avec l'accessibilité sont utilisées correctement, les technologies d'assistance et les agents utilisateurs pourront accéder aux informations dans le contenu (par exemple déterminer par un programme informatique les informations se trouvant dans le contenu) et les présenter à l'utilisateur.</p>
+  <p>Les deux concepts fonctionnent ensemble pour assurer que l'information puisse être présentée à l'utilisateur par les agents utilisateurs y compris les technologies d'assistance. Les auteurs ne doivent compter que sur les usages des technologies qui sont compatibles avec l'accessibilité - et les utiliser correctement pour que l'information soit déterminable par un programme informatique - et donc présentable, par les technologies d'assistance et les agents utilisateurs aux utilisateurs en situation de handicap.</p></div>
+<div class="div3"><h2 id="uc-conforming-alt-versions-head" class="section">Comprendre «&nbsp;version de remplacement conforme&nbsp;»</h2>
+<p>La première exigence de conformité permet d'inclure les pages non conformes dans le périmètre de conformité tant qu'elles ont une «&nbsp;version de remplacement conforme&nbsp;». La version de remplacement conforme est définie comme suit&nbsp;:</p>
+<dl>
+<dt class="label"><a name="conforming-alternate-versiondef" id="conforming-alternate-versiondef"> </a>version de remplacement conforme</dt>
+<dd>
+<p>version qui</p>
+<ol class="enumar">
+<li><p>se conforme au niveau désigné, et</p></li>
+<li><p>fournit toutes les informations similaires et les mêmes <a href="http:// www.w3.org/Translations/wcag20-fr/#functiondef" class="termref">fonctionnalités</a> dans la même <a href="http://www.w3.org/Translations/wcag20-fr/#human-langdef" class="termref">langue</a>, et</p></li>
+<li><p>est aussi à jour que le contenu non conforme, et </p></li>
+<li><p>pour laquelle au moins l'une des affirmations suivantes est vraie&nbsp;:</p>
+<ol class="enumla">
+<li><p>la version conforme peut être atteinte à partir de la page non conforme via un <a href="http://www.w3.org/Translations/wcag20-fr/#mechanismdef" class="termref">mécanisme</a> <a href="http://www.w3.org/Tranlsations/wcag20-fr/#accessibility-supporteddef" class="termref">compatible avec l'accessibilité</a>, ou</p></li>
+<li><p>la version non conforme peut être atteinte seulement à partir de la version conforme, ou</p></li>
+<li><p>la version non conforme peut être atteinte seulement à partir d'une page conforme qui fournit aussi un mécanisme pour atteindre la version conforme.</p></li>
+  </ol>
+  </li>
+</ol>
+<div class="note"> <p class="prefix"><em>Note 1&nbsp;: </em>dans cette définition, «&nbsp;peut être atteinte seulement&nbsp;» signifie qu'il y a un mécanisme, comme une redirection conditionnelle, qui empêche un utilisateur «&nbsp;d'atteindre&nbsp;» (de charger) la page non conforme à moins que l'utilisateur ne vienne justement de la version conforme de cette même page.</p>
+<p class="prefix"><em>Note 2&nbsp;: </em>la version de remplacement n'a pas besoin d'être appariée page par page avec la version originale (par exemple la version de remplacement conforme peut se présenter en plusieurs pages).</p>
+  <p class="prefix"><em>Note 3&nbsp;: </em>si des versions sont proposées dans plusieurs langues, une version de remplacement conforme est donc requise pour chacune de ces langues.</p>
+  <p class="prefix"><em>Note 4&nbsp;: </em>des versions de remplacement peuvent aussi être fournies afin d'accommoder différents environnements technologiques ou différents groupes d'utilisateurs.
+Chaque version devrait être aussi conforme que possible. Une version devrait être entièrement conforme afin de satisfaire à <a href="http://www.w3.org/Translations/wcag20-fr/#cc1">l'exigence de conformité 1</a>.</p>
+  <p class="prefix"><em>Note 5&nbsp;: </em>la version de remplacement conforme n'a pas besoin d'être située dans le périmètre de conformité ni même sur le même site Web tant qu'elle est aussi librement disponible que la version non conforme.</p>
+  <p class="prefix"><em>Note 6&nbsp;: </em>une version de remplacement ne devrait pas être confondue avec un <a href="http://www.w3.org/Translations/wcag20-fr/#suppcontentdef" class="termref"> contenu additionnel</a> qui s'ajoute à la page originale pour en améliorer la compréhension.</p>
+  <p class="prefix"><em>Note 7&nbsp;: </em>permettre la configuration des préférences de l'utilisateur à l'intérieur du contenu afin de produire une version conforme est un mécanisme acceptable pour atteindre une autre version tant que la méthode utilisée pour configurer les préférences est compatible avec l'accessibilité.</p>
+</div>
+</dd>
+</dl>
+<p>Cela garantit que tous les renseignements et toutes les fonctionnalités qui se trouvent sur les pages intérieures du périmètre de conformité sont disponibles sur des pages Web conformes.</p>
+<h3 id="uc-whypermit-head" class="div3head">Pourquoi autoriser des versions de remplacement&nbsp;?</h3>
+<p>Pourquoi les WCAG autorisent-elles des versions de remplacement conformes des pages Web à inclure dans les déclarations de conformité&nbsp;? Pourquoi inclure des pages qui ne satisfont pas les critères de succès pour un niveau de conformité dans la déclaration du périmètre de conformité&nbsp;?</p>
+<ul>
+  <li><p>Parfois, les pages utilisent des technologies qui ne sont pas encore compatibles avec l'accessibilité. Quand une nouvelle technologie apparaît, la compatibilité avec les technologies d'assistance peut être encore manquante, ou peut être disponible seulement pour certains groupes cibles. Aussi, les auteurs peuvent ne pas être en mesure de s'appuyer sur ou de dépendre de ces nouvelles technologies pour tous les utilisateurs. Toutefois, il peut y avoir d'autres avantages à utiliser les nouvelles technologies, par exemple, de meilleures performances, un plus large éventail de modalités disponibles, etc. L'exigence d'une version de remplacement permet aux auteurs d'inclure des pages dans leur site Web en offrant une page de remplacement accessible utilisant les technologies qui sont compatibles avec l'accessibilité. Les utilisateurs pour lesquels la nouvelle technologie est suffisamment compatible obtiennent les avantages de la nouvelle version. Les auteurs qui attendent le développement de la compatibilité avec l'accessibilité peuvent satisfaire aux critères de succès dès maintenant grâce à la page présentant la version de remplacement, et travailler avec l'autre page pour bâtir l'accès futur lorsque la compatibilité avec les technologies d'assistance (TA) sera disponible.</p></li>
+<li><p>Pour diverses raisons, il peut être impossible de modifier certains contenus sur une page Web. Par exemple</p>
+    <ul>
+<li><p>Il peut être crucial d'inclure une copie visuelle exacte d'un document pour des raisons juridiques ou historiques&nbsp;;</p></li>
+<li><p>La page Web peut faire partie d'un site, mais le propriétaire du site peut ne pas avoir le droit de modifier le contenu de la page originale&nbsp;;</p></li>
+<li><p>La compagnie peut ne pas être légalement autorisée à supprimer ou modifier de quelque façon, quelque chose qui a déjà été affiché.</p></li>
+<li><p>Un auteur peut ne pas avoir l'autorisation de modifier un document appartenant à un autre département, organisme ou société.</p></li>
+</ul>
+</li>
+<li><p>Parfois, la meilleure expérience pour les utilisateurs ayant certains types de limitation fonctionnelle est fournie en adaptant une page Web spécifique pour répondre à cette limitation. Dans une telle situation, il peut ne pas être possible ou pratique de faire une page Web adaptée à toutes les limitations en satisfaisant tous les critères de succès. L'exigence d'une version de remplacement permet d'inclure des pages spécialisées dans une déclaration de conformité tant qu'il y a une page présentant une version de remplacement entièrement conforme.</p></li>
+<li><p>Beaucoup de sites qui sont commis à l'accessibilité ont de grandes quantités de documents patrimoniaux. Bien que l'information ait été mise à disposition dans des formats accessibles, il y aura des résistances institutionnelles significatives et des obstacles importants de procédure à la suppression massive de ces fichiers. Certaines organisations, en particulier les organismes gouvernementaux, donnent la priorité aux processus axés sur les imprimés traditionnels. Même si ces organismes sont adaptés à la publication sur le Web et reconnaissent la nécessité des formats accessibles, ils gardent encore une mentalité de papier et insistent souvent sur des formats conçus pour la copie papier comme «&nbsp;première&nbsp;» version (même pour des documents qui ne seront jamais «&nbsp;publiés&nbsp;» autrement qu'en version électronique). Bien que le groupe de travail estime que ces approches devraient être obsolètes il n'a pas le sentiment qu'elles pourraient être interdites, tant que des versions accessibles sont facilement disponibles.</p>
+</li>
+</ul>
+<p>Une préoccupation lors de l'autorisation de pages Web qui ne satisfont pas les critères de succès est que les personnes en situation de handicap qui rencontrent ces pages non conformes ne soient pas en mesure d'accéder à leur contenu, et ne soient pas capables de trouver la «&nbsp;version de remplacement conforme&nbsp;». Un élément clé de la disposition concernant les versions de remplacement est donc la capacité à trouver la page conforme (la version de remplacement) de la page non conforme lorsque cette page est rencontrée. En conséquence, l'exigence de conformité qui permet les pages de remplacement exige aussi que les utilisateurs disposent d'une façon de trouver la version accessible parmi les autres versions.</p>
+<p>Notez que le fait de fournir une version de remplacement est une option de repli pour la conformité aux WCAG et que la méthode préférée pour la conformité est de rendre l'ensemble du contenu directement accessible.</p>
+<h3 id="uc-techsaltver-head" class="div3head">Techniques pour fournir une version de remplacement conforme</h3>
+<p>La chose la plus importante pour offrir une version de remplacement conforme est de fournir un mécanisme permettant de la trouver à partir de la version non conforme. Un certain nombre de méthodes différentes ont été recensées puisque certaines techniques particulières ne sont pas toujours possibles pour des technologies ou des situations spécifiques. Par exemple, si l'auteur a le contrôle du serveur, il y a des techniques puissantes qui permettront aux utilisateurs d'avoir toujours le choix à l'avance. Dans de nombreux cas cependant, l'auteur peut ne pas avoir le contrôle des services sur son serveur Web. Dans ces cas, d'autres techniques sont prévues. Un lien sur la page non conforme est une autre technique puissante, mais les liens hypertextes ne sont pas pris en charge par toutes les technologies non conformes.</p>
+<p>Voici les techniques qui ont été identifiées à ce jour. Nous prévoyons que d'autres techniques seront également développées avec le temps et elles seront ajoutées ici à mesure qu'elles seront connues et que la compatibilité de ces approches avec les agents utilisateurs y compris les technologies d'assistance pourra être démontrée. Par exemple, un développeur d'une nouvelle technologie Web qui n'est pas compatible avec certaines technologies d'assistance pourrait intégrer une fonctionnalité qui permettrait à cette technologie de présenter automatiquement aux utilisateurs un lien vers une version de remplacement.</p>
+<div>
+  <h4><a name="altvertechs" id="altvertechs"> </a>Techniques suffisantes pour fournir une version de remplacement conforme à une page Web</h4>
+  <p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des WCAG considère comme suffisante pour fournir une version de remplacement conforme.</p>
+  <ol class="enumar">
+    <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G136">G136&nbsp;: Au début d'une page Web non conforme, fournir un lien pointant vers une version de remplacement conforme (en anglais)</a> </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G190">G190&nbsp;: Pour un objet non conforme, fournir un lien adjacent ou associé vers une version de remplacement conforme (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C29">C29&nbsp;: Utiliser un changeur de style pour fournir une version de remplacement conforme (en anglais)</a> (CSS) </p></li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SVR2">SVR2&nbsp;: Utiliser .htaccess pour s'assurer que la seule façon d'accéder à un contenu non conforme est à partir du contenu conforme (en anglais)</a> (SERVER) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SVR3">SVR3&nbsp;: Utiliser un référent HTTP pour s'assurer que la seule façon d'accéder à un contenu non conforme est à partir du contenu conforme (en anglais)</a> (SERVER) </p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SVR4">SVR4&nbsp;: Permettre à l'utilisateur de configurer ses préférences pour la présentation des versions de remplacement conformes (en anglais)</a> (SERVER) </p></li>
+  </ol>
+</div>
+<div>
+  <h4><a name="uc-72-head" id="uc-72-head"> </a>Échecs fréquents identifiés par le groupe de travail</h4>
+  <ul>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F19">F19&nbsp;: Échec de l'exigence de conformité 1 consistant à ne pas fournir une méthode permettant à l'utilisateur de trouver la version de remplacement conforme d'une page Web non conforme (en anglais)</a> </p></li>
+  </ul>
+</div>
+<div><h4><a name="uc-73-head" id="uc-73-head"> </a>Techniques (recommandées) supplémentaires pour fournir une version de remplacement conforme à une page Web</h4>
+  <ul>
+<li><p>Fournir des liens réciproques entre les versions conformes et non conformes (lien à venir)</p>
+</li>
+<li><p>Exclure les contenus non conformes des résultats de recherche (lien à venir)</p></li>
+<li><p>Utiliser la négociation de contenu (lien à venir)</p></li>
+<li><p>Ne pas afficher un contenu qui dépend des technologies qui ne sont pas compatibles avec l'accessibilité lorsque cette technologie est désactivée ou qu'elle n'est pas prise en charge (lien à venir)</p></li>
+<li><p>Utiliser les métadonnées pour permettre de localiser la version de remplacement conforme à partir de l'URI d'une page non conforme (lien à venir)</p></li>
+  </ul>
+</div>
+<div>
+  <h4><a name="uc-74-head" id="uc-74-head"> </a>Exemples de versions de remplacement conformes</h4>
+  <ul>
+<li><p><strong>Un site Intranet avec des versions multiples.</strong> </p>
+<p>Une grande entreprise craint que l'utilisation de nouvelles technologies Web sur un site intranet puisse limiter sa capacité à répondre aux besoins des divers bureaux qui ont des bases technologiques différentes et aux employés individuels qui utilisent une grande variété d'agents utilisateurs et de technologies d'assistance. Pour répondre à ces préoccupations, la société a créé une version de remplacement du contenu qui satisfait à tous les critères de succès de niveau A en utilisant un ensemble plus limité d'utilisations des technologies Web compatibles avec l'accessibilité. Les deux versions sont liées réciproquement.</p></li>
+<li><p><strong>Un site d'information assurant la rétrocompatibilité.</strong></p>
+      <p>Un site d'information couvre une grande variété de sujets et veut permettre aux visiteurs de trouver rapidement les sujets qu'ils recherchent. Pour ce faire, le site a mis en place un système de menu interactif qui est seulement pris en charge dans la version la plus récente de deux agents utilisateurs populaires. Pour s'assurer que les visiteurs qui n'utilisent pas ces agents utilisateurs spécifiques sont encore capables d'utiliser efficacement le site, un mécanisme de navigation qui ne dépend pas du système de menu interactif est présenté aux agents utilisateurs qui ne sont pas compatibles avec la nouvelle technologie.</p> </li>
+  </ul>
+</div>
+</div>
+<div class="div3"><h2 id="uc-web-page-head" class="section">Comprendre «&nbsp;page Web&nbsp;»</h2>
+  <p>La définition de page Web est&nbsp;;</p>
+  <dl>
+    <dt class="label"><a name="webpagedef" id="webpagedef"> </a>page Web</dt>
+<dd><p>une ressource autonome obtenue depuis un URI unique grâce au protocole HTTP, accompagnée de toutes les autres ressources utilisées dans la restitution ou conçues pour être restituées simultanément par un <a href="#useragentdef" class="termref">agent utilisateur</a></p>
+<div class="note">
+<p class="prefix"><em>Note 1&nbsp;: </em>bien que toutes les «&nbsp;autres ressources&nbsp;» seraient restituées avec la ressource primaire, elles ne sont pas nécessairement restituées simultanément.</p>
+<p class="prefix"><em>Note 2&nbsp;: </em>à des fins de conformité avec ces règles, une ressource doit être autonome à l'intérieur du périmètre de conformité pour être considérée comme une page Web.</p>
+      </div>
+      <div class="example">
+<p class="prefix"><em>Exemple 1&nbsp;: </em>une ressource Web incluant toutes les images et médias liés.</p>
+      <p class="prefix"><em>Exemple 2&nbsp;: </em>un programme Web de courrier électronique (Webmail) développé à l'aide d'AJAX (<span xml:lang="en" lang="en">Asynchronous JavaScript and XML</span>, JavaScript asynchrone et XML). Le programme réside intégralement à l'adresse http://exemple.com/mail, mais comprend une boîte de réception, un carnet d'adresses et un calendrier. Des liens et des boutons permettent d'afficher la boîte de réception, les contacts ou le calendrier, mais ne changent pas globalement l'URI de la page.</p>
+      <p class="prefix"><em>Exemple 3&nbsp;: </em>un site portail personnalisable, dans lequel les utilisateurs peuvent choisir le contenu à afficher à partir d'un ensemble de modules de contenu.</p>
+      <p class="prefix"><em>Exemple 4&nbsp;: </em>quand on saisit «&nbsp;http://shopping.exemple.com/&nbsp;» dans son navigateur, on entre dans un environnement commercial animé et interactif dans lequel on se déplace visuellement dans une boutique, retirant les produits directement depuis les rayons pour les placer dans un panier d'achats face à soi. Cliquer sur un produit déclenche une démonstration avec la fiche technique juste à côté. Cela peut être un site Web à page unique ou simplement une page à l'intérieur d'un site Web.</p>
+      </div>
+    </dd>
+  </dl>
+  <p>Il est important de noter que, dans ce standard, le terme «&nbsp;page Web&nbsp;» va plus loin que la notion de page HTML statique. Le terme «&nbsp;page Web&nbsp;» est utilisé dans ces règles pour les rendre plus faciles à comprendre. Mais le terme a pris une signification plus large avec l'évolution des technologies pour englober un large éventail de technologies, dont beaucoup «&nbsp;ne ressemblent pas du tout à des pages&nbsp;».  Cela inclut les pages Web de plus en plus dynamiques qui apparaissent sur le Web, notamment les «&nbsp;pages&nbsp;» qui peuvent présenter une communauté virtuelle interactive complète. Par exemple, le terme «&nbsp;page Web&nbsp;» peut inclure une expérience immersive, interactive, proche du cinéma, pouvant être trouvée sur une seule URI.</p>
+</div>
+<div class="div3"><h2 id="uc-text-alternatives-head" class="section">Comprendre «&nbsp;équivalent textuel&nbsp;»</h2>
+  <p>Un équivalent textuel est un texte qui est utilisé à la place du contenu non textuel pour ceux qui ne peuvent pas voir ce contenu non textuel. Un contenu non textuel peut inclure des choses telles que les tableaux, les graphiques, les applets, les fichiers audio, etc. Les gens qui ne peuvent pas voir par exemple, ne seraient pas en mesure de voir les informations présentées dans un tableau ou un graphique. Un équivalent textuel est donc prévu afin de permettre à l'utilisateur d'être en mesure de convertir l'information (le texte) en paroles. À l'avenir, avoir l'information en texte permettra aussi de traduire l'information en langue des signes, en images, ou dans une formulation simplifiée.</p>
+  <p>Pour que les personnes en situation de handicap soient en mesure d'utiliser ce texte - le texte doit être «&nbsp;déterminable par un programme informatique&nbsp;». Cela signifie que le texte doit pouvoir être lu et utilisé par les technologies d'assistance (et les fonctionnalités d'accessibilité des navigateurs) que les personnes en situation de handicap utilisent.</p>
+  <p>Il doit aussi être possible pour les personnes utilisant les technologies d'assistance de trouver ces équivalents textuels quand ils rencontrent un contenu non textuel qu'ils ne peuvent pas utiliser. Pour ce faire, nous disons que le texte doit être «&nbsp;associé par programmation&nbsp;» avec le contenu non textuel. Cela signifie que l'utilisateur doit être en mesure d'utiliser sa technologie d'assistance pour trouver l'équivalent textuel (qu'il peut utiliser) quand il arrive à un contenu non textuel (qu'il ne peut pas utiliser).</p>
+</div>
+<h2 id="uc-conformance-terms-head" class="section">Mots clés</h2>
+<dl>
+<dt class="label"><a name="conformancedef" id="conformancedef"></a>conformité</dt>
+    <dd><p>satisfaire à toutes les exigences d'une norme ou d'un standard donné, d'une règle ou d'une spécification</p>
+    </dd>
+</dl>
+<dl>
+<dt class="label"><a name="processdef" id="processdef"></a>processus</dt>
+    <dd><p>séries d'actions de l'utilisateur dont l'enchaînement est       nécessaire à l'accomplissement d'une tâche</p>
+       <div class="example">
+      <p class="prefix"><em>Exemple 1&nbsp;: </em>utilisation réussie par l'utilisateur, sur un site de vente, d'un enchaînement de pages Web permettant de voir différents produits, des prix et des offres, de sélectionner des produits, de soumettre une commande, de fournir les informations d'envoi et de paiement.</p>
+      <p class="prefix"><em>Exemple 2&nbsp;: </em>une page permettant de créer un compte utilisateur nécessitant l'accomplissement d'un test de Turing avant de pouvoir accéder à cette page de formulaire de création de compte.</p>
+      </div>
+    </dd>
+</dl>
+<dl>
+  <dt class="label"><a name="reliedupondef" id="reliedupondef"></a>dépendre (technologies)</dt>
+    <dd><p>le contenu ne serait pas <a href="#conformancedef" class="termref">conforme</a> si cette <a href="#technologydef" class="termref">technologie</a> est inactivée ou si elle n'est pas compatible</p>
+    </dd>
+</dl>
+<dl>
+  <dt class="label"><a name="satisfiesdef" id="satisfiesdef"></a>satisfait à un critère de succès</dt>
+    <dd><p>le critère de succès ne se révèle pas «&nbsp;faux&nbsp;» lors de l'évaluation de la page</p>
+    </dd>
+</dl>
+<dl>
+<dt class="label"><a name="technologydef" id="technologydef"></a>technologie Web</dt>
+    <dd><p><a href="#mechanismdef" class="termref">mécanisme</a> pour encoder les instructions devant être restituées, jouées ou exécutées par les <a href="#useragentdef" class="termref">agents utilisateurs</a></p>
+       <div class="note">      <p class="prefix"><em>Note 1&nbsp;: </em>tel qu'employés dans ces règles, l'expression «&nbsp;technologie Web&nbsp;» et le mot «&nbsp;technologie&nbsp;» (utilisé seul) désignent les technologies relatives aux contenus Web.</p>
+      <p class="prefix"><em>Note 2&nbsp;: </em>les technologies relatives aux contenus Web comprennent les langages de balisage, les formats de données ou les langages de programmation que les auteurs sont amenés à utiliser seuls ou combinés pour créer des expériences pour l'utilisateur final qui vont de pages Web statiques jusqu'à des présentations multimédia synchronisées, en passant par des applications Web dynamiques.</p>
+      </div>
+       <div class="example">
+      <p class="prefix"><em>Exemple&nbsp;: </em>on compte parmi les exemples les plus fréquents de technologies Web&nbsp;: <acronym title="Hypertext Markup Language" lang="en" xml:lang="en">HTML</acronym>, <acronym title="Cascading Style Sheets" lang="en" xml:lang="en">CSS</acronym>, <acronym title="Scalable Vector Graphics" lang="en" xml:lang="en">SVG</acronym>, <acronym title="Portable Network Graphics" lang="en" xml:lang="en">PNG</acronym>, <acronym title="Portable Document Format" lang="en" xml:lang="en">PDF</acronym>, Flash et JavaScript.</p>
+      </div>
+    </dd>
+</dl>
+<hr class="divider"/></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 4.1.2 [Nom, rôle et valeur]" href="ensure-compat-rsv.html"><strong>Précédent&nbsp;: </strong>CS 4.1.2 [Nom, rôle et valeur]</a></li><li><a title="Faire référence aux WCAG 2.0" href="appendixA.html"><strong>Suivant&nbsp;: </strong> Faire référence aux WCAG 2.0</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

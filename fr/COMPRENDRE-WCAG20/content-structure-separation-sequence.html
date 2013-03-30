@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 1.3.2  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.3.1 [Information et relations]" href="content-structure-separation-programmatic.html"><strong>Précédent&nbsp;: </strong>CS 1.3.1 [Information et relations]</a></li><li><a title="Comprendre le CS 1.3.3 [Caractéristiques sensorielles]" href="content-structure-separation-understanding.html"><strong>Suivant&nbsp;: </strong>CS 1.3.3 [Caractéristiques sensorielles]</a></li></ul>
+<div class="navtoc">
+  <p>Sur cette page&nbsp;:</p>
+  <ul id="navbar"><li><a href="#content-structure-separation-sequence-intent-head">Objectif</a></li>
+    <li><a href="#content-structure-separation-sequence-examples-head">Exemples</a></li>
+    <li><a href="#content-structure-separation-sequence-techniques-head">Techniques et échecs</a></li>
+    <li><a href="#key-terms">Mots clés </a></li>
+  </ul>
+</div>
+<div class="skiptarget"><a id="maincontent">-</a></div>
+<h1><a name="content-structure-separation-sequence" id="content-structure-separation-sequence"> </a><strong>Ordre séquentiel logique</strong><span class="screenreader">&nbsp;:</span><br/>
+  Comprendre le <abbr title="critère de succès">CS</abbr> 1.3.2</h1>
+<blockquote class="scquote">
+  <div>
+    <p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/Translations/wcag20-fr/#content-structure-separation-sequence">1.3.2</a> Ordre séquentiel logique&nbsp;:</strong> lorsque l'ordre de présentation du contenu affecte sa signification, un <a href="#correct-reading-sequencedef" class="termref">ordre de lecture correct</a> peut être <a href="#programmaticallydetermineddef" class="termref">déterminé par un programme informatique</a>.
+      (Niveau A) </p>
+  </div>
+</blockquote>
+<div class="intent"><h2 id="content-structure-separation-sequence-intent-head" class="section">Objectif de ce critère de succès </h2>
+  <p>L'objectif de ce critère de succès est de permettre à un agent utilisateur de fournir une présentation alternative du contenu tout en préservant l'ordre de lecture nécessaire pour comprendre le sens. Il est important qu'il soit possible de déterminer par programmation au moins une séquence du contenu qui a du sens. Un contenu qui ne satisfait pas à ce critère de succès peut perturber ou désorienter les utilisateurs lorsque la technologie d'assistance lit le contenu dans un ordre fautif ou lorsque les feuilles de styles alternatives ou d'autres changements de format sont appliqués. </p>
+  <p>Une séquence a <em>un sens</em> si l'ordre du contenu dans la séquence ne peut être changé sans affecter sa signification. Par exemple, si une page contient deux articles indépendants, l'ordre relatif des articles peut ne pas affecter leur signification, tant qu'ils ne sont pas entrelacés. Dans une telle situation, les articles eux-mêmes peuvent avoir un ordre séquentiel logique, mais le conteneur qui contient les articles peut quant à lui ne pas avoir un ordre séquentiel logique.</p>  <p>La sémantique de certains éléments détermine si oui ou non leur contenu constitue un ordre séquentiel logique. Par exemple, en HTML, le texte forme toujours un ordre séquentiel logique. Les tableaux et les listes ordonnées constituent des ordres séquentiels logiques, mais pas les listes non ordonnées.</p>
+  <p>L'ordre du contenu dans une séquence n'est pas toujours significatif. Par exemple, l'ordre relatif de la partie principale d'une page Web et d'une section de navigation n'affecte pas leur signification. Ils pourraient se produire dans n'importe quel ordre dans la séquence de lecture déterminée par programmation. Comme autre exemple, un article de magazine contient plusieurs encadrés latéraux. L'ordre de l'article et des encadrés n'affecte pas leur signification. Dans de tels cas, il existe plusieurs ordres différents de lecture d'une page Web qui peuvent satisfaire le critère de succès. </p>
+  <div class="benefits">
+    <h3 id="content-structure-separation-sequence-52-head" class="div3head"> Avantages spécifiques du critère de succès 1.3.2&nbsp;: </h3>
+    <ul>
+      <li><p>Ce critère de succès peut aider les personnes qui comptent sur les technologies d'assistance qui lisent le contenu à haute voix. La signification évidente tirée de la mise en ordre de l'information de la présentation par défaut sera la même quand le contenu sera présenté sous forme orale. </p></li></ul></div></div>
+<div class="div3"><h2 id="content-structure-separation-sequence-examples-head" class="section"> Exemples pour le critère de succès 1.3.2</h2>
+  <ul>
+    <li><p> <strong>Exemple 1&nbsp;: </strong>dans un document multi-colonnes, la présentation linéaire du flux de contenu à partir du haut d'une colonne vers le bas de celle-ci, puis le haut de la colonne suivante.</p>
+    </li>
+    <li><p> <strong>Exemple 2&nbsp;:</strong> la feuille de style CSS est utilisée pour placer sur une page une barre de navigation, le contenu principal et un contenu secondaire. La présentation visuelle des sections ne correspond pas à l'ordre déterminé par un programme informatique, mais le sens de la page ne dépend pas de l'ordre des sections.</p>
+    </li>
+</ul></div>
+<div class="resources"><h2 id="content-structure-separation-sequence-resources-head" class="section">Ressources
+ liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.
+</p><p>(Aucune ressource n'est actuellement documentée)</p></div>
+<div class="div3"><h2 id="content-structure-separation-sequence-techniques-head" class="section"> Techniques et échecs pour le critère de succès 1.3.2 - Ordre séquentiel logique</h2>
+  <p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym title="Règles pour l'accessibilité des contenus Web">WCAG</acronym> considère comme suffisante pour satisfaire à ce critère de succès.  Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/wcag20-fr/#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées. </p>
+  <div class="boxed"><h3 id="content-structure-separation-sequence-53-head" class="div3head">Techniques suffisantes</h3>
+    <ol class="enumar">
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G57">G57&nbsp;: Ordonner le contenu selon une séquence logique (en anglais) </a> pour tout le contenu de la page Web</p>
+      </li>
+      <li><p>Marquer les séquences logiques dans le contenu en utilisant l'une des techniques suivantes <strong>ET</strong> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G57">G57&nbsp;: Ordonner le contenu selon une séquence logique (en anglais) </a> pour ces séquences</p>
+        <ul>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H34">H34&nbsp;: Utiliser un marqueur Unicode droite à gauche (RLM) ou gauche à droite (LRM) pour mélanger les directions de texte en ligne (en anglais)</a> (HTML) </p>
+</li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H56">H56&nbsp;: Utiliser l'attribut dir dans un élément incorporé pour résoudre le problème des changements de direction imbriqués (en anglais)</a> (HTML) </p>
+</li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C6">C6&nbsp;: Positionner le contenu selon le balisage structurel (en anglais) </a> (CSS) </p>
+</li>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C8">C8&nbsp;: Utiliser la propriété CSS letter-spacing pour contrôler l'espacement dans un mot (en anglais) </a> (CSS) </p>
+</li>
+        </ul>
+      </li>
+      <li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/C27">C27&nbsp;: Faire en sorte que l'ordre du DOM corresponde à l'ordre visuel (en anglais) </a> (CSS) </p>
+      </li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH15">FLASH15&nbsp;: Utiliser la propriété tabIndex pour spécifier un ordre de lecture et un ordre de tabulation logiques dans Flash (en anglais)</a> (Flash)
+</p></li><li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH37">FLASH37&nbsp;: Utiliser la propriété tabIndex pour spécifier un ordre logique de tabulation dans Flash (en anglais)</a> (Flash)
+</p></li>
+    </ol>
+  </div>
+  <div class="boxed"><h3 id="content-structure-separation-sequence-54-head" class="div3head">Techniques supplémentaires (recommandées) pour 1.3.2</h3>
+    <p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+    <ul>
+      <li><p>Utiliser un alignement à gauche pour les langues qui s'écrivent de gauche à droite et un alignement à droite pour les langues qui s'écrivent de droite à gauche (lien à venir)</p>
+      </li>
+      <li><p>Fournir un lien permettant de linéariser la présentation (lien à venir)</p>
+      </li>
+      <li><p>Fournir une fonction de bascule entre des feuilles de style qui affectent l'ordre de présentation (lien à venir)</p>
+      </li>
+    </ul>
+  </div>
+  <div class="boxed"><h3 id="content-structure-separation-sequence-55-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 1.3.2</h3>
+    <p>Le groupe de travail des <acronym title="Règles pour l'accessibilité des contenus Web">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 1.3.2.</p>
+    <ul>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F34">F34&nbsp;: Échec du critère de succès 1.3.1 et 1.3.2 consistant à utiliser des caractères blancs pour formater un tableau dans un contenu textuel (en anglais)</a> </p>
+      </li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F33">F33&nbsp;: Échec du critère de succès 1.3.1 et 1.3.2 consistant à utiliser des caractères blancs pour contrôler l'espacement entre les colonnes dans un contenu textuel (en anglais) </a> </p>
+      </li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F32">F32&nbsp;: Échec du critère de succès 1.3.2 consistant à utiliser des caractères blancs pour contrôler l'espacement à l'intérieur d'un mot (en anglais)</a> </p>
+</li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F49">F49&nbsp;: Échec du critère de succès 1.3.2 consistant à utiliser un tableau de présentation HTML qui n'a pas de sens une fois linéarisé (en anglais) </a> </p>
+      </li>
+      <li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F1">F1&nbsp;: Échec du critère de succès 1.3.2 consistant à changer la signification du contenu en positionnant le contenu à l'aide des CSS (en anglais) </a> </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+  <dl class="keyterms">
+<dt class="label"><a name="programmaticallydetermineddef"
+  id="programmaticallydetermineddef"></a>déterminé (déterminable) par un
+  programme informatique</dt>
+    <dd><p>déterminé par un programme à partir de données fournies par
+      l'auteur d'une manière qui permet aux <a
+href="
+http://www.w3.org/Translations/wcag20-fr/#useragentdef"
+      class="termref">agents utilisateurs</a>, y compris les <a
+href="http://www.w3.org/Translations/wcag20-fr/#atdef" class="termref">technologies d'assistance</a>, d'extraire et de présenter cette information aux utilisateurs sous différentes formes</p>
+       <div class="example">
+      <p class="prefix"><em>Exemple 1 : </em>déterminé dans un langage de
+      balisage à partir d'éléments et d'attributs auxquels on accède grâce
+      aux technologies d'assistance couramment disponibles.</p>
+      <p class="prefix"><em>Exemple 2 : </em>déterminé grâce à des
+      structures de données spécifiques d'une technologie pour un langage
+      non-balisé et exposée aux technologies d'assistance via une <acronym
+      xml:lang="en" lang="en"
+      title="Application Programming Interface">API</acronym> d'accessibilité
+      aux technologies d'assistance couramment disponibles. </p>
+      </div>
+    </dd>
+<dt class="label"><a name="correct-reading-sequencedef"
+  id="correct-reading-sequencedef"></a>ordre de lecture correct</dt>
+    <dd><p>tout ordre séquentiel où les mots et les paragraphes sont
+      présentés dans un ordre qui ne modifie pas la signification du
+      contenu</p>
+    </dd>
+</dl>
+</div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 1.3.1 [Information et relations]" href="content-structure-separation-programmatic.html"><strong>Précédent&nbsp;: </strong>CS 1.3.1 [Information et relations]</a></li><li><a title="Comprendre le CS 1.3.3 [Caractéristiques sensorielles]" href="content-structure-separation-understanding.html"><strong>Suivant&nbsp;: </strong>SC 1.3.3 [Caractéristiques sensorielles]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

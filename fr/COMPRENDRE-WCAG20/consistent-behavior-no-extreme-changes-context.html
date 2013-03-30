@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 3.2.5  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 3.2.4 [Identification cohérente]" href="consistent-behavior-consistent-functionality.html"><strong>Précédent&nbsp;: </strong>CS 3.2.4 [Identification cohérente]</a></li><li><a title="Comprendre la règle 3.3 [Assistance à la saisie]" href="minimize-error.html"><strong>Suivant&nbsp;: </strong>Règle 3.3 [Assistance à la saisie]</a></li></ul>
+<div class="navtoc">
+<p>Sur cette page&nbsp;:</p>
+<ul id="navbar">
+<li><a href="#consistent-behavior-no-extreme-changes-context-intent-head">Objectif</a></li>
+<li><a href="#consistent-behavior-no-extreme-changes-context-examples-head">Exemples</a></li>
+<li><a href="#consistent-behavior-no-extreme-changes-context-resources-head">Ressources liées</a></li>
+<li><a href="#consistent-behavior-no-extreme-changes-context-techniques-head">Techniques et échecs</a></li>
+<li><a href="#key-terms">Mots clés</a></li>
+</ul>
+</div>
+<div class="skiptarget"> <a id="maincontent">-</a> </div><h1>
+<a name="consistent-behavior-no-extreme-changes-context" id="consistent-behavior-no-extreme-changes-context"></a>
+        <strong>Changement à la demande</strong>
+<span class="screenreader">&nbsp;:</span><br/>Comprendre le
+<abbr title="Critère de succès">
+CS</abbr> 3.2.5</h1>
+<blockquote class="scquote">
+<div>
+<p class="sctxt"> <strong class="sc-handle"> <a href="http://www.w3.org/Translations/wcag20-fr/#consistent-behavior-no-extreme-changes-context">3.2.5</a>
+Changement à la demande&nbsp;:</strong> un <a href="#context-changedef" class="termref">changement de contexte</a> est initié uniquement sur demande de l'utilisateur ou un <a href="#mechanismdef" class="termref">mécanisme</a> est disponible pour désactiver un tel changement. (Niveau AAA)</p>
+</div>
+</blockquote>
+<div class="intent"> <h2 id="consistent-behavior-no-extreme-changes-context-intent-head" class="section"> Objectif de ce critère de succès</h2>
+<p> L'objectif de ce critère de succès est d'encourager la conception de contenus Web laissant aux utilisateurs un contrôle total sur les changements de contexte. Ce critère de succès vise à éliminer les confusions potentielles pouvant être causées par des changements de contexte non voulus, comme l'ouverture de nouvelles fenêtres, la soumission automatique de formulaires après sélection d'un élément dans une liste, etc. De tels changements de contexte non voulus peuvent causer des difficultés aux personnes ayant une limitation motrice, étant malvoyantes ou aveugles, et les personnes ayant des limitations cognitives. </p>
+<p> Certains types de changements de contexte ne sont pas perturbants pour certains utilisateurs et sont mêmes bénéfiques pour d'autres utilisateurs. Par exemple, les utilisateurs d'«&nbsp;interrupteur unique&nbsp;» se fient aux changements de contexte animés par le système, et les préférences des utilisateurs malvoyants peuvent varier suivant la quantité de contenu vue à la fois et selon la quantité d'information de structure qu'ils peuvent retenir en mémoire de travail. Certains types de contenus, comme les diaporamas, nécessitent de pouvoir changer le contexte pour procurer l'expérience utilisateur voulue. Les contenus qui initient un changement de contexte automatique suivant les préférences de l'utilisateur, peuvent respecter ce critère de succès.</p>
+<div class="note"><p class="prefix"> <em> Note&nbsp;: </em> cliquer sur un lien est un exemple d'action qui est «&nbsp;initié uniquement sur demande de l'utilisateur&nbsp;».</p></div>
+<div class="benefits"><h3 id="consistent-behavior-no-extreme-changes-context-217-head" class="div3head"> Avantages spécifiques du critère de succès 3.2.5&nbsp;:</h3>
+<ul>
+<li><p>Les personnes qui ne peuvent pas détecter les changements de contexte ou qui pourraient ne pas réaliser qu'un changement de contexte a eu lieu auront moins de chances d'être désorientées au cours de leur navigation dans un site. Par exemple&nbsp;:
+</p>
+<ul>
+<li><p> Les personnes aveugles ou malvoyantes pourraient avoir des difficultés pour savoir quand un changement de contexte visuel a eu lieu, tel que l'ouverture d'une nouvelle fenêtre (<span xml:lang="en" lang="en">popup</span>). Dans cette situation, avertir à l'avance les utilisateurs des changements de contexte limite les risques de confusion lorsque ces utilisateurs découvrent que le bouton Retour ne se comporte plus comme prévu.
+</p></li>
+</ul></li>
+<li><p>Certaines personnes malvoyantes, avec des difficultés de lecture et des limitations intellectuelles, et qui ont des difficultés à interpréter les repères visuels, pourraient tirer avantage de repères supplémentaires pour détecter les changements de contexte.
+</p></li>
+<li><p>Les personnes avec des <strong>limitations cognitives</strong> ne sont pas perturbées si des redirections automatiques sont exécutées par le serveur Web, et non par le navigateur.</p></li>
+</ul>
+</div>
+        </div>
+        <div class="div3">
+          <h2 id="consistent-behavior-no-extreme-changes-context-examples-head" class="section">
+            Exemples pour le critère de succès 3.2.5</h2>
+<ul>
+<li><p><strong>Un bouton «&nbsp;mettre à jour maintenant&nbsp;»</strong>
+</p>
+<p> Au lieu de mettre à jour automatiquement le contenu, l'auteur fournit un bouton «&nbsp;mettre à jour maintenant&nbsp;» qui effectue une demande de rafraîchissement du contenu.
+</p></li>
+<li><p><strong>Redirection automatique</strong>
+</p>
+<p>Un utilisateur est automatiquement redirigé depuis une ancienne page vers une nouvelle page d'une telle manière qu'il ne réalise jamais que la redirection a eu lieu.</p></li>
+</ul>
+</div>
+<div class="resources"><h2 id="consistent-behavior-no-extreme-changes-context-resources-head" class="section"> Ressources liées</h2>
+<p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p>
+<ul>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.w3.org/QA/Tips/reback">Use standard redirects: don't break the back button!</a> – conseil du <acronym title="World Wide Web Consortium" xml:lang="en" lang="en">
+W3C </acronym> <acronym title="Quality Assurance" xml:lang="en" lang="en">
+QA </acronym> utiliser des redirections standards&nbsp;: ne pas bloquer le bouton retour.
+</p></li>
+<li><p><a xml:lang="en" lang="en" hreflang="en" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3">HTTP/1.1 Status Code Definitions: Redirection 3xx</a> – définitions HTTP/1.1&nbsp;: redirection 3xx (en anglais).</p></li>
+</ul>
+</div>
+<div class="div3"> <h2 id="consistent-behavior-no-extreme-changes-context-techniques-head" class="section">
+Techniques et échecs pour le critère de succès 3.2.5 - Changement à la demande</h2>
+<p>Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des <acronym title="Web Content Accessibility Guidelines" xml:lang="en" lang="en">
+WCAG </acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les
+<a href="http://www.w3.org/Translations/WCAG20-fr/#conformance-reqs">exigences de conformité aux WCAG 2.0</a>
+ont été appliquées. </p>
+<div class="boxed"><h3 id="consistent-behavior-no-extreme-changes-context-218-head" class="div3head"> Techniques suffisantes</h3>
+<p class="instructions">
+<strong>Consignes&nbsp;:</strong> choisissez parmi les situations suivantes celle qui correspond à votre contenu. Chaque situation comprend des techniques ou des combinaisons
+de techniques qui sont connues et documentées comme suffisantes par rapport à cette situation.</p>
+<div><h4><a name="consistent-behavior-no-extreme-changes-context-situation-46-head" id="consistent-behavior-no-extreme-changes-context-situation-46-head"> </a>Situation A&nbsp;: si la page Web permet des mises à jour automatiques&nbsp;:</h4>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G76"> G76&nbsp;: Fournir un mécanisme pour demander une mise à jour du contenu plutôt que de faire des mises à jour automatiquement (en anglais)</a></p></li>
+</ol>
+ </div>
+ <div>
+ <h4><a name="consistent-behavior-no-extreme-changes-context-situation-47-head" id="consistent-behavior-no-extreme-changes-context-situation-47-head"> </a>Situation B&nbsp;: si des redirections automatiques sont possibles&nbsp;:</h4>
+              <ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SVR1"> SVR1&nbsp;: Implémenter les redirections automatiques côté serveur plutôt que côté client (en anglais)</a> (Serveur)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G110">G110&nbsp;: Utiliser une redirection instantanée côté client (en anglais)</a> en utilisant l'une des techniques suivantes&nbsp;:
+</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H76">H76&nbsp;: Utiliser meta refresh pour créer une redirection instantanée côté client (en anglais)</a> (HTML)
+</p></li>
+</ul></li>
+</ol>
+</div>
+<div>
+<h4><a name="consistent-behavior-no-extreme-changes-context-situation-48-head" id="consistent-behavior-no-extreme-changes-context-situation-48-head"> </a>Situation C&nbsp;: si la page Web utilise une fenêtre (<span lang="en">pop-up</span>)&nbsp;:</h4>
+<ol class="enumar">
+<li><p>inclure les fenêtres pop-up en utilisant l'une des techniques suivantes&nbsp;:</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H83">H83&nbsp;: Utiliser l'attribut target pour ouvrir une nouvelle fenêtre sur demande de l'utilisateur et l'indiquer dans l'intitulé du lien (en anglais)</a> (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014SCR24">SCR24&nbsp;: Utiliser une amélioration progressive pour ouvrir les nouvelles fenêtres sur demande de l'utilisateur (en anglais)</a> (programmation par script)
+</p></li>
+</ul></li>
+</ol>
+</div>
+<div><h4><a name="consistent-behavior-no-extreme-changes-context-situation-49-head" id="consistent-behavior-no-extreme-changes-context-situation-49-head"> </a>Situation D&nbsp;: si un évènement onchange est utilisé sur un élément select&nbsp;:</h4>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR19"> SCR19&nbsp;: Utiliser un événement onchange sur un élément select sans causer de changement de contexte (en anglais)</a> (programmation par script)
+</p></li>
+</ol>
+</div>
+</div>
+<div class="boxed"><h3 id="consistent-behavior-no-extreme-changes-context-219-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 3.2.5</h3>
+<p>Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.</p>
+<ul>
+<li><p> Ouvrir de nouvelles fenêtres en fournissant des hyperliens ordinaires sans l'attribut target (lien à venir), car beaucoup d'agents utilisateur permettent
+à l'utilisateur d'ouvrir des liens dans une nouvelle fenêtre ou dans un autre onglet.</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G200">G200&nbsp;: Ouvrir une nouvelle fenêtre et un onglet à partir d'un lien seulement quand cela est nécessaire (en anglais)</a></p></li>
+</ul>
+</div>
+<div class="boxed"><h3 id="consistent-behavior-no-extreme-changes-context-220-head" class="div3head">
+Échecs fréquents pour le <abbr title="Critère de succès">
+CS</abbr> 3.2.5</h3>
+<p> Le groupe de travail des <acronym title="Web Content Accessibility Guidelines" xml:lang="en" lang="en"> WCAG </acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 3.2.5.
+</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F60"> F60&nbsp;: Échec du critère de succès 3.2.5 consistant à ouvrir une nouvelle fenêtre quand un utilisateur entre de l'information dans un champ de formulaire (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F61"> F61&nbsp;: Échec du critère de succès 3.2.5 consistant à changer complètement le contenu principal via une mise à jour automatique que l'utilisateur ne peut désactiver à partir du contenu (en anglais)</a>
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F9"> F9&nbsp;: Échec du critère de succès 3.2.5 consistant à changer le contexte quand un utilisateur déplace le focus hors d'un champ de formulaire(en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F22"> F22&nbsp;: Échec du critère de succès 3.2.5 consistant à ouvrir une nouvelle fenêtre sans demande de l'utilisateur (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F52">F52&nbsp;: Échec du critère de succès 3.2.1 et 3.2.5 consistant à ouvrir une nouvelle fenêtre dès que la page est chargée
+(en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/F41"> F41&nbsp;: Échec du critère de succès 2.2.1, 2.2.4 et 3.2.5 consistant à utiliser meta refresh avec un délai (en anglais)</a></p></li>
+</ul>
+</div>
+</div>
+<div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms">
+<dt class="label">
+<a name="context-changedef" id="context-changedef"></a>changement de contexte</dt>
+<dd><p>changements majeurs dans le contenu d'une <a href="http://www.w3.org/Translations/WCAG20-fr/#webpagedef" class="termref">page Web</a> qui, s'ils sont faits sans que l'utilisateur en soit conscient, peuvent désorienter l'utilisateur qui ne peut voir l'ensemble de la page en même temps</p>
+<p>Les changements de contexte comprennent les changements de&nbsp;:</p>
+<ol class="enumar">
+<li><p><a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>&nbsp;;</p></li>
+<li><p><a href="http://www.w3.org/Translations/WCAG20-fr/#viewportdef" class="termref">espace de restitution</a>&nbsp;;</p></li>
+<li><p>focus&nbsp;;</p></li>
+<li><p><a href="http://www.w3.org/Translations/WCAG20-fr/#contentdef" class="termref">contenu</a>
+qui modifie la signification de la <a href="http://www.w3.org/Translations/WCAG20-fr/#webpagedef" class="termref">page Web</a>.</p></li>
+</ol>
+<div class="note"><p class="prefix"><em>
+Note&nbsp;:</em> un changement de contenu n'est pas toujours un changement de contexte. Un changement dans le contenu comme le déploiement d'une arborescence, un
+menu dynamique ou un déplacement de tabulation ne change pas nécessairement le contexte à moins qu'il ne change aussi l'un des éléments énumérés ci-dessus
+(par exemple le focus).</p>
+</div>
+<div class="example"><p class="prefix"><em> Exemple&nbsp;:
+</em> l'ouverture d'une nouvelle fenêtre, le déplacement du focus sur un composant différent, le déplacement vers une nouvelle page (y compris tout
+ce qui, pour l'utilisateur, aurait l'air d'un déplacement vers une autre page) ou la réorganisation significative du contenu d'une page sont autant d'exemples
+d'un changement de contexte.</p>
+</div>
+</dd>
+<dt class="label"><a name="mechanismdef" id="mechanismdef"></a>
+mécanisme</dt>
+<dd><p><a href="http://www.w3.org/Translations/WCAG20-fr/#processdef" class="termref">processus</a>
+ou technique pour obtenir un résultat</p>
+<div class="note"><p class="prefix"><em> Note 1&nbsp;: </em>
+le mécanisme peut être explicitement fourni par le contenu ou <a href="http://www.w3.org/Translations/WCAG20-fr/#reliedupondef" class="termref">dépendre</a>
+de la plateforme ou de l'<a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>, y compris les <a href="http://www.w3.org/Translations/WCAG20-fr/#atdef" class="termref">technologies d'assistance</a>.</p>
+<p class="prefix"><em> Note 2&nbsp;:</em> le mécanisme doit satisfaire à tous les critères de succès (d'un niveau donné) pour déclarer un niveau de conformité.</p>
+</div>
+</dd>
+</dl>
+</div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 3.2.4 [Identification cohérente]" href="consistent-behavior-consistent-functionality.html"><strong>Précédent&nbsp;: </strong>CS 3.2.4 [Identification cohérente]</a></li><li><a title="Comprendre la règle  3.3 [Assistance à la saisie]" href="minimize-error.html"><strong>Suivant&nbsp;: </strong>Règle 3.3 [Assistance à la saisie]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

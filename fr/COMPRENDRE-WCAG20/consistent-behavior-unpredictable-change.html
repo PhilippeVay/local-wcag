@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><title>
+Comprendre le critère de succès 3.2.2  | Comprendre les WCAG 2.0
+</title><link media="print" type="text/css" rel="stylesheet" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/print.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">Comprendre les WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Aller au contenu (appuyer sur entrée)</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 3.2.1 [Au focus]" href="consistent-behavior-receive-focus.html"><strong>Précédent&nbsp;: </strong>CS 3.2.1 [Au focus]</a></li><li><a title="Comprendre le CS 3.2.3 [Navigation cohérente]" href="consistent-behavior-consistent-locations.html"><strong>Suivant&nbsp;: </strong>CS 3.2.3 [Navigation cohérente]</a></li></ul>
+<div class="navtoc">
+<p> Sur cette page&nbsp;:</p>
+<ul id="navbar">
+<li><a href="#consistent-behavior-unpredictable-change-intent-head">Objectif</a></li>
+<li><a href="#consistent-behavior-unpredictable-change-examples-head">Exemples</a></li>
+<li><a href="#consistent-behavior-unpredictable-change-resources-head">Ressources liées</a></li>
+<li><a href="#consistent-behavior-unpredictable-change-techniques-head">Techniques et échecs</a></li>
+<li><a href="#key-terms">Mots clés</a></li>
+</ul>
+</div>
+<div class="skiptarget"><a id="maincontent">-</a>
+</div><h1><a name="consistent-behavior-unpredictable-change" id="consistent-behavior-unpredictable-change"></a>
+  <strong>À la saisie</strong><span class="screenreader">&nbsp;:
+</span>
+<br/>Comprendre le <abbr title="critère de succès"> CS</abbr>
+ 3.2.2</h1>
+<blockquote class="scquote">
+  <div><p class="sctxt">
+<strong class="sc-handle"><a href="http://www.w3.org/Translations/WCAG20-fr/#consistent-behavior-unpredictable-change">3.2.2</a>
+À la saisie&nbsp;:</strong> le changement de paramètre d'un <a href="#user-interface-componentdef" class="termref">composant d'interface utilisateur</a> ne doit pas initier de <a href="#context-changedef" class="termref">changement de contexte</a>, à moins que l'utilisateur n'ait été avisé de ce comportement avant d'utiliser le composant. (Niveau A)</p>
+</div>
+  </blockquote>
+<div class="intent"><h2 id="consistent-behavior-unpredictable-change-intent-head" class="section">Objectif de ce critère de succès</h2>
+<p> L'objectif de ce critère de succès est de s'assurer que la saisie de données ou la sélection d'un contrôle de formulaire ont des effets prévisibles. Changer la valeur de n'importe quel composant d'interface c'est changer l'état d'un contrôle qui persistera après la fin de l'interaction de l'utilisateur. Ainsi, cocher une case à cocher ou saisir un texte dans un champ change leur valeur, mais activer un lien ou un bouton ne la change pas. Les changements de contexte peuvent perturber des utilisateurs qui ne perçoivent pas aisément les changements ou qui sont distraits par ceux-ci. Les changements de contexte sont appropriés uniquement lorsqu'il est évident que ces changements vont avoir lieu
+      <span> après une action de l'utilisateur
+      </span>.</p>
+    <div class="note"><p class="prefix"><em> Note&nbsp;:
+</em> ce critère de succès couvre les changements de contexte dus aux changements de valeur d'un contrôle. Le fait de cliquer sur un lien ou un onglet dans un tab control active le contrôle mais ne change pas la valeur de ce contrôle.</p>
+    </div>
+    <div class="benefits">
+      <h3 id="consistent-behavior-unpredictable-change-205-head" class="div3head">Avantages spécifiques du critère de succès 3.2.2&nbsp;:</h3>
+      <ul>
+<li><p> Ce critère de succès aide les utilisateurs en situation de handicap en rendant les contenus interactifs plus prévisibles. Les changements de contexte non prévus peuvent être suffisamment déstabilisants pour les utilisateurs ayant une limitation visuelle ou cognitive, qu'ils ne sont plus en mesure d'utiliser le contenu.</p></li>
+<li><p> Les personnes qui ne sont pas capables de détecter les changements de contexte ont plus de chances d'être désorientées au cours de leur navigation dans le site. Par exemple&nbsp;:</p>
+<ul>
+<li><p> Les personnes aveugles ou malvoyantes peuvent avoir des difficultés pour percevoir un changement de contexte visuel, comme l'ouverture d'une nouvelle fenêtre (popup). Dans ce cas, prévenir à l'avance les utilisateurs des changements, limite le risque de confusion quand l'utilisateur découvre que le bouton retour ne réagit plus comme attendu.</p></li>
+</ul></li>
+<li><p> Des personnes malvoyantes, avec des difficultés de lecture ou des limitations intellectuelles, et d'autres personnes ayant des difficultés à identifier les repères visuels peuvent bénéficier de repères supplémentaires afin de détecter les changements de contexte.</p></li>
+</ul>
+</div>
+  </div>
+  <div class="div3"><h2 id="consistent-behavior-unpredictable-change-examples-head" class="section">Exemples pour le critère de succès 3.2.2</h2>
+    <ul>
+<li><p> Un formulaire est fourni pour saisir des entrées de calendrier dans une application Web d'agenda électronique. En complément des champs standards pour le sujet, l'heure et le lieu, il existe une série de boutons radio pour sélectionner le type d'entrée de calendrier à créer. Les types d'entrée de calendrier peuvent être des réunions, des rendez-vous ou des rappels. Si l'utilisateur choisit l'option pour une réunion, des champs supplémentaires sont alors affichés sur la page pour saisir les participants à la réunion. D'autres champs apparaissent si le bouton rappel est choisi. Comme seulement une partie des champs de l'entrée changent mais que la structure globale demeure, le contexte de base reste inchangé pour l'utilisateur.</p></li>
+<li><p> Un formulaire contient des champs représentant un numéro de téléphone au format d'Amérique du Nord. Tous ces numéros possèdent 3 chiffres pour le code zone, suivis par un préfixe de 3 chiffres, eux-mêmes suivis d'un nombre de 4 chiffres, et chaque partie du numéro est entrée dans un champ distinct. Quand un utilisateur complète sa saisie dans le premier champ et entre le premier chiffre du champ suivant, alors le focus est automatiquement déplacé vers ce deuxième champ. Ce comportement des champs de téléphone est décrit à l'intention de l'utilisateur en début de formulaire.</p></li>
+    </ul>
+  </div>
+<div class="resources"><h2 id="consistent-behavior-unpredictable-change-resources-head" class="section">Ressources liées</h2><p>Les ressources sont présentées dans un but d'information seulement, il ne s'agit pas d'une approbation.</p><p>(Aucune ressource n'est actuellement documentée)</p></div>
+<div class="div3"><h2 id="consistent-behavior-unpredictable-change-techniques-head" class="section">Techniques et échecs pour le critère de succès 3.2.2 - À la saisie</h2>
+<p> Chaque élément numéroté dans cette section représente une technique ou une combinaison de techniques que le groupe de travail des
+<acronym lang="fr" title="Web Content Accessibility Guidelines"> WCAG
+</acronym> considère comme suffisante pour satisfaire à ce critère de succès. Les techniques énumérées satisfont le critère de succès seulement si toutes les <a href="http://www.w3.org/Translations/WCAG20-fr/#conformance-reqs">exigences de conformité aux WCAG 2.0</a> ont été appliquées.
+</p>
+<div class="boxed"><h3 id="consistent-behavior-unpredictable-change-206-head" class="div3head">Techniques suffisantes</h3>
+<ol class="enumar">
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014G80">G80&nbsp;: Fournir un bouton de soumission pour initier un changement de contexte (en anglais)</a> en utilisant une technique spécifique à une technologie listée ci-dessous.</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014H32">H32&nbsp;: Fournir un bouton submit (en anglais)</a> (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014H84">H84&nbsp;: Utiliser un bouton avec un élément select pour déclencher une action (en anglais)</a> (HTML)
+</p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/FLASH4">FLASH4&nbsp;: Fournir des boutons de validation de formulaire dans Flash
+(en anglais)</a> (Flash)
+</p></li></ul></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014G13">G13&nbsp;: Décrire ce qui va se produire avant qu'une modification sur un élément de contrôle de formulaire ne cause un changement de contexte (en anglais)</a></p></li>
+</ol>
+<div class="note"><p class="prefix">
+<em> Note&nbsp;:
+</em> un changement de contenu n'est pas toujours un
+<a href="http://www.w3.org/Translations/WCAG20-fr/#context-changedef">changement de contexte</a>. Ce critère de succès est automatiquement satisfait si les changements de contenus ne sont pas des changements de contexte.</p>
+</div>
+</div>
+<div class="boxed"><h3 id="consistent-behavior-unpredictable-change-207-head" class="div3head">
+Techniques (recommandées) supplémentaires pour 3.2.2</h3>
+<p> Bien qu'elles ne soient pas nécessaires à la conformité, les techniques supplémentaires suivantes devraient être envisagées afin de rendre le contenu plus accessible. Toutes ces techniques ne peuvent pas être utilisées ou ne seraient pas efficaces dans toutes les situations.
+</p>
+<ul>
+<li><p> <a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/G201">G201&nbsp;: Avertir l'utilisateur à l'avance lorsqu'une nouvelle fenêtre est ouverte (en anglais)</a></p></li>
+      </ul>
+    </div>
+    <div class="boxed"><h3 id="consistent-behavior-unpredictable-change-208-head" class="div3head">Échecs fréquents pour le <abbr title="critère de succès">CS</abbr> 3.2.2</h3>
+<p>Le groupe de travail des
+<acronym title="Web Content Accessibility Guidelines" lang="en">WCAG</acronym> considère les erreurs fréquentes suivantes comme des échecs du critère de succès 3.2.2.</p>
+<ul>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014F36">F36&nbsp;: Échec du critère de succès 3.2.2 consistant à soumettre automatiquement un formulaire et à présenter un nouveau contenu sans avertissement préalable lorsque le dernier champ d'un formulaire reçoit une valeur (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014F37">F37&nbsp;: Échec du critère de succès 3.2.2 consistant à ouvrir une nouvelle fenêtre sans avertissement préalable lorsque l'état d'un bouton radio, d'une case à cocher ou d'une zone de liste déroulante est changé (en anglais)</a></p></li>
+<li><p><a hreflang="en" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014F76">F76&nbsp;: Échec du critère de succès 3.2.2 consistant à fournir des instructions à propos des changements de contexte par un changement d'état d'un élément d'interface utilisateur à un endroit par dessus lequel un utilisateur risque de passer (en anglais)</a></p></li>
+</ul>
+    </div>
+  </div>
+  <div class="div3"><h2 id="key-terms" class="terms">Mots clés</h2>
+<dl class="keyterms">
+<dt class="label">
+<a name="context-changedef" id="context-changedef"></a> changement de contexte
+</dt>
+<dd><p>changements majeurs dans le contenu d'une
+  <a href="http://www.w3.org/Translations/wcag20-fr/#webpagedef" class="termref">page Web</a> qui, s'ils sont faits sans que l'utilisateur en soit conscient, peuvent désorienter l'utilisateur qui ne peut voir l'ensemble de la page
+en même temps</p>
+<p>Les changements de contexte comprennent les changements de&nbsp;:
+</p>
+<ol class="enumar">
+<li><a href="http://www.w3.org/Translations/WCAG20-fr/#useragentdef" class="termref">agent utilisateur</a>&nbsp;;</li>
+  <li><a href="http://www.w3.org/Translations/WCAG20-fr/#viewportdef" class="termref">espace de restitution</a>
+  &nbsp;;</li>          <li>focus&nbsp;;</li>
+<li><a href="http://www.w3.org/Translations/WCAG20-fr/#contentdef" class="termref">contenu</a>
+qui modifie la signification de la <a href="http://www.w3.org/Translations/WCAG20-fr/#webpagedef" class="termref">page Web</a>.</li>
+</ol>
+<div class="note"><p class="prefix">
+<em> Note&nbsp;:</em> un changement de contenu n'est pas toujours un changement de contexte. Un changement dans le contenu comme le déploiement d'une arborescence, un menu dynamique ou un déplacement de tabulation ne change pas nécessairement le contexte à moins qu'il ne change aussi l'un des éléments énumérés ci-dessus (par exemple le
+focus).</p>
+ </div>
+<div class="example"><p class="prefix"><em>Exemple&nbsp;:
+</em> l'ouverture d'une nouvelle fenêtre, le déplacement du focus sur un composant différent, le déplacement vers une nouvelle page (y compris tout ce qui, pour l'utilisateur, aurait l'air d'un déplacement vers une autre page) ou la réorganisation significative du contenu d'une page sont autant
+d'exemples d'un changement de contexte.
+</p>
+</div>
+</dd>
+<dt class="label"><a name="user-interface-componentdef" id="user-interface-componentdef"></a> composant d'interface utilisateur</dt>
+<dd>
+<p> partie du contenu qui est perçue par les utilisateurs comme un
+élément de contrôle unique pour une fonction distincte</p>
+<div class="note"><p class="prefix">
+<em>Note 1&nbsp;: </em> plusieurs composants d'interface utilisateur peuvent être implémentés au sein d'un seul programme. La notion de composant n'est pas liée ici aux techniques de programmation, mais plutôt à ce que les utilisateurs perçoivent comme des éléments de contrôle distincts.
+</p>
+<p class="prefix"><em> Note 2&nbsp;:
+</em> les composants d'interface utilisateur incluent les éléments de formulaire et les liens aussi bien que des composants générés par scripts.
+</p>
+</div>
+<div class="example"> <p class="prefix"><em> Exemple&nbsp;:
+</em> un microprogramme (applet) dispose d'un «&nbsp;élément de contrôle&nbsp;» permettant de se déplacer dans le contenu ligne par ligne, page par page ou au hasard. Puisque chacune de ces fonctions devrait avoir un nom et fonctionner indépendamment, elles
+constitueraient chacune un «&nbsp;composant d'interface utilisateur&nbsp;».
+</p>
+</div>
+</dd>
+</dl>
+  </div>
+<!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">Haut de page</a></strong></li><li><strong><a href="Overview.html#contents" title="Table des matières">Sommaire</a></strong></li><li><strong><a href="intro.html" title="Introduction à Comprendre les WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li><li><a title="Comprendre le CS 3.2.1 [Au focus]" href="consistent-behavior-receive-focus.html"><strong>Précédent&nbsp;: </strong>CS 3.2.1 [Au focus]</a></li><li><a title="Comprendre le CS 3.2.3 [Navigation cohérente]" href="consistent-behavior-consistent-locations.html"><strong>Suivant&nbsp;: </strong>CS 3.2.3 [Navigation cohérente]</a></li></ul></div>
+<div class="footer"><p class="copyright">Cette page Web fait partie de <a href="Overview.html">Comprendre les WCAG 2.0&nbsp;: un guide pour comprendre et implémenter les WCAG 2.0</a>. La totalité du document est aussi disponible dans un <a href="complete.html">seul fichier HTML</a>. Consulter <a hreflang="en" href="http://www.w3.org/WAI/intro/wcag20">les documents des WCAG 2.0 (en anglais)</a> pour des explications sur la façon dont ce document s'articule avec les autres documents des Règles pour l'accessibilité des contenus Web <span xml:lang="en" lang="en">Web Content Accessibility Guidelines</span> (WCAG) 2.0.
+ </p><p xml:lang="en" lang="en" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2010 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
