@@ -6,6 +6,16 @@
   <link media="print" type="text/css" rel="stylesheet" href="print.css" />
   <link rel="stylesheet" type="text/css" href="additional.css" />
   <style type="text/css">
+/* Debug */
+a[href^="COMPRENDRE"] +span+ a[href^="http://www.w3.org"]/*:not([hreflang])*/ {
+  background-color: lightblue;
+}
+a[href^="COMPRENDRE"]/*:not([hreflang])*/ {
+  background-color: lightgreen;
+}
+a[href^="http://www.w3.org"] {
+  background-color: red;
+}
 
 /* Copy of http://www.w3.org/StyleSheets/TR/W3C-REC */
 /* Style for a "Recommendation" */
